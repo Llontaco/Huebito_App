@@ -4,24 +4,21 @@
     "nombre": "Quinua",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 302,
     "nombre": "Avena",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 303,
     "nombre": "Maca",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 304,
@@ -29,32 +26,28 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 305,
     "nombre": "Jugo de papaya",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 306,
     "nombre": "Jugo surtido",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 307,
     "nombre": "Leche con café",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 308,
@@ -62,96 +55,84 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 309,
     "nombre": "Infusión de hierbas",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 310,
     "nombre": "Chicha morada",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 311,
     "nombre": "Chicha de jora",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 312,
     "nombre": "Chicha de maní",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 313,
     "nombre": "Chicha blanca de trigo",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 314,
     "nombre": "Chicha de guiñapo",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 315,
     "nombre": "Chicha de siete semillas",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 316,
     "nombre": "Refresco de cebada",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 317,
     "nombre": "Refresco de linaza",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 318,
     "nombre": "Refresco de maíz morado con piña",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 319,
     "nombre": "Frutillada",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 320,
@@ -159,8 +140,7 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 321,
@@ -168,32 +148,28 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 322,
     "nombre": "Chicha de quinua",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 323,
     "nombre": "Refresco de kiwicha",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 324,
     "nombre": "Refresco de habas tostadas",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 325,
@@ -201,40 +177,35 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 326,
     "nombre": "Leche de soya",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 327,
     "nombre": "Leche de almendras",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 328,
     "nombre": "Leche de ajonjolí",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 329,
     "nombre": "Masato de yuca",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 330,
@@ -242,64 +213,56 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 331,
     "nombre": "Aguajina",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 332,
     "nombre": "Refresco de cocona",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 333,
     "nombre": "Refresco de camu camu",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 334,
     "nombre": "Refresco de carambola",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 335,
     "nombre": "Refresco de tumbo",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 336,
     "nombre": "Agua de cebada tostada",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 337,
     "nombre": "Refresco de piña con cáscara",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 338,
@@ -307,8 +270,7 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 339,
@@ -316,24 +278,21 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 340,
     "nombre": "Jugo de fresa",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 341,
     "nombre": "Jugo de plátano con leche",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 342,
@@ -341,8 +300,7 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 343,
@@ -350,64 +308,56 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 344,
     "nombre": "Jugo de granadilla",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 345,
     "nombre": "Jugo de tuna",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 346,
     "nombre": "Jugo de sauco",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 347,
     "nombre": "Jugo de aguaymanto",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 348,
     "nombre": "Jugo de guanábana",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 349,
     "nombre": "Jugo de lúcuma",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 350,
     "nombre": "Jugo de chirimoya",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 351,
@@ -415,8 +365,7 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 352,
@@ -424,48 +373,42 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 353,
     "nombre": "Jugo de papaya con leche",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 354,
     "nombre": "Jugo de manzana",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 355,
     "nombre": "Jugo de pera",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 356,
     "nombre": "Jugo de durazno",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 357,
     "nombre": "Jugo de uva",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 358,
@@ -473,104 +416,91 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 359,
     "nombre": "Jugo de níspero",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 360,
     "nombre": "Jugo de mora",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 361,
     "nombre": "Jugo de mandarina",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 362,
     "nombre": "Jugo de toronja",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 363,
     "nombre": "Jugo de membrillo",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 364,
     "nombre": "Jugo de higo",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 365,
     "nombre": "Jugo de pitahaya",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 366,
     "nombre": "Jugo de zanahoria",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 367,
     "nombre": "Jugo de betarraga",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 368,
     "nombre": "Extracto de alfalfa",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 369,
     "nombre": "Jugo verde",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 370,
     "nombre": "Jugo de apio con piña",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 371,
@@ -578,184 +508,161 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 372,
     "nombre": "Jugo de espinaca con manzana",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 373,
     "nombre": "Jugo de zanahoria con naranja y kion",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 374,
     "nombre": "Batido de lúcuma",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 375,
     "nombre": "Batido de fresa con leche",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 376,
     "nombre": "Batido de plátano con avena",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 377,
     "nombre": "Batido de mango con yogurt",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 378,
     "nombre": "Batido de chirimoya",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 379,
     "nombre": "Cremolada de fresa",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 380,
     "nombre": "Cremolada de maracuyá",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 381,
     "nombre": "Cremolada de lúcuma",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 382,
     "nombre": "Cremolada de guanábana",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 383,
     "nombre": "Maracuyá frozen",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 384,
     "nombre": "Limonada frozen",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 385,
     "nombre": "Limonada clásica",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 386,
     "nombre": "Limonada de hierbabuena",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 387,
     "nombre": "Agua de manzana con canela",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 388,
     "nombre": "Agua de jengibre con limón",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 389,
     "nombre": "Agua saborizada de cítricos",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 390,
     "nombre": "Yogurt casero de fresa",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 391,
     "nombre": "Leche con plátano y algarrobina",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 392,
     "nombre": "Jugo surtido especial",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 393,
     "nombre": "Batido de papaya con avena",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 394,
@@ -763,230 +670,196 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 395,
     "nombre": "Mate de muña",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 396,
     "nombre": "Mate de anís",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 397,
     "nombre": "Manzanilla",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 398,
     "nombre": "Hierba luisa",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 399,
     "nombre": "Infusión de cedrón",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 400,
     "nombre": "Infusión de toronjil",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 401,
     "nombre": "Infusión de menta",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 402,
     "nombre": "Infusión de boldo",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 403,
     "nombre": "Infusión de eucalipto",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 404,
     "nombre": "Té de canela y clavo",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 405,
     "nombre": "Infusión de tilo",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 406,
     "nombre": "Infusión de valeriana",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 407,
     "nombre": "Infusión de paico",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 408,
     "nombre": "Infusión de llantén",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 409,
     "nombre": "Infusión de hercampuri",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 410,
     "nombre": "Infusión de chanca piedra",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 411,
     "nombre": "Infusión de uña de gato",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 412,
     "nombre": "Té negro con leche",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 413,
     "nombre": "Té verde con limón",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
-  },
-  {
-    "id": 414,
-    "nombre": "Té piteado",
-    "momentos": [],
-    "alcohol": true
+    ]
   },
   {
     "id": 415,
     "nombre": "Café americano",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 416,
     "nombre": "Café cortado",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 417,
     "nombre": "Capuchino casero",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 418,
     "nombre": "Café con algarrobina",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 419,
     "nombre": "Café helado",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 420,
     "nombre": "Infusión de manayupa",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 421,
     "nombre": "Agua de romero",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 422,
     "nombre": "Mate de coca con muña",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 423,
@@ -994,8 +867,7 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 424,
@@ -1003,16 +875,14 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 425,
     "nombre": "Ponche navideño",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 426,
@@ -1020,8 +890,7 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 427,
@@ -1029,16 +898,14 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 428,
     "nombre": "Calientito",
     "momentos": [
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 429,
@@ -1046,8 +913,7 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 430,
@@ -1055,8 +921,7 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 431,
@@ -1064,141 +929,76 @@
     "momentos": [
       "desayuno",
       "cena"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 432,
     "nombre": "Café bombón",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 433,
     "nombre": "Horchata de arroz",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 434,
     "nombre": "Quinua con piña",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 435,
     "nombre": "Maca con algarrobina",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 436,
     "nombre": "Chicha de manzana",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 437,
     "nombre": "Refresco de hierbabuena con limón",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 438,
     "nombre": "Agua de coco natural",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 439,
     "nombre": "Bebida de aloe vera con miel",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 440,
     "nombre": "Té de frutas",
     "momentos": [
       "almuerzo"
-    ],
-    "alcohol": false
+    ]
   },
   {
     "id": 441,
     "nombre": "Crema de café casera",
     "momentos": [
       "desayuno"
-    ],
-    "alcohol": false
-  },
-  {
-    "id": 442,
-    "nombre": "Pisco Sour",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 443,
-    "nombre": "Chilcano de Pisco",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 444,
-    "nombre": "Algarrobina",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 445,
-    "nombre": "Machu Picchu",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 446,
-    "nombre": "Capitán",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 447,
-    "nombre": "Perú Libre",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 448,
-    "nombre": "Sangría peruana",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 449,
-    "nombre": "Pisco Punch",
-    "momentos": [],
-    "alcohol": true
-  },
-  {
-    "id": 450,
-    "nombre": "Licor de guinda",
-    "momentos": [],
-    "alcohol": true
+    ]
   }
 ]
