@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 11 | 80 | 59 |
+| bebidas | 150 | 16 | 75 | 59 |
 
 ## desayunos
 
@@ -359,7 +359,7 @@ Carpeta: `image/bebidas/`
 | Aguajina | `aguajina.jpg` | **falta** |
 | Algarrobina | `algarrobina.jpg` | **falta** |
 | Api blanco | `api-blanco.jpg` | **falta** |
-| Api morado | `api-morado.jpg` | foto en la base |
+| Api morado | `api-morado.jpg` | en la carpeta (api-morado.jpg) |
 | Avena | `avena.jpg` | foto en la base |
 | Batido de chirimoya | `batido-de-chirimoya.jpg` | foto en la base |
 | Batido de fresa con leche | `batido-de-fresa-con-leche.jpg` | foto en la base |
@@ -369,7 +369,7 @@ Carpeta: `image/bebidas/`
 | Batido de plátano con avena | `batido-de-platano-con-avena.jpg` | foto en la base |
 | Bebida de aloe vera con miel | `bebida-de-aloe-vera-con-miel.jpg` | foto en la base |
 | Café americano | `cafe-americano.jpg` | foto en la base |
-| Café bombón | `cafe-bombon.jpg` | foto en la base |
+| Café bombón | `cafe-bombon.jpg` | en la carpeta (cafe-bombon.jpg) |
 | Café con algarrobina | `cafe-con-algarrobina.jpg` | foto en la base |
 | Café cortado | `cafe-cortado.jpg` | foto en la base |
 | Café helado | `cafe-helado.jpg` | foto en la base |
@@ -416,7 +416,7 @@ Carpeta: `image/bebidas/`
 | Jugo de aguaymanto | `jugo-de-aguaymanto.jpg` | foto en la base |
 | Jugo de apio con piña | `jugo-de-apio-con-pina.jpg` | **falta** |
 | Jugo de betarraga | `jugo-de-betarraga.jpg` | foto en la base |
-| Jugo de chirimoya | `jugo-de-chirimoya.jpg` | foto en la base |
+| Jugo de chirimoya | `jugo-de-chirimoya.jpg` | en la carpeta (jugo-de-chirimoya.jpg) |
 | Jugo de durazno | `jugo-de-durazno.jpg` | foto en la base |
 | Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | **falta** |
 | Jugo de fresa | `jugo-de-fresa.jpg` | foto en la base |
@@ -450,7 +450,7 @@ Carpeta: `image/bebidas/`
 | Jugo de zanahoria con naranja y kion | `jugo-de-zanahoria-con-naranja-y-kion.jpg` | foto en la base |
 | Jugo surtido | `jugo-surtido.jpg` | **falta** |
 | Jugo surtido especial | `jugo-surtido-especial.jpg` | en la carpeta (jugo-surtido-especial.jpg) |
-| Jugo verde | `jugo-verde.jpg` | foto en la base |
+| Jugo verde | `jugo-verde.jpg` | en la carpeta (jugo-verde.jpg) |
 | Leche con café | `leche-con-cafe.jpg` | foto en la base |
 | Leche con canela | `leche-con-canela.jpg` | foto en la base |
 | Leche con plátano y algarrobina | `leche-con-platano-y-algarrobina.jpg` | foto en la base |
@@ -479,7 +479,7 @@ Carpeta: `image/bebidas/`
 | Ponche de maní | `ponche-de-mani.jpg` | **falta** |
 | Ponche de quinua | `ponche-de-quinua.jpg` | en la carpeta (ponche-de-quinua.jpg) |
 | Ponche navideño | `ponche-navideno.jpg` | **falta** |
-| Quinua | `quinua.jpg` | foto en la base |
+| Quinua | `quinua.jpg` | en la carpeta (quinua.jpg) |
 | Quinua con piña | `quinua-con-pina.jpg` | **falta** |
 | Refresco de camu camu | `refresco-de-camu-camu.jpg` | foto en la base |
 | Refresco de carambola | `refresco-de-carambola.jpg` | foto en la base |
