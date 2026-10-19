@@ -1,0 +1,377 @@
+[
+  {
+    "nombre": "Pan con pejerrey",
+    "descripcion": "Pejerreyes rebozados y fritos en pan francés con salsa tártara y sarsa criolla, clásico del Callao.",
+    "ingredientes": ["5 panes franceses", "20 pejerreyes limpios y sin espinas", "Harina para enharinar", "Aceite para freír", "1 huevo", "3/4 taza de cerveza rubia", "1/2 taza de agua con gas", "1 taza de harina para el rebozado", "6 cucharadas de mayonesa", "1 cucharada de mostaza", "1 clara de huevo duro rallada", "2 cucharadas de cebolla china picada", "1 diente de ajo picado", "1 cebolla en tiras finas", "Ají limo picado al gusto", "2 cucharaditas de culantro picado", "3 limones", "Sal y pimienta al gusto"],
+    "preparacion": [
+      "Batir el huevo con la cerveza, el agua con gas y la harina, y sazonar el rebozado con sal y pimienta",
+      "Sazonar los pejerreyes, pasarlos por harina y luego por el rebozado",
+      "Freírlos en aceite caliente hasta que estén dorados y escurrirlos sobre papel absorbente",
+      "Mezclar la mayonesa con la mostaza, la clara rallada, la cebolla china, el ajo y el jugo de un limón para la salsa tártara",
+      "Mezclar la cebolla en tiras con el ají limo, el culantro, el jugo de dos limones, un chorrito de aceite, sal y pimienta para la sarsa criolla",
+      "Abrir los panes y armarlos con salsa tártara, unos 4 pejerreyes por pan y sarsa criolla"
+    ],
+    "tiempo_minutos": 40,
+    "dificultad": "media",
+    "bebida": "Chicha morada",
+    "acompanamiento": "Sarsa criolla",
+    "grupo": "salado",
+    "fuente": "https://larepublica.pe/recetas/578162-receta-del-pan-con-pejerrey"
+  },
+  {
+    "nombre": "Hamburguesa casera",
+    "descripcion": "Hamburguesa de asado de tira molido con cebolla y perejil, servida en pan con papas al hilo.",
+    "ingredientes": ["750 g de asado de tira molido", "1 cebolla mediana picada", "2 cucharadas de perejil picado", "1 cucharada de galleta molida", "6 panes de hamburguesa", "2 tazas de papas al hilo", "Lechuga y tomate en rodajas", "Mayonesa, kétchup y mostaza al gusto", "Aceite", "Sal y pimienta negra al gusto"],
+    "preparacion": [
+      "Mezclar en un bol la carne molida con la cebolla, el perejil, la galleta molida, sal y pimienta",
+      "Formar bolitas del mismo tamaño y aplastarlas para darles forma de hamburguesa",
+      "Freírlas en una sartén con aceite bien caliente, unos 4 minutos por lado, sin aplastarlas para que queden jugosas",
+      "Calentar los panes en la misma sartén",
+      "Armar cada pan con lechuga, tomate, la hamburguesa y las cremas al gusto",
+      "Coronar con papas al hilo y servir"
+    ],
+    "tiempo_minutos": 30,
+    "dificultad": "facil",
+    "bebida": "Chicha morada",
+    "acompanamiento": "Papas al hilo",
+    "grupo": "salado",
+    "fuente": "https://panamericana.pe/buenosdiasperu/locales/321783-receta-d-manana-hoy-preparamos-exquisita-hamburguesa-artesanal"
+  },
+  {
+    "nombre": "Bolitas de yuca con queso",
+    "descripcion": "Bolitas de puré de yuca con parmesano, rellenas de queso derretido y fritas hasta quedar crocantes.",
+    "ingredientes": ["1 kg de yuca", "2 cucharadas de mantequilla", "1/4 taza de queso parmesano", "2 yemas de huevo", "Queso mozzarella en cubos", "1/2 taza de harina", "2 cucharaditas de ají amarillo molido (opcional)", "Aceite para freír", "Sal y pimienta al gusto"],
+    "preparacion": [
+      "Pelar la yuca, cortarla en trozos y sancocharla hasta que esté muy tierna",
+      "Escurrirla y prensarla caliente con la mantequilla, el parmesano, las yemas, sal y pimienta hasta lograr un puré espeso",
+      "Si se quiere un toque picante, agregar el ají amarillo al puré",
+      "Tomar porciones de puré, poner un cubo de mozzarella al centro y formar bolitas",
+      "Pasarlas por harina y enfriarlas en el congelador un par de horas para que no se deshagan",
+      "Freírlas en aceite caliente hasta dorarlas y escurrirlas sobre papel absorbente"
+    ],
+    "tiempo_minutos": 50,
+    "dificultad": "media",
+    "bebida": "Chicha morada",
+    "acompanamiento": "Salsa huancaína o ají",
+    "grupo": "salado",
+    "fuente": "https://www.comida-peruana.com/recetas/entradas/bolitas-de-yuca"
+  },
+  {
+    "nombre": "Empanaditas de yuca con queso",
+    "descripcion": "Empanaditas fritas de masa de yuca rellenas de queso, ideales para picar en el lonche.",
+    "ingredientes": ["500 g de yuca", "1/4 taza de mantequilla derretida", "1/4 taza de harina", "2 yemas de huevo", "1 cucharada de polvo de hornear", "1/4 taza de queso parmesano", "Queso fresco o mantecoso para rellenar", "Aceite para freír"],
+    "preparacion": [
+      "Pelar la yuca y sancocharla hasta que esté muy tierna",
+      "Prensarla y retirar las fibras, luego mezclarla con la mantequilla, las yemas, el parmesano y el polvo de hornear",
+      "Amasar hasta que la masa esté suave y estirarla sobre una mesa enharinada",
+      "Cortar círculos de unos 6 cm, poner queso al centro, doblar y sellar los bordes",
+      "Refrigerar media hora",
+      "Enharinarlas ligeramente y freírlas en aceite caliente hasta que estén doradas"
+    ],
+    "tiempo_minutos": 60,
+    "dificultad": "media",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "salado",
+    "fuente": "https://www.comida-peruana.com/recetas/entradas/empanadas-de-yuca"
+  },
+  {
+    "nombre": "Pancitos de papa",
+    "descripcion": "Pancitos suaves y esponjosos hechos con papa blanca, para rellenar con lo que haya en casa.",
+    "ingredientes": ["2 papas blancas sancochadas", "1/2 taza del agua de cocción de la papa", "3 tazas de harina", "6 cucharadas de azúcar", "2 cucharadas de levadura fresca", "10 yemas de huevo", "6 cucharadas de mantequilla", "2 cucharadas de aceite", "Queso parmesano rallado para decorar"],
+    "preparacion": [
+      "Prensar las papas calientes y mezclarlas con el agua de papa, una cucharada de azúcar, la levadura y una taza de harina",
+      "Dejar levar 15 minutos",
+      "Agregar las yemas, el resto del azúcar, la mantequilla, el aceite y el resto de la harina, y amasar",
+      "Dejar levar la masa hora y media",
+      "Formar pancitos de unos 25 g, ponerlos en una lata engrasada y dejarlos levar una hora más",
+      "Hornearlos a 170 °C de 20 a 25 minutos, pintarlos con mantequilla y espolvorearlos con parmesano"
+    ],
+    "tiempo_minutos": 210,
+    "dificultad": "dificil",
+    "bebida": "Té negro con leche",
+    "acompanamiento": "Mantequilla o queso",
+    "grupo": "salado",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/pan-de-agua-de-papa-blanca"
+  },
+  {
+    "nombre": "Pan de maca con cebolla",
+    "descripcion": "Panecillos caseros con maca y cebolla, de miga suave y sabor ligeramente dulce.",
+    "ingredientes": ["1 kg de harina", "500 g de maca fresca", "200 g de cebolla picada", "125 g de mantequilla derretida", "3 huevos", "1/4 taza de leche", "4 cucharadas de levadura fresca", "3 cucharadas de azúcar", "2 cucharadas de sal"],
+    "preparacion": [
+      "Picar la cebolla en cubitos y pelar y blanquear la maca",
+      "Tamizar la harina y mezclarla con la sal, el azúcar y la levadura",
+      "Añadir la mantequilla derretida y mezclar",
+      "Incorporar la maca y la cebolla, y luego la leche y los huevos hasta lograr una masa suave que no se pegue",
+      "Formar bollos y dejarlos reposar 40 minutos hasta que dupliquen su tamaño",
+      "Formar panecillos y hornearlos a 180 °C unos 30 minutos, hasta que estén dorados"
+    ],
+    "tiempo_minutos": 100,
+    "dificultad": "media",
+    "bebida": "Mate de anís",
+    "acompanamiento": "Queso fresco",
+    "grupo": "salado",
+    "fuente": "https://www.comida-peruana.com/recetas/plato-principal/pan-de-maca"
+  },
+  {
+    "nombre": "Budín de pan",
+    "descripcion": "Budín horneado de pan remojado en leche con huevo, pasas, nueces y caramelo.",
+    "ingredientes": ["1 pan de molde", "4 tazas de leche", "7 huevos", "2 tazas de azúcar", "1 taza de azúcar para el caramelo", "1/2 taza de pasas", "1/2 taza de nueces en trozos", "1 cucharadita de vainilla", "1 cucharadita de canela en polvo", "1/8 cucharadita de clavo de olor molido", "1 cucharadita de ralladura de limón"],
+    "preparacion": [
+      "Derretir una taza de azúcar a fuego bajo hasta formar un caramelo y cubrir con él un molde grande",
+      "Remojar las tajadas de pan en agua y escurrirlas bien",
+      "Mezclar el pan con la leche caliente y la vainilla",
+      "Agregar los huevos, el azúcar, la canela, el clavo, la ralladura, las pasas y las nueces",
+      "Verter en el molde acaramelado y hornear a 180 °C alrededor de 1 hora y 15 minutos",
+      "Dejar enfriar, desmoldar y servir en tajadas"
+    ],
+    "tiempo_minutos": 100,
+    "dificultad": "facil",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/budin-de-pan-peruano"
+  },
+  {
+    "nombre": "Pie de limón",
+    "descripcion": "Base de galleta con relleno de limón y leche condensada, cubierta de merengue dorado.",
+    "ingredientes": ["150 g de galletas de vainilla", "7 cucharadas de mantequilla derretida", "4 yemas de huevo", "800 ml de leche condensada", "1/2 taza de jugo de limón", "180 g de claras de huevo", "360 g de azúcar", "2 cucharaditas de esencia de vainilla", "Ralladura de limón para decorar"],
+    "preparacion": [
+      "Moler las galletas, mezclarlas con la mantequilla y forrar un molde de pie de 25 cm",
+      "Hornear la base a 180 °C por 10 minutos",
+      "Batir las yemas con la leche condensada, el jugo de limón y la vainilla, y colar el relleno dos veces",
+      "Verter el relleno sobre la base y hornear de 10 a 15 minutos hasta que espese; dejar enfriar",
+      "Calentar las claras con el azúcar a baño María hasta disolverla y batir 10 minutos hasta tener un merengue firme",
+      "Cubrir el pie con el merengue, dorarlo en el horno unos minutos y decorar con ralladura de limón"
+    ],
+    "tiempo_minutos": 75,
+    "dificultad": "media",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://larepublica.pe/recetas/975685-receta-del-pie-de-limon-paso-a-paso-video"
+  },
+  {
+    "nombre": "King kong",
+    "descripcion": "Dulce lambayecano de capas de galleta rellenas con manjar blanco y dulce de membrillo.",
+    "ingredientes": ["1/2 kg de harina", "6 yemas de huevo", "100 g de margarina", "1/2 taza de agua", "1 pizca de sal", "2 tazas de manjar blanco", "1 taza de dulce de membrillo", "Higos secos picados (opcional)", "Nueces picadas (opcional)"],
+    "preparacion": [
+      "Cernir la harina y formar un volcán; poner al centro las yemas, el agua, la sal y la margarina",
+      "Unir y amasar hasta tener una masa lisa, y dejarla reposar",
+      "Estirar la masa y cortar tres planchas del mismo tamaño",
+      "Hornearlas en bandejas engrasadas hasta que estén doradas y dejarlas enfriar",
+      "Armar intercalando galleta, manjar blanco con higos, dulce de membrillo y manjar blanco",
+      "Terminar con la última galleta y cortar en porciones"
+    ],
+    "tiempo_minutos": 90,
+    "dificultad": "media",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/king-kong-peruano"
+  },
+  {
+    "nombre": "Torta tres leches",
+    "descripcion": "Bizcocho esponjoso empapado en tres leches y cubierto con crema batida y canela.",
+    "ingredientes": ["1 1/2 taza de harina", "6 huevos", "1 taza de azúcar", "1/2 taza de azúcar en polvo", "1/2 cucharadita de polvo de hornear", "1/2 cucharadita de canela en polvo", "1 lata de leche evaporada", "1 lata de leche condensada", "2 latas de crema de leche", "1 rama de canela", "Esencia de vainilla"],
+    "preparacion": [
+      "Tamizar la harina con el polvo de hornear y la canela molida",
+      "Batir las claras a punto de nieve con la mitad del azúcar y, aparte, las yemas con el resto del azúcar y la vainilla",
+      "Unir las yemas con las claras y los secos de forma envolvente y hornear 30 minutos en un molde engrasado",
+      "Hervir una lata de crema de leche con la leche condensada, la evaporada, la canela en rama y vainilla, y colar",
+      "Pinchar el bizcocho, bañarlo con las leches calientes y refrigerar unas horas",
+      "Batir la otra lata de crema fría con el azúcar en polvo y vainilla, cubrir la torta y espolvorear canela"
+    ],
+    "tiempo_minutos": 90,
+    "dificultad": "media",
+    "bebida": "Café americano",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/torta-tres-leches-peruana"
+  },
+  {
+    "nombre": "Torta de maracuyá",
+    "descripcion": "Torta fría de masa con crema de maracuyá y una cubierta brillante de almíbar de la fruta.",
+    "ingredientes": ["2 tazas de pulpa de maracuyá", "1 taza de jugo de maracuyá", "2 latas de leche condensada", "12 yemas de huevo", "2 1/2 tazas de harina", "150 g de mantequilla", "1 taza de azúcar", "1 cucharada de vainilla"],
+    "preparacion": [
+      "Mezclar la pulpa de maracuyá con la leche condensada y 6 yemas, y refrigerar",
+      "Batir la mantequilla con la harina, media taza de azúcar, las otras 6 yemas y la vainilla; refrigerar la masa 20 minutos",
+      "Estirar la masa en un molde engrasado y hornearla 20 minutos",
+      "Cubrir con la crema de maracuyá y hornear a temperatura baja 20 minutos más",
+      "Cocinar el jugo de maracuyá con el resto del azúcar hasta formar un almíbar y dejarlo reposar",
+      "Cubrir la torta fría con el almíbar y guardarla en el refrigerador"
+    ],
+    "tiempo_minutos": 90,
+    "dificultad": "media",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/torta-de-maracuya"
+  },
+  {
+    "nombre": "Empanadas dulces cusqueñas",
+    "descripcion": "Empanadas horneadas de harina de maíz y trigo cubiertas con azúcar teñida de airampo.",
+    "ingredientes": ["1/2 kg de harina de maíz blanco", "1/2 kg de harina de trigo", "1/2 kg de azúcar molida", "1/2 kg de manteca", "4 yemas de huevo", "1 taza de leche", "1 taza de pisco", "Azúcar granulada", "Airampo para teñir"],
+    "preparacion": [
+      "Cernir juntas la harina de maíz y la de trigo",
+      "Agregar la manteca y el azúcar y amasar hasta obtener una masa suave",
+      "Incorporar las yemas batidas, la leche y el pisco y seguir amasando",
+      "Extender la masa en moldes rectangulares forrados con papel manteca",
+      "Mezclar el airampo con un poco de pisco, colarlo y teñir el azúcar granulada; espolvorearla encima",
+      "Hornear a 180 °C de 15 a 20 minutos, hasta que estén doradas"
+    ],
+    "tiempo_minutos": 50,
+    "dificultad": "media",
+    "bebida": "Mate de anís",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/empanadas-de-dulce"
+  },
+  {
+    "nombre": "Gaznates",
+    "descripcion": "Canutos de masa frita y crocante rellenos de manjar blanco, típicos de la repostería limeña.",
+    "ingredientes": ["8 yemas de huevo", "2 claras de huevo", "12 cucharadas de harina", "1/2 taza de pisco", "1/2 cucharadita de cremor tártaro", "Manteca vegetal para freír", "Manjar blanco para rellenar", "Caramelo para decorar"],
+    "preparacion": [
+      "Batir las yemas con las claras hasta que espesen y blanqueen",
+      "Agregar la harina poco a poco hasta lograr una masa que no se pegue a las manos",
+      "Incorporar el pisco y el cremor tártaro y amasar hasta que esté uniforme",
+      "Estirar la masa fina y cortar cuadrados de 8 cm; unir dos puntas opuestas para formar los canutos",
+      "Freírlos en manteca caliente hasta que estén dorados",
+      "Rellenarlos con manjar blanco y decorarlos con hilos de caramelo"
+    ],
+    "tiempo_minutos": 60,
+    "dificultad": "dificil",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/gaznates"
+  },
+  {
+    "nombre": "Ponderaciones",
+    "descripcion": "Espirales de masa muy fina y crocante, fritas en molde y servidas con manjar blanco y canela.",
+    "ingredientes": ["3 huevos", "1 taza de leche fresca", "1 taza de harina", "Aceite para freír", "Manjar blanco", "Azúcar en polvo", "Canela en polvo"],
+    "preparacion": [
+      "Mezclar ligeramente los huevos y batirlos con la leche y la harina hasta tener una masa suave y líquida",
+      "Calentar abundante aceite en una olla honda",
+      "Calentar el molde de ponderaciones en el aceite y luego sumergirlo en la masa sin cubrir el borde superior",
+      "Freír de nuevo el molde con la masa unos 30 segundos, hasta que dore",
+      "Soltar la ponderación con golpecitos y escurrirla sobre papel absorbente",
+      "Servir sobre una cama de manjar blanco, espolvoreada con azúcar en polvo y canela"
+    ],
+    "tiempo_minutos": 40,
+    "dificultad": "media",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/ponderaciones"
+  },
+  {
+    "nombre": "Cocadas",
+    "descripcion": "Dulces horneados de coco rallado, merengue y leche condensada.",
+    "ingredientes": ["8 claras de huevo", "2 tazas de azúcar", "1 taza de leche condensada", "500 g de coco rallado", "Mantequilla para la bandeja"],
+    "preparacion": [
+      "Batir las claras a punto de nieve",
+      "Agregar el azúcar poco a poco sin dejar de batir hasta tener un merengue firme",
+      "Mezclar la leche condensada con el coco e incorporarlos al merengue",
+      "Formar las cocadas con dos cucharas sobre bandejas enmantequilladas",
+      "Hornear a 180 °C de 15 a 20 minutos",
+      "Dejarlas enfriar antes de despegarlas de la bandeja"
+    ],
+    "tiempo_minutos": 40,
+    "dificultad": "facil",
+    "bebida": "Café americano",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/cocadas"
+  },
+  {
+    "nombre": "Pastel de choclo dulce",
+    "descripcion": "Pastel horneado de choclo licuado con sémola, relleno con una capa de manjar blanco y ajonjolí encima.",
+    "ingredientes": ["2 tazas de choclo desgranado", "2 tazas de leche", "1 1/2 taza de sémola", "200 g de margarina", "4 huevos", "1 taza de azúcar", "1 taza de manjar blanco", "1 rama de canela", "1 cucharadita de polvo de hornear", "1/8 cucharadita de anís", "2 cucharadas de aceite", "1 cucharadita de ajonjolí tostado", "1 pizca de sal"],
+    "preparacion": [
+      "Hervir la leche con la canela, la margarina y media taza de azúcar; dejar entibiar y agregar la sémola",
+      "Licuar el choclo con un poco de agua, el resto del azúcar, el polvo de hornear, el anís y el aceite, y unirlo a la leche",
+      "Añadir sal y secar la mezcla un poco al fuego",
+      "Incorporar las yemas batidas y luego las claras a punto de nieve",
+      "Verter la mitad en un molde engrasado, cubrir con manjar blanco y poner el resto de la mezcla",
+      "Espolvorear ajonjolí y hornear a 180 °C unos 30 minutos, hasta que cuaje"
+    ],
+    "tiempo_minutos": 70,
+    "dificultad": "media",
+    "bebida": "Mate de anís",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/pastel-de-choclo-dulce"
+  },
+  {
+    "nombre": "Turrón de doña pepa",
+    "descripcion": "Varitas de masa con anís bañadas en miel de chancaca y frutas, y cubiertas de confites.",
+    "ingredientes": ["1/2 kg de harina", "250 g de manteca vegetal", "8 yemas de huevo", "1 taza de agua", "2 cucharadas de ajonjolí", "1 1/2 cucharadita de anís en grano", "10 g de polvo de hornear", "4 g de bicarbonato", "15 g de sal", "1 1/2 cucharadita de vainilla", "Colorante amarillo", "2 cucharadas de chancaca", "1 taza de azúcar", "60 g de glucosa", "2 manzanas, 1/2 piña, 1 naranja y 1 limón en trozos", "1 rama de canela", "5 clavos de olor", "1 hoja de higo", "Confites, grageas y pastillas de colores"],
+    "preparacion": [
+      "Tostar y moler el ajonjolí y el anís, y batir la manteca hasta que esté cremosa",
+      "Tamizar la harina con el bicarbonato y el polvo de hornear, mezclar con el ajonjolí y el anís, y formar un volcán con la manteca, el agua con colorante, la vainilla y las yemas al centro",
+      "Amasar, envolver en film y refrigerar una hora",
+      "Estirar la masa a 1 cm de grosor, cortar varitas y hornearlas 25 minutos a 180 °C",
+      "Hervir las frutas con canela, clavo y hoja de higo 30 minutos, colar y cocinar el líquido con la chancaca, el azúcar y la glucosa hasta formar una miel",
+      "Armar tres capas de varitas cruzadas en un molde, bañando cada capa con miel, y decorar con los confites"
+    ],
+    "tiempo_minutos": 180,
+    "dificultad": "dificil",
+    "bebida": "Té negro con leche",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/turron-de-dona-pepa"
+  },
+  {
+    "nombre": "Pastelillos de yuca",
+    "descripcion": "Pastelitos fritos de masa de yuca rellenos de camotillo o manjar blanco, con azúcar y canela.",
+    "ingredientes": ["1 kg de yuca", "100 g de zapallo", "1 cucharadita de anís molido", "1/4 cucharadita de sal", "Camotillo o manjar blanco para rellenar", "Harina para las manos", "Aceite para freír", "Azúcar en polvo", "Canela molida"],
+    "preparacion": [
+      "Pelar la yuca y cocinarla en poca agua con el zapallo, la sal y el anís",
+      "Prensarla hasta obtener una masa suave",
+      "Enharinarse las manos y formar bolitas de unos 5 cm",
+      "Aplanar una porción, poner una cucharadita de camotillo o manjar al centro, tapar con otra porción y sellar los bordes en forma de estrella",
+      "Freír en aceite caliente hasta dorar y escurrir sobre papel absorbente",
+      "Servir calientes con azúcar en polvo y canela"
+    ],
+    "tiempo_minutos": 60,
+    "dificultad": "media",
+    "bebida": "Mate de anís",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/pastelillos-de-yuca"
+  },
+  {
+    "nombre": "Chocotejas",
+    "descripcion": "Pecanas rellenas de manjar blanco y bañadas en chocolate, la golosina iqueña para el té.",
+    "ingredientes": ["Pecanas peladas", "1 lata de leche condensada (para el manjar blanco)", "Chocolate de cobertura semiamargo"],
+    "preparacion": [
+      "Hervir la lata de leche condensada cerrada, cubierta de agua, durante 2 horas para hacer manjar blanco",
+      "Dejar enfriar la lata por completo antes de abrirla y pasar el manjar a una manga",
+      "Partir las pecanas por la mitad, rellenar una mitad con manjar y taparla con la otra",
+      "Derretir el chocolate a baño María",
+      "Bañar las pecanas rellenas con el chocolate, en moldes o sumergiéndolas",
+      "Dejarlas secar hasta que el chocolate endurezca"
+    ],
+    "tiempo_minutos": 150,
+    "dificultad": "media",
+    "bebida": "Café americano",
+    "acompanamiento": null,
+    "grupo": "dulce",
+    "fuente": "https://www.comida-peruana.com/recetas/postres/chocotejas"
+  },
+  { "copiar_de_id": 2, "nombre": "Pan con chicharrón", "grupo": "desayuno" },
+  { "copiar_de_id": 13, "nombre": "Butifarra", "grupo": "desayuno" },
+  { "copiar_de_id": 32, "nombre": "Sándwich triple", "grupo": "desayuno" },
+  { "copiar_de_id": 12, "nombre": "Pan con pollo", "grupo": "desayuno" },
+  { "copiar_de_id": 96, "nombre": "Sánguche de pollo a la brasa", "grupo": "desayuno" },
+  { "copiar_de_id": 97, "nombre": "Sánguche de lomo saltado", "grupo": "desayuno" },
+  { "copiar_de_id": 53, "nombre": "Empanada de carne", "grupo": "desayuno" },
+  { "copiar_de_id": 54, "nombre": "Empanada de pollo", "grupo": "desayuno" },
+  { "copiar_de_id": 143, "nombre": "Tequeños de queso", "grupo": "desayuno" },
+  { "copiar_de_id": 41, "nombre": "Tamal criollo", "grupo": "desayuno" },
+  { "copiar_de_id": 106, "nombre": "Picarones", "grupo": "desayuno" },
+  { "copiar_de_id": 144, "nombre": "Pionono de manjar", "grupo": "desayuno" },
+  { "copiar_de_id": 145, "nombre": "Alfajores de maicena", "grupo": "desayuno" },
+  { "copiar_de_id": 110, "nombre": "Keke de zanahoria", "grupo": "desayuno" }
+]
