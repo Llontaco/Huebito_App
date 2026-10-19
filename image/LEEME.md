@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 16 | 75 | 59 |
+| bebidas | 150 | 18 | 73 | 59 |
 
 ## desayunos
 
@@ -415,7 +415,7 @@ Carpeta: `image/bebidas/`
 | Infusión de valeriana | `infusion-de-valeriana.jpg` | foto en la base |
 | Jugo de aguaymanto | `jugo-de-aguaymanto.jpg` | foto en la base |
 | Jugo de apio con piña | `jugo-de-apio-con-pina.jpg` | **falta** |
-| Jugo de betarraga | `jugo-de-betarraga.jpg` | foto en la base |
+| Jugo de betarraga | `jugo-de-betarraga.jpg` | en la carpeta (jugo-de-betarraga.jpg) |
 | Jugo de chirimoya | `jugo-de-chirimoya.jpg` | en la carpeta (jugo-de-chirimoya.jpg) |
 | Jugo de durazno | `jugo-de-durazno.jpg` | foto en la base |
 | Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | **falta** |
@@ -452,7 +452,7 @@ Carpeta: `image/bebidas/`
 | Jugo surtido especial | `jugo-surtido-especial.jpg` | en la carpeta (jugo-surtido-especial.jpg) |
 | Jugo verde | `jugo-verde.jpg` | en la carpeta (jugo-verde.jpg) |
 | Leche con café | `leche-con-cafe.jpg` | foto en la base |
-| Leche con canela | `leche-con-canela.jpg` | foto en la base |
+| Leche con canela | `leche-con-canela.jpg` | en la carpeta (leche-con-canela.jpg) |
 | Leche con plátano y algarrobina | `leche-con-platano-y-algarrobina.jpg` | foto en la base |
 | Leche de ajonjolí | `leche-de-ajonjoli.jpg` | foto en la base |
 | Leche de almendras | `leche-de-almendras.jpg` | **falta** |
