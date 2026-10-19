@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 136 | 21 | 61 | 54 |
+| bebidas | 136 | 26 | 58 | 52 |
 
 ## desayunos
 
@@ -389,7 +389,7 @@ Carpeta: `image/bebidas/`
 | Cremolada de guanábana | `cremolada-de-guanabana.jpg` | **falta** |
 | Cremolada de lúcuma | `cremolada-de-lucuma.jpg` | **falta** |
 | Cremolada de maracuyá | `cremolada-de-maracuya.jpg` | **falta** |
-| Emoliente | `emoliente.jpg` | foto en la base |
+| Emoliente | `emoliente.jpg` | en la carpeta (emoliente.jpg) |
 | Emoliente con uña de gato | `emoliente-con-una-de-gato.jpg` | **falta** |
 | Extracto de alfalfa | `extracto-de-alfalfa.jpg` | **falta** |
 | Frutillada | `frutillada.jpg` | foto en la base |
@@ -415,7 +415,7 @@ Carpeta: `image/bebidas/`
 | Jugo de chirimoya | `jugo-de-chirimoya.jpg` | en la carpeta (jugo-de-chirimoya.jpg) |
 | Jugo de durazno | `jugo-de-durazno.jpg` | foto en la base |
 | Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | **falta** |
-| Jugo de fresa | `jugo-de-fresa.jpg` | foto en la base |
+| Jugo de fresa | `jugo-de-fresa.jpg` | en la carpeta (jugo-de-fresa.jpg) |
 | Jugo de granadilla | `jugo-de-granadilla.jpg` | foto en la base |
 | Jugo de guanábana | `jugo-de-guanabana.jpg` | en la carpeta (jugo-de-guanabana.jpg) |
 | Jugo de higo | `jugo-de-higo.jpg` | foto en la base |
@@ -424,7 +424,7 @@ Carpeta: `image/bebidas/`
 | Jugo de mango | `jugo-de-mango.jpg` | foto en la base |
 | Jugo de manzana | `jugo-de-manzana.jpg` | en la carpeta (jugo-de-manzana.jpg) |
 | Jugo de maracuyá | `jugo-de-maracuya.jpg` | foto en la base |
-| Jugo de melón | `jugo-de-melon.jpg` | **falta** |
+| Jugo de melón | `jugo-de-melon.jpg` | en la carpeta (jugo-de-melon.jpg) |
 | Jugo de membrillo | `jugo-de-membrillo.jpg` | foto en la base |
 | Jugo de mora | `jugo-de-mora.jpg` | foto en la base |
 | Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
@@ -447,7 +447,7 @@ Carpeta: `image/bebidas/`
 | Leche con café | `leche-con-cafe.jpg` | foto en la base |
 | Leche con canela | `leche-con-canela.jpg` | en la carpeta (leche-con-canela.jpg) |
 | Leche con plátano y algarrobina | `leche-con-platano-y-algarrobina.jpg` | foto en la base |
-| Leche de ajonjolí | `leche-de-ajonjoli.jpg` | foto en la base |
+| Leche de ajonjolí | `leche-de-ajonjoli.jpg` | en la carpeta (leche-de-ajonjoli.jpg) |
 | Leche de almendras | `leche-de-almendras.jpg` | **falta** |
 | Leche de soya | `leche-de-soya.jpg` | **falta** |
 | Limonada clásica | `limonada-clasica.jpg` | **falta** |
@@ -468,7 +468,7 @@ Carpeta: `image/bebidas/`
 | Ponche de quinua | `ponche-de-quinua.jpg` | en la carpeta (ponche-de-quinua.jpg) |
 | Ponche navideño | `ponche-navideno.jpg` | **falta** |
 | Quinua | `quinua.jpg` | en la carpeta (quinua.jpg) |
-| Quinua con piña | `quinua-con-pina.jpg` | **falta** |
+| Quinua con piña | `quinua-con-pina.jpg` | en la carpeta (quinua-con-pina.jpg) |
 | Refresco de camu camu | `refresco-de-camu-camu.jpg` | foto en la base |
 | Refresco de carambola | `refresco-de-carambola.jpg` | foto en la base |
 | Refresco de cebada | `refresco-de-cebada.jpg` | foto en la base |
