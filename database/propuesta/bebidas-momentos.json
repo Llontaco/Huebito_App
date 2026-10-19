@@ -288,13 +288,6 @@
     ]
   },
   {
-    "id": 341,
-    "nombre": "Jugo de plátano con leche",
-    "momentos": [
-      "desayuno"
-    ]
-  },
-  {
     "id": 342,
     "nombre": "Jugo de mango",
     "momentos": [
@@ -373,13 +366,6 @@
     "momentos": [
       "desayuno",
       "almuerzo"
-    ]
-  },
-  {
-    "id": 353,
-    "nombre": "Jugo de papaya con leche",
-    "momentos": [
-      "desayuno"
     ]
   },
   {
@@ -518,13 +504,6 @@
     ]
   },
   {
-    "id": 373,
-    "nombre": "Jugo de zanahoria con naranja y kion",
-    "momentos": [
-      "desayuno"
-    ]
-  },
-  {
     "id": 374,
     "nombre": "Batido de lúcuma",
     "momentos": [
@@ -653,13 +632,6 @@
   {
     "id": 392,
     "nombre": "Jugo surtido especial",
-    "momentos": [
-      "desayuno"
-    ]
-  },
-  {
-    "id": 393,
-    "nombre": "Batido de papaya con avena",
     "momentos": [
       "desayuno"
     ]

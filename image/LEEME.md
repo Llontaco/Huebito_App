@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 18 | 73 | 59 |
+| bebidas | 136 | 21 | 61 | 54 |
 
 ## desayunos
 
@@ -357,7 +357,6 @@ Carpeta: `image/bebidas/`
 | Agua de romero | `agua-de-romero.jpg` | foto en la base |
 | Agua saborizada de cítricos | `agua-saborizada-de-citricos.jpg` | **falta** |
 | Aguajina | `aguajina.jpg` | **falta** |
-| Algarrobina | `algarrobina.jpg` | **falta** |
 | Api blanco | `api-blanco.jpg` | **falta** |
 | Api morado | `api-morado.jpg` | en la carpeta (api-morado.jpg) |
 | Avena | `avena.jpg` | foto en la base |
@@ -365,8 +364,7 @@ Carpeta: `image/bebidas/`
 | Batido de fresa con leche | `batido-de-fresa-con-leche.jpg` | foto en la base |
 | Batido de lúcuma | `batido-de-lucuma.jpg` | foto en la base |
 | Batido de mango con yogurt | `batido-de-mango-con-yogurt.jpg` | foto en la base |
-| Batido de papaya con avena | `batido-de-papaya-con-avena.jpg` | **falta** |
-| Batido de plátano con avena | `batido-de-platano-con-avena.jpg` | foto en la base |
+| Batido de plátano con avena | `batido-de-platano-con-avena.jpg` | en la carpeta (batido-de-platano-con-avena.jpg) |
 | Bebida de aloe vera con miel | `bebida-de-aloe-vera-con-miel.jpg` | foto en la base |
 | Café americano | `cafe-americano.jpg` | foto en la base |
 | Café bombón | `cafe-bombon.jpg` | en la carpeta (cafe-bombon.jpg) |
@@ -374,7 +372,6 @@ Carpeta: `image/bebidas/`
 | Café cortado | `cafe-cortado.jpg` | foto en la base |
 | Café helado | `cafe-helado.jpg` | foto en la base |
 | Calientito | `calientito.jpg` | **falta** |
-| Capitán | `capitan.jpg` | **falta** |
 | Capuchino casero | `capuchino-casero.jpg` | foto en la base |
 | Chapo | `chapo.jpg` | en la carpeta (chapo.jpg) |
 | Chicha blanca de trigo | `chicha-blanca-de-trigo.jpg` | **falta** |
@@ -385,7 +382,6 @@ Carpeta: `image/bebidas/`
 | Chicha de quinua | `chicha-de-quinua.jpg` | **falta** |
 | Chicha de siete semillas | `chicha-de-siete-semillas.jpg` | foto en la base |
 | Chicha morada | `chicha-morada.jpg` | foto en la base |
-| Chilcano de Pisco | `chilcano-de-pisco.jpg` | foto en la base |
 | Chocolate caliente | `chocolate-caliente.jpg` | foto en la base |
 | Chocolate cusqueño | `chocolate-cusqueno.jpg` | **falta** |
 | Crema de café casera | `crema-de-cafe-casera.jpg` | foto en la base |
@@ -433,21 +429,18 @@ Carpeta: `image/bebidas/`
 | Jugo de mora | `jugo-de-mora.jpg` | foto en la base |
 | Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
 | Jugo de níspero | `jugo-de-nispero.jpg` | en la carpeta (jugo-de-nispero.jpg) |
-| Jugo de papaya | `jugo-de-papaya.jpg` | foto en la base |
-| Jugo de papaya con leche | `jugo-de-papaya-con-leche.jpg` | foto en la base |
+| Jugo de papaya | `jugo-de-papaya.jpg` | en la carpeta (jugo-de-papaya.jpg) |
 | Jugo de pepino con limón | `jugo-de-pepino-con-limon.jpg` | **falta** |
 | Jugo de pera | `jugo-de-pera.jpg` | **falta** |
 | Jugo de pitahaya | `jugo-de-pitahaya.jpg` | **falta** |
 | Jugo de piña | `jugo-de-pina.jpg` | foto en la base |
-| Jugo de plátano con leche | `jugo-de-platano-con-leche.jpg` | foto en la base |
 | Jugo de sandía | `jugo-de-sandia.jpg` | foto en la base |
 | Jugo de sauco | `jugo-de-sauco.jpg` | foto en la base |
 | Jugo de tamarindo | `jugo-de-tamarindo.jpg` | foto en la base |
 | Jugo de toronja | `jugo-de-toronja.jpg` | foto en la base |
 | Jugo de tuna | `jugo-de-tuna.jpg` | **falta** |
 | Jugo de uva | `jugo-de-uva.jpg` | en la carpeta (jugo-de-uva.jpg) |
-| Jugo de zanahoria | `jugo-de-zanahoria.jpg` | foto en la base |
-| Jugo de zanahoria con naranja y kion | `jugo-de-zanahoria-con-naranja-y-kion.jpg` | foto en la base |
+| Jugo de zanahoria | `jugo-de-zanahoria.jpg` | en la carpeta (jugo-de-zanahoria.jpg) |
 | Jugo surtido | `jugo-surtido.jpg` | **falta** |
 | Jugo surtido especial | `jugo-surtido-especial.jpg` | en la carpeta (jugo-surtido-especial.jpg) |
 | Jugo verde | `jugo-verde.jpg` | en la carpeta (jugo-verde.jpg) |
@@ -457,13 +450,11 @@ Carpeta: `image/bebidas/`
 | Leche de ajonjolí | `leche-de-ajonjoli.jpg` | foto en la base |
 | Leche de almendras | `leche-de-almendras.jpg` | **falta** |
 | Leche de soya | `leche-de-soya.jpg` | **falta** |
-| Licor de guinda | `licor-de-guinda.jpg` | foto en la base |
 | Limonada clásica | `limonada-clasica.jpg` | **falta** |
 | Limonada de hierbabuena | `limonada-de-hierbabuena.jpg` | foto en la base |
 | Limonada frozen | `limonada-frozen.jpg` | foto en la base |
 | Maca | `maca.jpg` | en la carpeta (maca.jpg) |
 | Maca con algarrobina | `maca-con-algarrobina.jpg` | **falta** |
-| Machu Picchu | `machu-picchu.jpg` | foto en la base |
 | Manzanilla | `manzanilla.jpg` | foto en la base |
 | Maracuyá frozen | `maracuya-frozen.jpg` | **falta** |
 | Masato de yuca | `masato-de-yuca.jpg` | foto en la base |
@@ -471,9 +462,6 @@ Carpeta: `image/bebidas/`
 | Mate de coca | `mate-de-coca.jpg` | foto en la base |
 | Mate de coca con muña | `mate-de-coca-con-muna.jpg` | **falta** |
 | Mate de muña | `mate-de-muna.jpg` | **falta** |
-| Perú Libre | `peru-libre.jpg` | foto en la base |
-| Pisco Punch | `pisco-punch.jpg` | **falta** |
-| Pisco Sour | `pisco-sour.jpg` | foto en la base |
 | Ponche de habas | `ponche-de-habas.jpg` | **falta** |
 | Ponche de leche | `ponche-de-leche.jpg` | **falta** |
 | Ponche de maní | `ponche-de-mani.jpg` | **falta** |
@@ -492,11 +480,9 @@ Carpeta: `image/bebidas/`
 | Refresco de maíz morado con piña | `refresco-de-maiz-morado-con-pina.jpg` | foto en la base |
 | Refresco de piña con cáscara | `refresco-de-pina-con-cascara.jpg` | **falta** |
 | Refresco de tumbo | `refresco-de-tumbo.jpg` | foto en la base |
-| Sangría peruana | `sangria-peruana.jpg` | foto en la base |
 | Submarino | `submarino.jpg` | foto en la base |
 | Té de canela y clavo | `te-de-canela-y-clavo.jpg` | **falta** |
 | Té de frutas | `te-de-frutas.jpg` | foto en la base |
 | Té negro con leche | `te-negro-con-leche.jpg` | **falta** |
-| Té piteado | `te-piteado.jpg` | **falta** |
 | Té verde con limón | `te-verde-con-limon.jpg` | foto en la base |
 | Yogurt casero de fresa | `yogurt-casero-de-fresa.jpg` | **falta** |
