@@ -46,6 +46,13 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
   const ofrecerAcompanante =
     mostrarVolverAGirar && CategoriaSlug.comidas.includes(receta.categoriaSlug) && !sinAcompanante;
   const momentoCombinacion = location.state?.momento ?? Momento.deCategoria[plato?.categoriaSlug];
+  // Dentro de la ruleta la combinación la deciden los sorteos: en el plato no
+  // se sugiere bebida (para eso está la ruleta de acompañante) y en la bebida
+  // no se sugiere con qué comerla (el plato ya salió). Fuera de la ruleta, por
+  // ejemplo desde favoritos, ambas sugerencias se siguen mostrando.
+  const esBebida = receta.categoriaSlug === CategoriaSlug.bebidas;
+  const mostrarBebidaSugerida = !!receta.bebida && !(mostrarVolverAGirar && !esBebida);
+  const mostrarAcompanamiento = !!receta.acompanamiento && !(mostrarVolverAGirar && esBebida);
 
   const handleShare = async () => {
     const text = `Prueba "${receta.nombre}" 🇵🇪 — la encontré en Huebito.`;
@@ -112,12 +119,12 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
           />
         </div>
 
-        {(receta.bebida || receta.acompanamiento) && (
+        {(mostrarBebidaSugerida || mostrarAcompanamiento) && (
           <div className="mt-6 flex gap-4">
-            {receta.bebida && (
+            {mostrarBebidaSugerida && (
               <InfoChip icon={Coffee} label="Bebida" value={receta.bebida} />
             )}
-            {receta.acompanamiento && (
+            {mostrarAcompanamiento && (
               <InfoChip icon={UtensilsCrossed} label="Acompañamiento" value={receta.acompanamiento} />
             )}
           </div>
