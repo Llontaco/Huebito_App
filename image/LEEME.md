@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 136 | 26 | 58 | 52 |
+| bebidas | 135 | 26 | 57 | 52 |
 
 ## desayunos
 
@@ -361,7 +361,6 @@ Carpeta: `image/bebidas/`
 | Api morado | `api-morado.jpg` | en la carpeta (api-morado.jpg) |
 | Avena | `avena.jpg` | foto en la base |
 | Batido de chirimoya | `batido-de-chirimoya.jpg` | foto en la base |
-| Batido de fresa con leche | `batido-de-fresa-con-leche.jpg` | foto en la base |
 | Batido de lúcuma | `batido-de-lucuma.jpg` | foto en la base |
 | Batido de mango con yogurt | `batido-de-mango-con-yogurt.jpg` | foto en la base |
 | Batido de plátano con avena | `batido-de-platano-con-avena.jpg` | en la carpeta (batido-de-platano-con-avena.jpg) |
