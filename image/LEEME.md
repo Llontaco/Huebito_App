@@ -29,10 +29,10 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 
 | Categoría | Recetas | En la carpeta | Foto en la base | Faltan |
 |---|---|---|---|---|
-| desayunos | 106 | 0 | 87 | 19 |
+| desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 0 | 88 | 62 |
+| bebidas | 150 | 1 | 87 | 62 |
 
 ## desayunos
 
@@ -53,7 +53,7 @@ Carpeta: `image/desayunos/`
 | Choclo con queso | `choclo-con-queso.jpg` | foto en la base |
 | Churros con chocolate | `churros-con-chocolate.jpg` | foto en la base |
 | Crepes dulces | `crepes-dulces.jpg` | foto en la base |
-| Croissant con jamón y queso | `croissant-con-jamon-y-queso.jpg` | foto en la base |
+| Croissant con jamón y queso | `croissant-con-jamon-y-queso.jpg` | en la carpeta (croissant-con-jamon-y-queso.jpg) |
 | Empanada de carne | `empanada-de-carne.jpg` | foto en la base |
 | Empanada de pollo | `empanada-de-pollo.jpg` | foto en la base |
 | Empanada de queso | `empanada-de-queso.jpg` | foto en la base |
@@ -431,7 +431,7 @@ Carpeta: `image/bebidas/`
 | Jugo de melón | `jugo-de-melon.jpg` | **falta** |
 | Jugo de membrillo | `jugo-de-membrillo.jpg` | foto en la base |
 | Jugo de mora | `jugo-de-mora.jpg` | foto en la base |
-| Jugo de naranja | `jugo-de-naranja.jpg` | foto en la base |
+| Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
 | Jugo de níspero | `jugo-de-nispero.jpg` | foto en la base |
 | Jugo de papaya | `jugo-de-papaya.jpg` | foto en la base |
 | Jugo de papaya con leche | `jugo-de-papaya-con-leche.jpg` | foto en la base |
