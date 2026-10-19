@@ -1,23 +1,30 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { AppTopBar } from '../../../../core/widgets/AppTopBar';
 import { AppPrimaryButton } from '../../../../core/widgets/AppPrimaryButton';
 import { RuletaWheel, SEGMENTOS_RULETA } from '../widgets/RuletaWheel';
 import { useRecetasPorCategoria, useRecetaAleatoria } from '../../../recipes/presentation/providers/useRecetas';
-import { CategoriaSlug } from '../../../recipes/domain/entities/categoria';
+import { CategoriaSlug, Momento } from '../../../recipes/domain/entities/categoria';
 import { AppRoutes } from '../../../../core/router/appRoutes';
 import { Dices } from 'lucide-react';
 
 export function RuletaScreen() {
   const { categoria: categoriaParam } = useParams();
+  const [searchParams] = useSearchParams();
+  const location = useLocation();
   const navigate = useNavigate();
   const { colors } = useTheme();
 
-  const categoria = CategoriaSlug.fromStorage(categoriaParam) || CategoriaSlug.desayunos;
-  const titulo = CategoriaSlug.preguntas[categoria];
+  const categoria = CategoriaSlug.esValido(categoriaParam) ? categoriaParam : CategoriaSlug.desayunos;
+  // Cuando la ruleta es de acompañante llega el momento del plato (?momento=)
+  // y el plato ya sorteado (en el state), para mostrarlos juntos al final.
+  const momentoParam = searchParams.get('momento');
+  const momento = Momento.esValido(momentoParam) ? momentoParam : undefined;
+  const plato = location.state?.plato ?? null;
+  const titulo = momento ? Momento.preguntasBebida[momento] : CategoriaSlug.preguntas[categoria];
 
-  const { recetas, loading: loadingRecetas, error } = useRecetasPorCategoria(categoria);
+  const { recetas, loading: loadingRecetas, error } = useRecetasPorCategoria(categoria, momento);
   const { girar, loading: spinning } = useRecetaAleatoria();
 
   const [rotation, setRotation] = useState(0);
@@ -29,7 +36,7 @@ export function RuletaScreen() {
     if (isSpinning || recetas.length === 0) return;
     setIsSpinning(true);
 
-    const ganador = await girar(categoria, ultimoGanadorId);
+    const ganador = await girar(categoria, ultimoGanadorId, momento);
     if (!ganador) {
       setIsSpinning(false);
       return;
@@ -76,12 +83,12 @@ export function RuletaScreen() {
         setUltimoGanadorId(ganador.id);
         setIsSpinning(false);
         // Navegar al resultado
-        navigate(AppRoutes.rouletteResult(categoria), { state: { receta: ganador } });
+        navigate(AppRoutes.rouletteResult(categoria), { state: { receta: ganador, plato, momento } });
       }
     };
 
     animRef.current = requestAnimationFrame(animate);
-  }, [isSpinning, recetas, categoria, ultimoGanadorId, rotation, girar, navigate]);
+  }, [isSpinning, recetas, categoria, momento, plato, ultimoGanadorId, rotation, girar, navigate]);
 
   if (loadingRecetas) {
     return (
@@ -111,7 +118,11 @@ export function RuletaScreen() {
         <div className="flex-1 flex flex-col items-center justify-center w-full">
           <RuletaWheel recetas={recetas} rotation={rotation} />
           <p className="mt-14 text-center text-on-surface-variant font-body text-sm">
-            {isSpinning ? 'Girando...' : 'Presiona girar para descubrir tu receta'}
+            {isSpinning
+              ? 'Girando...'
+              : plato
+                ? `Gira para elegir qué tomar con tu ${plato.nombre}`
+                : 'Presiona girar para descubrir tu receta'}
           </p>
         </div>
         <div className="w-full pb-6">

@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { AppIconButton } from '../../../../core/widgets/AppIconButton';
-import { AppPrimaryButton } from '../../../../core/widgets/AppPrimaryButton';
+import { AppPrimaryButton, AppButtonVariant } from '../../../../core/widgets/AppPrimaryButton';
 import { RecipeCard } from '../../../../core/widgets/RecipeCard';
 import { useAuth } from '../../../auth/presentation/providers/useAuth';
 import { useFavoritos } from '../../../favorites/presentation/providers/useFavoritos';
 import { useHistorial } from '../../../history/presentation/providers/useHistorial';
 import { CategoriaSlug } from '../../../recipes/domain/entities/categoria';
 import { AppRoutes } from '../../../../core/router/appRoutes';
-import { Dices, LogOut, Coffee, UtensilsCrossed, CupSoda } from 'lucide-react';
+import { Dices, LogOut, Sunrise, Sun, Moon, ChevronRight } from 'lucide-react';
 
-const iconosPorCategoria = {
-  [CategoriaSlug.desayunos]: Coffee,
-  [CategoriaSlug.almuerzos]: UtensilsCrossed,
-  [CategoriaSlug.bebidas]: CupSoda,
-};
+// Las tres opciones del menú principal: cada una abre la ruleta de su comida.
+const opcionesDelDia = [
+  { slug: CategoriaSlug.desayunos, verbo: 'Desayunar', detalle: 'Ruleta de desayunos', icono: Sunrise },
+  { slug: CategoriaSlug.almuerzos, verbo: 'Almorzar', detalle: 'Ruleta de almuerzos', icono: Sun },
+  { slug: CategoriaSlug.cenas, verbo: 'Cenar', detalle: 'Ruleta de cenas', icono: Moon },
+];
 
 export function HomeScreen() {
   const navigate = useNavigate();
@@ -39,37 +40,42 @@ export function HomeScreen() {
       </div>
 
       <div className="px-5 mt-2">
-        <h2 className="text-[27px] font-bold font-display text-on-surface">¿Qué quieres cocinar hoy?</h2>
+        <h2 className="text-[27px] font-bold font-display text-on-surface">¿Qué quieres hacer hoy?</h2>
       </div>
 
-      <div className="px-5 mt-6">
+      <div className="px-5 mt-6 flex flex-col gap-3">
+        {opcionesDelDia.map(({ slug, verbo, detalle, icono: Icon }) => (
+          <button
+            key={slug}
+            onClick={() => navigate(AppRoutes.roulette(slug))}
+            className="w-full flex items-center gap-4 px-4 py-4 rounded-[20px] text-left"
+            style={{ backgroundColor: colors.surfaceContainer }}
+          >
+            <span
+              className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
+              style={{ backgroundColor: `${colors.primary}26` }}
+            >
+              <Icon size={24} style={{ color: colors.primary }} />
+            </span>
+            <span className="flex-1 min-w-0">
+              <span className="block text-[18px] font-semibold font-body text-on-surface">{verbo}</span>
+              <span className="block text-[13px] font-body text-on-surface-variant">{detalle}</span>
+            </span>
+            <ChevronRight size={20} className="text-on-surface-variant flex-shrink-0" />
+          </button>
+        ))}
+      </div>
+
+      <div className="px-5 mt-4">
         <AppPrimaryButton
           label="Sorpréndeme"
           icon={Dices}
+          variant={AppButtonVariant.outlined}
           onPressed={() => {
-            const cat = CategoriaSlug.values[Math.floor(Math.random() * CategoriaSlug.values.length)];
+            const cat = CategoriaSlug.comidas[Math.floor(Math.random() * CategoriaSlug.comidas.length)];
             navigate(AppRoutes.roulette(cat));
           }}
         />
-      </div>
-
-      <div className="px-5 mt-6 grid grid-cols-3 gap-3">
-        {CategoriaSlug.values.map((slug) => {
-          const Icon = iconosPorCategoria[slug];
-          return (
-            <button
-              key={slug}
-              onClick={() => navigate(AppRoutes.roulette(slug))}
-              className="flex flex-col items-center py-5 rounded-[20px]"
-              style={{ backgroundColor: colors.surfaceContainer }}
-            >
-              <Icon size={28} style={{ color: colors.primary }} />
-              <span className="mt-2 text-[14px] font-medium font-body text-on-surface">
-                {CategoriaSlug.labels[slug]}
-              </span>
-            </button>
-          );
-        })}
       </div>
 
       <Section

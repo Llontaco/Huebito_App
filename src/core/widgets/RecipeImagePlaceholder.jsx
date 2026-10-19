@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../theme/ThemeProvider';
-import { Coffee, UtensilsCrossed, CupSoda } from 'lucide-react';
+import { Coffee, UtensilsCrossed, CupSoda, Moon } from 'lucide-react';
 import { CategoriaSlug } from '../../features/recipes/domain/entities/categoria';
 
 // Muestra la foto real de la receta cuando exista; si no viene, o si falla la
@@ -13,6 +13,7 @@ export function RecipeImagePlaceholder({ categoria, imagenUrl, borderRadius = '2
   const iconosPorCategoria = {
     [CategoriaSlug.desayunos]: Coffee,
     [CategoriaSlug.almuerzos]: UtensilsCrossed,
+    [CategoriaSlug.cenas]: Moon,
     [CategoriaSlug.bebidas]: CupSoda,
   };
   const Icon = iconosPorCategoria[categoria] || UtensilsCrossed;

@@ -16,6 +16,7 @@ export class Receta {
     bebida = null,
     acompanamiento = null,
     videoUrl = null,
+    momentos = [],
   }) {
     this.id = id;
     this.categoriaSlug = categoriaSlug;
@@ -37,5 +38,8 @@ export class Receta {
     this.bebida = bebida;
     this.acompanamiento = acompanamiento;
     this.videoUrl = videoUrl;
+    // Momentos del día en que encaja ('desayuno', 'almuerzo', 'cena'). Solo
+    // las bebidas lo traen lleno: decide en qué ruleta de acompañante salen.
+    this.momentos = momentos;
   }
 }

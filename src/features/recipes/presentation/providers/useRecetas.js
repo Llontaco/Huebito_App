@@ -10,7 +10,9 @@ const getRecetasPorCategoriaUC = new GetRecetasPorCategoriaUseCase(repository);
 const getRecetaPorIdUC = new GetRecetaPorIdUseCase(repository);
 const getRecetaAleatoriaUC = new GetRecetaAleatoriaUseCase(repository);
 
-export function useRecetasPorCategoria(categoria) {
+// `momento` es opcional: con él solo llegan las recetas de ese momento del día
+// (la ruleta de acompañante lo usa para las bebidas).
+export function useRecetasPorCategoria(categoria, momento) {
   const [recetas, setRecetas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -18,12 +20,12 @@ export function useRecetasPorCategoria(categoria) {
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
-    getRecetasPorCategoriaUC.call(categoria)
+    getRecetasPorCategoriaUC.call(categoria, { momento })
       .then((data) => { if (!cancelled) { setRecetas(data); setError(null); } })
       .catch((e) => { if (!cancelled) setError(e.message); })
       .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
-  }, [categoria]);
+  }, [categoria, momento]);
 
   return { recetas, loading, error };
 }
@@ -61,10 +63,10 @@ export function useRecetaPorId(id) {
 export function useRecetaAleatoria() {
   const [loading, setLoading] = useState(false);
 
-  const girar = useCallback(async (categoria, excluirId) => {
+  const girar = useCallback(async (categoria, excluirId, momento) => {
     setLoading(true);
     try {
-      const receta = await getRecetaAleatoriaUC.call(categoria, { excluirId });
+      const receta = await getRecetaAleatoriaUC.call(categoria, { excluirId, momento });
       return receta;
     } finally {
       setLoading(false);

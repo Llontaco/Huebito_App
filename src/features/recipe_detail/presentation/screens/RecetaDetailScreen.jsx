@@ -11,8 +11,9 @@ import { RecetaVideoSection } from '../../../../core/widgets/RecetaVideoSection'
 import { useFavoritos } from '../../../favorites/presentation/providers/useFavoritos';
 import { useHistorial } from '../../../history/presentation/providers/useHistorial';
 import { Dificultad } from '../../../recipes/domain/entities/dificultad';
+import { CategoriaSlug, Momento } from '../../../recipes/domain/entities/categoria';
 import { AppRoutes } from '../../../../core/router/appRoutes';
-import { Coffee, UtensilsCrossed, Share2, Heart, RotateCcw, Home } from 'lucide-react';
+import { Coffee, UtensilsCrossed, Share2, Heart, RotateCcw, Home, CupSoda, Check, ChevronRight } from 'lucide-react';
 
 export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = false }) {
   const navigate = useNavigate();
@@ -22,9 +23,17 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
   const { registrarVisita } = useHistorial();
 
   const receta = propReceta || location.state?.receta;
+  // Plato que ya salió en la ruleta: solo viene cuando esta receta es la
+  // bebida sorteada como su acompañante.
+  const plato = location.state?.plato ?? null;
   const [visible, setVisible] = useState(false);
+  const [sinAcompanante, setSinAcompanante] = useState(false);
 
   useEffect(() => {
+    // Se llega aquí desde otra pantalla ya scrolleada (p. ej. el detalle del
+    // plato): el resultado nuevo tiene que empezar arriba.
+    window.scrollTo(0, 0);
+    setSinAcompanante(false);
     if (receta?.id) registrarVisita(receta.id);
     const t = setTimeout(() => setVisible(true), 50);
     return () => clearTimeout(t);
@@ -33,6 +42,10 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
   if (!receta) return null;
 
   const esFav = esFavorito(receta.id);
+  const momentoDelPlato = Momento.deCategoria[receta.categoriaSlug];
+  const ofrecerAcompanante =
+    mostrarVolverAGirar && CategoriaSlug.comidas.includes(receta.categoriaSlug) && !sinAcompanante;
+  const momentoCombinacion = location.state?.momento ?? Momento.deCategoria[plato?.categoriaSlug];
 
   const handleShare = async () => {
     const text = `Prueba "${receta.nombre}" 🇵🇪 — la encontré en Huebito.`;
@@ -68,6 +81,27 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
             {receta.descripcion}
           </p>
         </div>
+
+        {ofrecerAcompanante && (
+          <AcompananteCard
+            momento={momentoDelPlato}
+            onSi={() =>
+              navigate(AppRoutes.roulette(CategoriaSlug.bebidas, { momento: momentoDelPlato }), {
+                state: { plato: receta },
+              })
+            }
+            onNo={() => setSinAcompanante(true)}
+          />
+        )}
+
+        {mostrarVolverAGirar && plato && (
+          <CombinacionCard
+            momento={momentoCombinacion}
+            plato={plato}
+            bebida={receta}
+            onVerPlato={() => navigate(AppRoutes.recipeDetail(plato.id))}
+          />
+        )}
 
         <div className="mt-6">
           <StatBlock
@@ -145,6 +179,59 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
           </div>
           <AppIconButton icon={Share2} onPressed={handleShare} filled />
         </div>
+      </div>
+    </div>
+  );
+}
+
+const nombreDelMomento = {
+  [Momento.desayuno]: 'desayuno',
+  [Momento.almuerzo]: 'almuerzo',
+  [Momento.cena]: 'cena',
+};
+
+// Aparece en el resultado de la ruleta de un plato: ofrece girar una segunda
+// ruleta con las bebidas del mismo momento del día.
+function AcompananteCard({ momento, onSi, onNo }) {
+  const { colors } = useTheme();
+  return (
+    <div className="mt-6 p-4 rounded-[20px]" style={{ backgroundColor: colors.surfaceContainer }}>
+      <div className="flex items-center gap-2">
+        <CupSoda size={20} style={{ color: colors.primary }} />
+        <p className="text-[16px] font-semibold font-body text-on-surface">¿Quieres un acompañante?</p>
+      </div>
+      <p className="mt-1 text-sm font-body text-on-surface-variant">
+        Gira la ruleta de bebidas para tu {nombreDelMomento[momento] ?? 'comida'}.
+      </p>
+      <div className="mt-4 flex gap-3">
+        <div className="flex-1">
+          <AppPrimaryButton label="Sí" icon={Check} onPressed={onSi} />
+        </div>
+        <div className="flex-1">
+          <AppPrimaryButton label="No, gracias" variant={AppButtonVariant.outlined} onPressed={onNo} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Resumen final cuando la receta mostrada es la bebida acompañante: deja a
+// mano el plato que salió en la primera ruleta.
+function CombinacionCard({ momento, plato, bebida, onVerPlato }) {
+  const { colors } = useTheme();
+  return (
+    <div className="mt-6 p-4 rounded-[20px]" style={{ backgroundColor: colors.surfaceContainer }}>
+      <p className="text-[12px] font-medium font-body tracking-wider text-on-surface-variant uppercase">
+        Tu {nombreDelMomento[momento] ?? 'comida'} de hoy
+      </p>
+      <button onClick={onVerPlato} className="mt-3 w-full flex items-center gap-3 text-left">
+        <UtensilsCrossed size={20} style={{ color: colors.primary }} className="flex-shrink-0" />
+        <span className="flex-1 text-sm font-body text-on-surface">{plato.nombre}</span>
+        <ChevronRight size={18} className="text-on-surface-variant flex-shrink-0" />
+      </button>
+      <div className="mt-3 flex items-center gap-3">
+        <CupSoda size={20} style={{ color: colors.primary }} className="flex-shrink-0" />
+        <span className="flex-1 text-sm font-body text-on-surface">{bebida.nombre}</span>
       </div>
     </div>
   );

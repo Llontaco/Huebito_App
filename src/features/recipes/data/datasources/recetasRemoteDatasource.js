@@ -13,14 +13,17 @@ export class RecetasRemoteDatasource {
   // GET /recetas -> { items, total, page, limit }
   // El DTO topea limit en 100, así que con 150 recetas por categoría hay que
   // recorrer varias páginas hasta juntar el total que informa la propia API.
-  async getRecetasByCategoria(categoriaId, { signal } = {}) {
+  //
+  // Con `momento`, la API devuelve solo las recetas de ese momento del día
+  // (lo usa la ruleta de acompañante para las bebidas).
+  async getRecetasByCategoria(categoriaId, { momento, signal } = {}) {
     const acumuladas = [];
     let page = 1;
     let total = Infinity;
 
     while (acumuladas.length < total) {
       const respuesta = await apiGet('/recetas', {
-        params: { categoriaId, limit: API_MAX_LIMIT, page },
+        params: { categoriaId, ...(momento ? { momento } : {}), limit: API_MAX_LIMIT, page },
         signal,
       });
 

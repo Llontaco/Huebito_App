@@ -54,6 +54,7 @@ export class RecetaModel {
       bebida: json.bebida,
       acompanamiento: json.acompanamiento,
       videoUrl: json.video_url ?? json.videoUrl ?? null,
+      momentos: Array.isArray(json.momentos) ? json.momentos : [],
     });
   }
 }
