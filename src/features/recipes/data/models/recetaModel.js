@@ -3,6 +3,7 @@ import { CategoriaSlug } from '../../domain/entities/categoria.js';
 import { Dificultad } from '../../domain/entities/dificultad.js';
 import { DbSeparators } from '../../../../core/database/dbConstants.js';
 import { API_BASE_URL } from '../../../../core/network/apiConfig.js';
+import { imagenLocal } from '../../../../core/images/imagenesLocales.js';
 
 // Las dos fuentes entregan estas listas en formatos distintos:
 //   - localStorage: string con separador "|"  ("4 panes|2 paltas")
@@ -37,9 +38,15 @@ function urlDeImagen(json) {
 
 export class RecetaModel {
   static fromJson(json) {
+    const categoriaSlug = CategoriaSlug.fromStorage(aSlug(json));
+    // Una foto subida a la carpeta image/ manda sobre la guardada en la base.
+    // Su crédito sale de image/creditos.json; si no tiene (foto propia), no se
+    // muestra ninguno, en vez de arrastrar el crédito de la foto de la base.
+    const local = imagenLocal(categoriaSlug, json.nombre);
+
     return new Receta({
       id: json.id,
-      categoriaSlug: CategoriaSlug.fromStorage(aSlug(json)),
+      categoriaSlug,
       nombre: json.nombre,
       descripcion: json.descripcion,
       ingredientes: aLista(json.ingredientes),
@@ -47,10 +54,10 @@ export class RecetaModel {
       tiempoMinutos: json.tiempo_minutos ?? json.tiempoMinutos,
       dificultad: Dificultad.fromStorage(json.dificultad),
       imagenAsset: json.imagen_asset ?? json.imagenAsset,
-      imagenUrl: urlDeImagen(json),
-      imagenAutor: json.imagen_autor ?? json.imagenAutor ?? null,
-      imagenLicencia: json.imagen_licencia ?? json.imagenLicencia ?? null,
-      imagenFuente: json.imagen_fuente ?? json.imagenFuente ?? null,
+      imagenUrl: local ? local.url : urlDeImagen(json),
+      imagenAutor: local ? local.credito?.autor ?? null : json.imagen_autor ?? json.imagenAutor ?? null,
+      imagenLicencia: local ? local.credito?.licencia ?? null : json.imagen_licencia ?? json.imagenLicencia ?? null,
+      imagenFuente: local ? local.credito?.fuente ?? null : json.imagen_fuente ?? json.imagenFuente ?? null,
       bebida: json.bebida,
       acompanamiento: json.acompanamiento,
       videoUrl: json.video_url ?? json.videoUrl ?? null,

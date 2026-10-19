@@ -10,14 +10,23 @@
 //   node database/imagenes/buscarImagenes.mjs --dry           # no escribe en la BD
 //   node database/imagenes/buscarImagenes.mjs --categoria bebidas
 //   node database/imagenes/buscarImagenes.mjs --rehacer       # reprocesa las que ya tienen
+//   node database/imagenes/buscarImagenes.mjs --carpeta       # guarda en image/ en vez de la BD
+//   node database/imagenes/buscarImagenes.mjs --receta "Pie de limón"   # una sola receta
+//   DEBUG_IMG=1 node database/imagenes/buscarImagenes.mjs ...  # muestra por qué descarta cada foto
 //
 // El proceso es reanudable: por defecto salta las recetas que ya tienen imagen.
+//
+// Con --carpeta la foto se guarda como JPG en image/<categoria>/<nombre>.jpg y
+// su crédito en image/creditos.json, en lugar de escribirse en la base. Salta
+// las recetas que ya tienen foto en la base o en la carpeta, así que nunca
+// pisa una foto que hayas subido tú.
 
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import { neonConfig, Pool } from '@neondatabase/serverless';
 import ws from 'ws';
+import { slugImagen, CARPETA_IMAGENES, EXTENSIONES_IMAGEN } from '../../src/core/images/slugImagen.js';
 
 neonConfig.webSocketConstructor = ws;
 
@@ -36,6 +45,11 @@ const LIMITE = Number(opcion('limit', '0')) || Infinity;
 const DRY = bandera('dry');
 const REHACER = bandera('rehacer');
 const CATEGORIA = opcion('categoria');
+const CARPETA = bandera('carpeta');
+const RECETA = opcion('receta');
+
+const dirImagenes = path.resolve(import.meta.dirname, '..', '..', CARPETA_IMAGENES);
+const rutaCreditos = path.join(dirImagenes, 'creditos.json');
 
 // Tamaño final. 600x450 (4:3) cubre tanto la tarjeta del listado como la
 // cabecera del detalle sin que se vea pixelada en pantallas 2x.
@@ -43,8 +57,9 @@ const ANCHO = 600;
 const ALTO = 450;
 const CALIDAD = 80;
 
-// Wikimedia pide un User-Agent descriptivo que identifique a la aplicación.
-const UA = 'HuebitoApp/1.0 (proyecto educativo de recetas peruanas)';
+// Wikimedia pide un User-Agent descriptivo con una forma de contacto; sin ella
+// responde 429 (demasiadas peticiones) desde la primera consulta.
+const UA = 'HuebitoApp/1.0 (https://github.com/Llontaco/Huebito_App; proyecto educativo de recetas peruanas)';
 
 // --------------------------------------------------------------- licencias
 
@@ -91,7 +106,7 @@ function limpiarRuido(texto) {
     .replace(EXT_VALIDA, ' ')
     .replace(/https?:\/\/\S+/g, ' ')
     .replace(/[@#]\S+/g, ' ')
-    .replace(/(from|via|por|photo|foto|img|dsc|image)/gi, ' ')
+    .replace(/\b(from|via|por|photo|foto|img|dsc|image)\b/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -119,11 +134,11 @@ const PISTA_PERUANA = /per[uú]|peruvian|andean|andino|cusco|cuzco|lima|arequipa
 // planta. Casos reales que se colaron: "Chancay" trajo una foto de la calle de
 // la ciudad de Chancay (es pan y es ciudad), "Estofado de Res" la etiqueta de
 // una lata, y "Jugo de pera" una rama con frutos.
-const NO_ES_COMIDA = /(calle|calles|street|streets|plaza|avenida|jir[oó]n|ciudad|distrito|provincia|puerto|iglesia|edificio|building|vista|panor[aá]mica|mapa|map|escudo|bandera|flag|logo|letrero|se[nñ]al|lata|can|tin|envase|package|packaging|etiqueta|label|producto|brand|supermercado|tienda|shop|arbol|[aá]rbol|tree|planta|plant|flor|flower|hoja|leaf|semilla|seed|retrato|portrait|iglesia|cementerio|estacion|station|puente|bridge)/i;
+const NO_ES_COMIDA = /\b(calle|calles|street|streets|plaza|avenida|jir[oó]n|ciudad|distrito|provincia|puerto|iglesia|edificio|building|vista|panor[aá]mica|mapa|map|escudo|bandera|flag|logo|letrero|se[nñ]al|lata|can|tin|envase|package|packaging|etiqueta|label|producto|brand|supermercado|tienda|shop|arbol|[aá]rbol|tree|planta|plant|flor|flower|hoja|leaf|semilla|seed|retrato|portrait|iglesia|cementerio|estacion|station|puente|bridge)\b/i;
 
 // Señal de que el archivo sí retrata comida o bebida. Commons categoriza muy
 // bien los alimentos, así que cuando hay categorías se puede exigir esto.
-const ES_COMIDA = /(food|foods|cuisine|dish|dishes|comida|plato|platos|gastronom|drink|drinks|beverage|beverages|bebida|bebidas|juice|jugo|soup|sopa|bread|pan(es)?|dessert|postre|meat|carne|seafood|marisco|restaurant|cooking|cocina|recipe|receta|breakfast|desayuno|lunch|almuerzo|snack|cake|pastry|panaderia|cocktail|coctel|tea|te|cafe|coffee)/i;
+const ES_COMIDA = /\b(food|foods|cuisine|dish|dishes|comida|plato|platos|gastronom|drink|drinks|beverage|beverages|bebida|bebidas|juice|jugo|soup|sopa|bread|pan(es)?|dessert|postre|meat|carne|seafood|marisco|restaurant|cooking|cocina|recipe|receta|breakfast|desayuno|lunch|almuerzo|snack|cake|pastry|panaderia|cocktail|coctel|tea|te|cafe|coffee)(e?s)?\b/i;
 
 function pareceDeLibro(titulo) {
   // Los escaneos del Internet Archive vienen como "(IA nombre-del-libro)" y
@@ -147,7 +162,14 @@ async function buscarEnCommons(consulta) {
     '&prop=imageinfo|categories&cllimit=max' +
     `&iiprop=url|extmetadata&iiurlwidth=${ANCHO * 2}`;
 
-  const r = await fetch(url, { headers: { 'User-Agent': UA } });
+  let r = await fetch(url, { headers: { 'User-Agent': UA } });
+  if (r.status === 429) {
+    // Límite de Wikimedia: esperar y reintentar una vez. Antes esto devolvía
+    // una lista vacía y la receta quedaba "sin imagen" sin que se notara.
+    console.log('        (Commons pidió esperar; reintentando en 30 s)');
+    await dormir(30_000);
+    r = await fetch(url, { headers: { 'User-Agent': UA } });
+  }
   if (!r.ok) return [];
   const j = await r.json();
   const paginas = j?.query?.pages ? Object.values(j.query.pages) : [];
@@ -187,6 +209,13 @@ async function buscarEnOpenverse(consulta) {
 // Elige el mejor candidato aplicando licencia + relevancia.
 function elegirCandidato(fraseObjetivo, candidatos) {
   const unaSolaPalabra = tokens(fraseObjetivo).length === 1;
+  if (process.env.DEBUG_IMG) {
+    for (const c of candidatos) {
+      console.log('   ?', fraseObjetivo, '|', c.titulo.slice(0, 60), '| lic', licenciaUsable(c.licencia), '| usada', urlsUsadas.has(c.urlDescarga) || urlsUsadas.has(c.urlPagina),
+        '| ext', c.fuenteApi === 'openverse' || EXT_VALIDA.test(c.titulo), '| noComida', NO_ES_COMIDA.test(c.titulo), '| esComida', !c.contexto || c.contexto === c.titulo || ES_COMIDA.test(c.contexto),
+        '| score', puntaje(fraseObjetivo, c.titulo).toFixed(2), '| ctx', JSON.stringify(String(c.contexto).slice(0, 90)));
+    }
+  }
 
   const viables = candidatos
     .filter((c) => c.urlDescarga && !urlsUsadas.has(c.urlDescarga) && !urlsUsadas.has(c.urlPagina) && licenciaUsable(c.licencia))
@@ -242,6 +271,29 @@ const MODIFICADORES = new Set([
 // frase que el título del resultado tendrá que contener. Reducir el nombre
 // amplía mucho la cobertura, y el requisito de señal peruana para frases
 // cortas evita que se cuelen homónimos de otras cocinas.
+// Nombres con los que un plato aparece en las fotos cuando no se titula como
+// la receta: postres internacionales en inglés, o el singular del nombre. Cada
+// alias se busca y se exige igual que el nombre original.
+const ALIAS = {
+  'Pie de limón': ['lemon pie', 'lemon meringue pie', 'pie de limon'],
+  'Torta tres leches': ['tres leches', 'torta de tres leches'],
+  'Budín de pan': ['bread pudding', 'budin de pan'],
+  'Hamburguesa casera': ['hamburguesa', 'hamburger'],
+  'Keke de zanahoria': ['carrot cake', 'torta de zanahoria'],
+  'Pionono de manjar': ['pionono'],
+  'Torta de maracuyá': ['passion fruit cake', 'maracuya cake'],
+  'Cocadas': ['cocada'],
+  'Chocotejas': ['chocoteja', 'chocotejas'],
+  'Turrón de doña pepa': ['turron de dona pepa', 'turron dona pepa'],
+  'King kong': ['king kong dulce', 'king kong lambayeque'],
+  'Gaznates': ['gaznate'],
+  'Ponderaciones': ['ponderacion'],
+  'Bolitas de yuca con queso': ['bolitas de yuca', 'yuca balls'],
+  'Empanaditas de yuca con queso': ['empanadas de yuca'],
+  'Pastelillos de yuca': ['pastelitos de yuca'],
+  'Pan con pejerrey': ['pejerrey sandwich', 'sanguche de pejerrey'],
+};
+
 function consultasPara(nombre, categoriaSlug) {
   const contenido = tokens(nombre);
   const nucleo = contenido.filter((t) => !MODIFICADORES.has(t));
@@ -271,20 +323,24 @@ function consultasPara(nombre, categoriaSlug) {
     intentos.push({ consulta: `${frase} peru`, objetivo: frase });
     intentos.push({ consulta: frase, objetivo: frase });
   }
+  for (const alias of ALIAS[nombre] ?? []) {
+    intentos.push({ consulta: alias, objetivo: alias });
+  }
   return intentos;
 }
 
-async function descargarYRedimensionar(url) {
+async function descargarYRedimensionar(url, formato = 'webp') {
   const r = await fetch(url, { headers: { 'User-Agent': UA } });
   if (!r.ok) throw new Error(`descarga ${r.status}`);
   const buffer = Buffer.from(await r.arrayBuffer());
 
   // cover recorta al centro para que todas queden con la misma proporción y
   // las tarjetas del listado no se vean desparejas.
-  const salida = await sharp(buffer)
-    .resize(ANCHO, ALTO, { fit: 'cover', position: 'attention' })
-    .webp({ quality: CALIDAD })
-    .toBuffer();
+  const redimensionada = sharp(buffer).resize(ANCHO, ALTO, { fit: 'cover', position: 'attention' });
+  const salida = await (formato === 'jpg'
+    ? redimensionada.jpeg({ quality: CALIDAD, mozjpeg: true })
+    : redimensionada.webp({ quality: CALIDAD })
+  ).toBuffer();
 
   const meta = await sharp(salida).metadata();
   return { buffer: salida, ancho: meta.width, alto: meta.height };
@@ -352,13 +408,49 @@ async function precargarUrlsUsadas() {
     'SELECT DISTINCT imagen_fuente FROM recetas WHERE imagen_fuente IS NOT NULL'
   );
   for (const fila of rows) urlsUsadas.add(fila.imagen_fuente);
-  return rows.length;
+  for (const credito of Object.values(creditos)) if (credito.fuente) urlsUsadas.add(credito.fuente);
+  // Fotos revisadas a mano y descartadas porque no muestran el plato.
+  const rechazadas = JSON.parse(await readFile(path.join(import.meta.dirname, 'rechazadas.json'), 'utf-8').catch(() => '{}'));
+  for (const r of Object.values(rechazadas)) if (r.fuente) urlsUsadas.add(r.fuente);
+  return urlsUsadas.size;
+}
+
+// --------------------------------------------------------- modo --carpeta
+
+const creditos = JSON.parse(await readFile(rutaCreditos, 'utf-8').catch(() => '{}'));
+
+// Fotos que ya están en la carpeta, como "desayunos/pan-con-palta".
+async function fotosEnCarpeta() {
+  const claves = new Set();
+  for (const categoria of await readdir(dirImagenes).catch(() => [])) {
+    for (const archivo of await readdir(path.join(dirImagenes, categoria)).catch(() => [])) {
+      const [base, ext] = [archivo.replace(/\.[^.]+$/, ''), archivo.split('.').pop().toLowerCase()];
+      if (EXTENSIONES_IMAGEN.includes(ext)) claves.add(`${categoria}/${base.toLowerCase()}`);
+    }
+  }
+  return claves;
+}
+
+async function guardarEnCarpeta(receta, img, elegido) {
+  const archivo = `${slugImagen(receta.nombre)}.jpg`;
+  await mkdir(path.join(dirImagenes, receta.categoria), { recursive: true });
+  await writeFile(path.join(dirImagenes, receta.categoria, archivo), img.buffer);
+  creditos[`${receta.categoria}/${archivo}`] = {
+    autor: elegido.autor?.slice(0, 300) || null,
+    licencia: elegido.licencia,
+    fuente: elegido.urlPagina || null,
+    titulo: elegido.titulo?.slice(0, 300) || null,
+  };
+  // Se reescribe tras cada foto para que cortar el proceso no deje fotos sin crédito.
+  const ordenado = Object.fromEntries(Object.entries(creditos).sort(([a], [b]) => a.localeCompare(b)));
+  await writeFile(rutaCreditos, JSON.stringify(ordenado, null, 2) + '\n');
 }
 
 try {
   const filtros = ['1=1'];
   if (!REHACER) filtros.push('r.imagen_datos IS NULL');
   if (CATEGORIA) filtros.push(`c.slug = '${CATEGORIA.replace(/'/g, "''")}'`);
+  if (RECETA) filtros.push(`r.nombre = '${RECETA.replace(/'/g, "''")}'`);
 
   const { rows: recetas } = await consultar(
     `SELECT r.id, r.nombre, c.slug AS categoria
@@ -371,7 +463,14 @@ try {
   if (yaUsadas > 0) console.log(`(${yaUsadas} fotos ya en uso; no se van a repetir)
 `);
 
-  const objetivo = recetas.slice(0, LIMITE === Infinity ? undefined : LIMITE);
+  let pendientes = recetas;
+  if (CARPETA) {
+    const enCarpeta = await fotosEnCarpeta();
+    pendientes = recetas.filter((r) => !enCarpeta.has(`${r.categoria}/${slugImagen(r.nombre)}`));
+    console.log(`Modo --carpeta: guarda en ${path.relative(root, dirImagenes)}/ (${recetas.length - pendientes.length} ya tienen foto ahí)\n`);
+  }
+
+  const objetivo = pendientes.slice(0, LIMITE === Infinity ? undefined : LIMITE);
   console.log(`Recetas a procesar: ${objetivo.length}${DRY ? '  (modo --dry, no escribe)' : ''}\n`);
 
   for (const [i, receta] of objetivo.entries()) {
@@ -394,7 +493,7 @@ try {
       elegido = elegirCandidato(objetivo, candidatos);
       if (elegido) { elegido.query = consulta; break; }
 
-      await dormir(120);
+      await dormir(800); // Commons limita las consultas anónimas seguidas
     }
 
     if (!elegido) {
@@ -405,9 +504,11 @@ try {
     }
 
     try {
-      const img = await descargarYRedimensionar(elegido.urlDescarga);
+      const img = await descargarYRedimensionar(elegido.urlDescarga, CARPETA ? 'jpg' : 'webp');
 
-      if (!DRY) {
+      if (!DRY && CARPETA) {
+        await guardarEnCarpeta(receta, img, elegido);
+      } else if (!DRY) {
         await consultar(
           `UPDATE recetas SET
              imagen_datos = $1, imagen_mime = 'image/webp',
