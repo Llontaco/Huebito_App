@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 6 | 84 | 60 |
+| bebidas | 150 | 11 | 80 | 59 |
 
 ## desayunos
 
@@ -376,7 +376,7 @@ Carpeta: `image/bebidas/`
 | Calientito | `calientito.jpg` | **falta** |
 | Capitán | `capitan.jpg` | **falta** |
 | Capuchino casero | `capuchino-casero.jpg` | foto en la base |
-| Chapo | `chapo.jpg` | foto en la base |
+| Chapo | `chapo.jpg` | en la carpeta (chapo.jpg) |
 | Chicha blanca de trigo | `chicha-blanca-de-trigo.jpg` | **falta** |
 | Chicha de guiñapo | `chicha-de-guinapo.jpg` | **falta** |
 | Chicha de jora | `chicha-de-jora.jpg` | foto en la base |
@@ -423,8 +423,8 @@ Carpeta: `image/bebidas/`
 | Jugo de granadilla | `jugo-de-granadilla.jpg` | foto en la base |
 | Jugo de guanábana | `jugo-de-guanabana.jpg` | en la carpeta (jugo-de-guanabana.jpg) |
 | Jugo de higo | `jugo-de-higo.jpg` | foto en la base |
-| Jugo de lúcuma | `jugo-de-lucuma.jpg` | foto en la base |
-| Jugo de mandarina | `jugo-de-mandarina.jpg` | foto en la base |
+| Jugo de lúcuma | `jugo-de-lucuma.jpg` | en la carpeta (jugo-de-lucuma.jpg) |
+| Jugo de mandarina | `jugo-de-mandarina.jpg` | en la carpeta (jugo-de-mandarina.jpg) |
 | Jugo de mango | `jugo-de-mango.jpg` | foto en la base |
 | Jugo de manzana | `jugo-de-manzana.jpg` | en la carpeta (jugo-de-manzana.jpg) |
 | Jugo de maracuyá | `jugo-de-maracuya.jpg` | foto en la base |
@@ -445,11 +445,11 @@ Carpeta: `image/bebidas/`
 | Jugo de tamarindo | `jugo-de-tamarindo.jpg` | foto en la base |
 | Jugo de toronja | `jugo-de-toronja.jpg` | foto en la base |
 | Jugo de tuna | `jugo-de-tuna.jpg` | **falta** |
-| Jugo de uva | `jugo-de-uva.jpg` | foto en la base |
+| Jugo de uva | `jugo-de-uva.jpg` | en la carpeta (jugo-de-uva.jpg) |
 | Jugo de zanahoria | `jugo-de-zanahoria.jpg` | foto en la base |
 | Jugo de zanahoria con naranja y kion | `jugo-de-zanahoria-con-naranja-y-kion.jpg` | foto en la base |
 | Jugo surtido | `jugo-surtido.jpg` | **falta** |
-| Jugo surtido especial | `jugo-surtido-especial.jpg` | **falta** |
+| Jugo surtido especial | `jugo-surtido-especial.jpg` | en la carpeta (jugo-surtido-especial.jpg) |
 | Jugo verde | `jugo-verde.jpg` | foto en la base |
 | Leche con café | `leche-con-cafe.jpg` | foto en la base |
 | Leche con canela | `leche-con-canela.jpg` | foto en la base |
