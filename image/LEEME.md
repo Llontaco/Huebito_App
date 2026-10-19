@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 150 | 1 | 87 | 62 |
+| bebidas | 150 | 6 | 84 | 60 |
 
 ## desayunos
 
@@ -421,18 +421,18 @@ Carpeta: `image/bebidas/`
 | Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | **falta** |
 | Jugo de fresa | `jugo-de-fresa.jpg` | foto en la base |
 | Jugo de granadilla | `jugo-de-granadilla.jpg` | foto en la base |
-| Jugo de guanábana | `jugo-de-guanabana.jpg` | foto en la base |
+| Jugo de guanábana | `jugo-de-guanabana.jpg` | en la carpeta (jugo-de-guanabana.jpg) |
 | Jugo de higo | `jugo-de-higo.jpg` | foto en la base |
 | Jugo de lúcuma | `jugo-de-lucuma.jpg` | foto en la base |
 | Jugo de mandarina | `jugo-de-mandarina.jpg` | foto en la base |
 | Jugo de mango | `jugo-de-mango.jpg` | foto en la base |
-| Jugo de manzana | `jugo-de-manzana.jpg` | **falta** |
+| Jugo de manzana | `jugo-de-manzana.jpg` | en la carpeta (jugo-de-manzana.jpg) |
 | Jugo de maracuyá | `jugo-de-maracuya.jpg` | foto en la base |
 | Jugo de melón | `jugo-de-melon.jpg` | **falta** |
 | Jugo de membrillo | `jugo-de-membrillo.jpg` | foto en la base |
 | Jugo de mora | `jugo-de-mora.jpg` | foto en la base |
 | Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
-| Jugo de níspero | `jugo-de-nispero.jpg` | foto en la base |
+| Jugo de níspero | `jugo-de-nispero.jpg` | en la carpeta (jugo-de-nispero.jpg) |
 | Jugo de papaya | `jugo-de-papaya.jpg` | foto en la base |
 | Jugo de papaya con leche | `jugo-de-papaya-con-leche.jpg` | foto en la base |
 | Jugo de pepino con limón | `jugo-de-pepino-con-limon.jpg` | **falta** |
@@ -461,7 +461,7 @@ Carpeta: `image/bebidas/`
 | Limonada clásica | `limonada-clasica.jpg` | **falta** |
 | Limonada de hierbabuena | `limonada-de-hierbabuena.jpg` | foto en la base |
 | Limonada frozen | `limonada-frozen.jpg` | foto en la base |
-| Maca | `maca.jpg` | foto en la base |
+| Maca | `maca.jpg` | en la carpeta (maca.jpg) |
 | Maca con algarrobina | `maca-con-algarrobina.jpg` | **falta** |
 | Machu Picchu | `machu-picchu.jpg` | foto en la base |
 | Manzanilla | `manzanilla.jpg` | foto en la base |
@@ -477,7 +477,7 @@ Carpeta: `image/bebidas/`
 | Ponche de habas | `ponche-de-habas.jpg` | **falta** |
 | Ponche de leche | `ponche-de-leche.jpg` | **falta** |
 | Ponche de maní | `ponche-de-mani.jpg` | **falta** |
-| Ponche de quinua | `ponche-de-quinua.jpg` | **falta** |
+| Ponche de quinua | `ponche-de-quinua.jpg` | en la carpeta (ponche-de-quinua.jpg) |
 | Ponche navideño | `ponche-navideno.jpg` | **falta** |
 | Quinua | `quinua.jpg` | foto en la base |
 | Quinua con piña | `quinua-con-pina.jpg` | **falta** |
