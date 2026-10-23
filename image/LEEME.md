@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 135 | 34 | 50 | 51 |
+| bebidas | 135 | 38 | 47 | 50 |
 
 ## desayunos
 
@@ -408,14 +408,14 @@ Carpeta: `image/bebidas/`
 | Infusión de toronjil | `infusion-de-toronjil.jpg` | foto en la base |
 | Infusión de uña de gato | `infusion-de-una-de-gato.jpg` | foto en la base |
 | Infusión de valeriana | `infusion-de-valeriana.jpg` | foto en la base |
-| Jugo de aguaymanto | `jugo-de-aguaymanto.jpg` | foto en la base |
+| Jugo de aguaymanto | `jugo-de-aguaymanto.jpg` | en la carpeta (jugo-de-aguaymanto.jpg) |
 | Jugo de apio con piña | `jugo-de-apio-con-pina.jpg` | **falta** |
 | Jugo de betarraga | `jugo-de-betarraga.jpg` | en la carpeta (jugo-de-betarraga.jpg) |
 | Jugo de chirimoya | `jugo-de-chirimoya.jpg` | en la carpeta (jugo-de-chirimoya.jpg) |
-| Jugo de durazno | `jugo-de-durazno.jpg` | foto en la base |
-| Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | **falta** |
+| Jugo de durazno | `jugo-de-durazno.jpg` | en la carpeta (jugo-de-durazno.jpg) |
+| Jugo de espinaca con manzana | `jugo-de-espinaca-con-manzana.jpg` | en la carpeta (jugo-de-espinaca-con-manzana.jpg) |
 | Jugo de fresa | `jugo-de-fresa.jpg` | en la carpeta (jugo-de-fresa.jpg) |
-| Jugo de granadilla | `jugo-de-granadilla.jpg` | foto en la base |
+| Jugo de granadilla | `jugo-de-granadilla.jpg` | en la carpeta (jugo-de-granadilla.jpg) |
 | Jugo de guanábana | `jugo-de-guanabana.jpg` | en la carpeta (jugo-de-guanabana.jpg) |
 | Jugo de higo | `jugo-de-higo.jpg` | foto en la base |
 | Jugo de lúcuma | `jugo-de-lucuma.jpg` | en la carpeta (jugo-de-lucuma.jpg) |
