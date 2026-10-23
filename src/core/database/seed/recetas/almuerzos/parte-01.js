@@ -30,7 +30,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/lomo_saltado.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=NI-AMYX1-6Q",
   },
   {
     categoria_slug: 'almuerzos',
@@ -59,7 +59,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/aji_de_gallina.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=mRotd7x4X_g",
   },
   {
     categoria_slug: 'almuerzos',
@@ -88,7 +88,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/arroz_con_pollo.jpg",
     bebida: "Chicha de jora",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=rgXc3RIxGf0",
   },
   {
     categoria_slug: 'almuerzos',
@@ -118,7 +118,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/seco_de_res.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Frejoles y arroz",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=f2JAk50lVoQ",
   },
   {
     categoria_slug: 'almuerzos',
@@ -148,7 +148,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/carapulcra.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=no5l20i8WnM",
   },
   {
     categoria_slug: 'almuerzos',
@@ -177,7 +177,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/tallarines_verdes.jpg",
     bebida: "Limonada",
     acompanamiento: "Bistec apanado",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=enxbUqDbq2g",
   },
   {
     categoria_slug: 'almuerzos',
@@ -206,7 +206,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/causa_limena.jpg",
     bebida: "Chicha morada",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=UbbSMZrosZk",
   },
   {
     categoria_slug: 'almuerzos',
@@ -234,7 +234,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/papa_a_la_huancaina.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Huevo duro y aceituna",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=9rHZ4I_HRRw",
   },
   {
     categoria_slug: 'almuerzos',
@@ -262,7 +262,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/escabeche.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Camote y yuca",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=N4XqaeqEaok",
   },
   {
     categoria_slug: 'almuerzos',
@@ -291,7 +291,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pollo_a_la_brasa.jpg",
     bebida: "Gaseosa",
     acompanamiento: "Papas fritas y ensalada",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=6bQe0pdd1po",
   },
   {
     categoria_slug: 'almuerzos',
@@ -320,7 +320,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/arroz_chaufa.jpg",
     bebida: "Chicha morada",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=sFbtifPPQCY",
   },
   {
     categoria_slug: 'almuerzos',
@@ -348,7 +348,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/tacu_tacu.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Bistec o huevo frito",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=0LoT6cVWcT0",
   },
   {
     categoria_slug: 'almuerzos',
@@ -376,7 +376,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/frejoles_con_seco.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=f2JAk50lVoQ",
   },
   {
     categoria_slug: 'almuerzos',
@@ -405,7 +405,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/estofado.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=eUdE-C9Oizg",
   },
   {
     categoria_slug: 'almuerzos',
@@ -432,7 +432,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pescado_frito.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz y ensalada",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=eg3inXNY44M",
   },
   {
     categoria_slug: 'almuerzos',
@@ -460,7 +460,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/sudado.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Arroz blanco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=KhVK5pQC8jk",
   },
   {
     categoria_slug: 'almuerzos',
@@ -489,7 +489,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/ceviche.jpg",
     bebida: "Chicha morada",
     acompanamiento: "Camote y choclo",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=oRw2YNE5kLU",
   },
   {
     categoria_slug: 'almuerzos',
@@ -518,6 +518,6 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/arroz_con_mariscos.jpg",
     bebida: "Chicha morada",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=QHDQ-oB7RZs",
   },
 ];

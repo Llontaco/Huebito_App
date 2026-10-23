@@ -4,6 +4,16 @@ import { recetasSeedData } from './seed/recetasSeedData.js';
 
 const DB_KEY = 'huebito_db_v3';
 
+// Huella del seed. Si el seed cambia (por ejemplo, se agregan videos o se
+// corrige una receta), la copia guardada en localStorage queda vieja: con esta
+// huella se detecta y las recetas se regeneran, conservando favoritos e historial.
+function huella(texto) {
+  let h = 5381;
+  for (let i = 0; i < texto.length; i++) h = ((h << 5) + h + texto.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+}
+const SEED_VERSION = huella(JSON.stringify(recetasSeedData));
+
 class AppDatabase {
   constructor() {
     this._data = null;
@@ -25,7 +35,8 @@ class AppDatabase {
       && Object.prototype.hasOwnProperty.call(recetasActuales[0], 'video_url');
     const yaTieneRutaAbsoluta = recetasActuales?.length > 0
       && String(recetasActuales[0].imagen_asset || '').startsWith('/');
-    if (yaTieneCategoriaSlug && yaTieneVideoUrl && yaTieneRutaAbsoluta) return storedData;
+    const seedAlDia = storedData.seedVersion === SEED_VERSION;
+    if (yaTieneCategoriaSlug && yaTieneVideoUrl && yaTieneRutaAbsoluta && seedAlDia) return storedData;
 
     const categorias = storedData[DbTables.categorias]?.length > 0
       ? storedData[DbTables.categorias]
@@ -52,6 +63,7 @@ class AppDatabase {
       [DbTables.recetas]: recetas,
       [DbTables.favoritos]: storedData[DbTables.favoritos] || [],
       [DbTables.historial]: storedData[DbTables.historial] || [],
+      seedVersion: SEED_VERSION,
     };
     this._persist(repairedData);
     return repairedData;
@@ -64,6 +76,7 @@ class AppDatabase {
       [DbTables.recetas]: [],
       [DbTables.favoritos]: [],
       [DbTables.historial]: [],
+      seedVersion: SEED_VERSION,
     };
 
     const categoriaIds = {};

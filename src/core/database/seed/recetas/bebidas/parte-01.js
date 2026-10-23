@@ -28,7 +28,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/quinua.jpg",
     bebida: null,
     acompanamiento: "Pan con queso fresco",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=PNy6COhPQ-Y",
   },
   {
     categoria_slug: 'bebidas',
@@ -54,7 +54,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/avena.jpg",
     bebida: null,
     acompanamiento: "Pan con palta",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=B-dbqL7gNv4",
   },
   {
     categoria_slug: 'bebidas',
@@ -79,7 +79,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/maca.jpg",
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=XT33hnJbkSA",
   },
   {
     categoria_slug: 'bebidas',
@@ -106,7 +106,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/emoliente.jpg",
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=-zpjX2URhU8",
   },
   {
     categoria_slug: 'bebidas',
@@ -131,7 +131,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/jugo_de_papaya.jpg",
     bebida: null,
     acompanamiento: "Pan con palta",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ot7nhVPBsaQ",
   },
   {
     categoria_slug: 'bebidas',
@@ -156,7 +156,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/jugo_surtido.jpg",
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=JrZ8HzuK0VI",
   },
   {
     categoria_slug: 'bebidas',
@@ -181,7 +181,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/leche_con_cafe.jpg",
     bebida: null,
     acompanamiento: "Pan con mantequilla",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=JwSFqwYRUaY",
   },
   {
     categoria_slug: 'bebidas',
@@ -206,7 +206,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/chocolate_caliente.jpg",
     bebida: null,
     acompanamiento: "Pan",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=yLArBFbemxY",
   },
   {
     categoria_slug: 'bebidas',
@@ -231,6 +231,6 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/infusion_de_hierbas.jpg",
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lbIM5euHt4Y",
   },
 ];

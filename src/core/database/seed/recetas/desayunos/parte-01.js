@@ -25,7 +25,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pan_con_palta.jpg",
     bebida: "Café pasado",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=EUhSzh7WBrw",
   },
   {
     categoria_slug: 'desayunos',
@@ -53,7 +53,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pan_con_chicharron.jpg",
     bebida: "Café pasado",
     acompanamiento: "Camote frito",
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=-5rU8Rjf9TE",
   },
   {
     categoria_slug: 'desayunos',
@@ -106,7 +106,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pan_con_tortilla.jpg",
     bebida: "Emoliente",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=snWN9zp0Usw",
   },
   {
     categoria_slug: 'desayunos',
@@ -159,7 +159,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/humitas.jpg",
     bebida: "Café pasado",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=aLtGdXLbQNg",
   },
   {
     categoria_slug: 'desayunos',
@@ -210,7 +210,7 @@ export const parte = [
     imagen_asset: "/assets/images/recetas/pan_con_queso_fresco.jpg",
     bebida: "Emoliente",
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=g3AHwCh9_os",
   },
   {
     categoria_slug: 'desayunos',

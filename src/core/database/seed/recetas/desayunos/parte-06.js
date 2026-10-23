@@ -27,7 +27,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/huevos_al_plato.jpg',
     bebida: 'Café pasado',
     acompanamiento: 'Pan tostado',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=crbdF9zeA-Q",
   },
   {
     categoria_slug: 'desayunos',
@@ -55,7 +55,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/huevo_escalfado_con_pan.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=phNvuCLcRM0",
   },
   {
     categoria_slug: 'desayunos',
@@ -83,7 +83,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tortilla_de_atun.jpg',
     bebida: 'Jugo de naranja',
     acompanamiento: 'Pan francés',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=j4wsn5JcneA",
   },
   {
     categoria_slug: 'desayunos',
@@ -111,7 +111,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tortilla_de_fideos.jpg',
     bebida: 'Café pasado',
     acompanamiento: 'Salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=icT5N93w6f0",
   },
   {
     categoria_slug: 'desayunos',
@@ -167,7 +167,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/panqueques_de_quinua.jpg',
     bebida: 'Jugo de papaya',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=yglIeneJlf4",
   },
   {
     categoria_slug: 'desayunos',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_de_kiwicha.jpg',
     bebida: 'Café pasado',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=J8sQTrpxvT4",
   },
   {
     categoria_slug: 'desayunos',
@@ -223,7 +223,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/barritas_de_kiwicha.jpg',
     bebida: 'Jugo de naranja',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=4WQjbIBgnWk",
   },
   {
     categoria_slug: 'desayunos',
@@ -251,7 +251,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_mortadela.jpg',
     bebida: 'Leche con café',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=MYx7fqRD52I",
   },
   {
     categoria_slug: 'desayunos',
@@ -279,7 +279,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_queso_crema_y_mermelada.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ZOMqpYraVUY",
   },
   {
     categoria_slug: 'desayunos',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_miel_y_mantequilla.jpg',
     bebida: 'Leche con café',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=0DqkcYEMpv0",
   },
   {
     categoria_slug: 'desayunos',
@@ -391,7 +391,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/yuca_con_huevo.jpg',
     bebida: 'Café pasado',
     acompanamiento: 'Salsa de ají',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Qgk7QfvZ2i4",
   },
   {
     categoria_slug: 'desayunos',
@@ -419,7 +419,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/platano_frito_con_huevo.jpg',
     bebida: 'Chapo',
     acompanamiento: 'Arroz blanco',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=u5pjBhsmJ5o",
   },
   {
     categoria_slug: 'desayunos',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_salpicon_de_pollo.jpg',
     bebida: 'Jugo surtido',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=1OG_oPPBB9E",
   },
   {
     categoria_slug: 'desayunos',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tequenos_de_queso.jpg',
     bebida: 'Jugo de maracuyá',
     acompanamiento: 'Guacamole',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Uc7kMLKoOS4",
   },
   {
     categoria_slug: 'desayunos',
@@ -587,7 +587,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pionono_de_manjar.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=EX4mVsYYgrM",
   },
   {
     categoria_slug: 'desayunos',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/alfajores_de_maicena.jpg',
     bebida: 'Café pasado',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=qB1ICj-Fy7c",
   },
   {
     categoria_slug: 'desayunos',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/queque_de_vainilla.jpg',
     bebida: 'Leche con café',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=DVLiaOO_jO4",
   },
   {
     categoria_slug: 'desayunos',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/muffins_de_arandanos.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=VuGKQIO16UA",
   },
   {
     categoria_slug: 'desayunos',
@@ -699,7 +699,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_integral_casero.jpg',
     bebida: 'Café pasado',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=z2FTzs5N4rQ",
   },
   {
     categoria_slug: 'desayunos',

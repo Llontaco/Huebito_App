@@ -28,7 +28,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_morada.jpg',
     bebida: null,
     acompanamiento: 'Almuerzos criollos',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=vg4y10RzWbg",
   },
   {
     categoria_slug: 'bebidas',
@@ -56,7 +56,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_jora.jpg',
     bebida: null,
     acompanamiento: 'Seco de cabrito',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=RybAASzXwY8",
   },
   {
     categoria_slug: 'bebidas',
@@ -84,7 +84,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_mani.jpg',
     bebida: null,
     acompanamiento: 'Pan con mantequilla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=O6hCfbEaeMI",
   },
   {
     categoria_slug: 'bebidas',
@@ -112,7 +112,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_blanca_de_trigo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=oblckb7-l9Y",
   },
   {
     categoria_slug: 'bebidas',
@@ -140,7 +140,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_guinapo.jpg',
     bebida: null,
     acompanamiento: 'Adobo arequipeño',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=0yEKFpIe7xM",
   },
   {
     categoria_slug: 'bebidas',
@@ -169,7 +169,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_siete_semillas.jpg',
     bebida: null,
     acompanamiento: 'Pan francés',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=32qaOf86jQI",
   },
   {
     categoria_slug: 'bebidas',
@@ -197,7 +197,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_cebada.jpg',
     bebida: null,
     acompanamiento: 'Menú del día',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xJ1TpqMNoU8",
   },
   {
     categoria_slug: 'bebidas',
@@ -225,7 +225,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_linaza.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=8J2orRtv04I",
   },
   {
     categoria_slug: 'bebidas',
@@ -253,7 +253,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_maiz_morado_con_pina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=BInE0qLuCZ4",
   },
   {
     categoria_slug: 'bebidas',
@@ -281,7 +281,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/frutillada.jpg',
     bebida: null,
     acompanamiento: 'Chicharrón colorado',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=IvKip9-62y8",
   },
   {
     categoria_slug: 'bebidas',
@@ -309,7 +309,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/api_morado.jpg',
     bebida: null,
     acompanamiento: 'Buñuelo',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=raam69PM2oA",
   },
   {
     categoria_slug: 'bebidas',
@@ -337,7 +337,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/api_blanco.jpg',
     bebida: null,
     acompanamiento: 'Buñuelo',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=-HCvoh0zc80",
   },
   {
     categoria_slug: 'bebidas',
@@ -365,7 +365,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_quinua.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ExV0RQFSapA",
   },
   {
     categoria_slug: 'bebidas',
@@ -421,7 +421,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_habas_tostadas.jpg',
     bebida: null,
     acompanamiento: 'Pan chuta',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Fzt70BQ-pvE",
   },
   {
     categoria_slug: 'bebidas',
@@ -450,7 +450,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/emoliente_con_una_de_gato.jpg',
     bebida: null,
     acompanamiento: 'Pan con queso',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=XEB_Qw9MBww",
   },
   {
     categoria_slug: 'bebidas',
@@ -478,7 +478,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/leche_de_soya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=-G9O-ypEx0Q",
   },
   {
     categoria_slug: 'bebidas',
@@ -506,7 +506,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/leche_de_almendras.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=JAgIOpF8g0c",
   },
   {
     categoria_slug: 'bebidas',
@@ -534,7 +534,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/leche_de_ajonjoli.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=RThpm7aYWCg",
   },
   {
     categoria_slug: 'bebidas',
@@ -562,7 +562,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/masato_de_yuca.jpg',
     bebida: null,
     acompanamiento: 'Juane',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=UJll2KXqwv8",
   },
   {
     categoria_slug: 'bebidas',
@@ -590,7 +590,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chapo.jpg',
     bebida: null,
     acompanamiento: 'Tacacho',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=gnkqvYVKZPw",
   },
   {
     categoria_slug: 'bebidas',
@@ -618,7 +618,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/aguajina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Mbt_QFzgCyI",
   },
   {
     categoria_slug: 'bebidas',
@@ -646,7 +646,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_cocona.jpg',
     bebida: null,
     acompanamiento: 'Tacacho con cecina',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=5jUU2NtfZrA",
   },
   {
     categoria_slug: 'bebidas',
@@ -674,7 +674,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_camu_camu.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=FdbBKAS8FT0",
   },
   {
     categoria_slug: 'bebidas',
@@ -702,7 +702,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_carambola.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xEF1lId7KaA",
   },
   {
     categoria_slug: 'bebidas',
@@ -730,7 +730,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_tumbo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=WOytGbm1qU4",
   },
   {
     categoria_slug: 'bebidas',
@@ -758,7 +758,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/agua_de_cebada_tostada.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lMjyAF80EW4",
   },
   {
     categoria_slug: 'bebidas',
@@ -786,6 +786,6 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_pina_con_cascara.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=_HfpmIzSgeo",
   },
 ];

@@ -27,7 +27,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/mote_con_chicharron.jpg',
     bebida: 'Mate de coca',
     acompanamiento: 'Ensalada de cebolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=3xLGoW2cJI0",
   },
   {
     categoria_slug: 'desayunos',
@@ -83,7 +83,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/papa_sancochada_con_queso.jpg',
     bebida: 'Mate de muña',
     acompanamiento: 'Salsa de huacatay',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=vEpl-MPVpco",
   },
   {
     categoria_slug: 'desayunos',
@@ -111,7 +111,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cancha_con_queso.jpg',
     bebida: 'Mate de coca',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Qb_4myZZA8Q",
   },
   {
     categoria_slug: 'desayunos',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/juane_pequeno_de_desayuno.jpg',
     bebida: 'Chapo',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=TqEUg8trnOg",
   },
   {
     categoria_slug: 'desayunos',
@@ -223,7 +223,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/platano_asado_con_queso.jpg',
     bebida: 'Chapo',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=cqjOfdvRJFY",
   },
   {
     categoria_slug: 'desayunos',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/sopa_de_semola.jpg',
     bebida: 'Café con leche',
     acompanamiento: 'Pan francés',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=jKiG4v2sIQk",
   },
   {
     categoria_slug: 'desayunos',
@@ -447,7 +447,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tortilla_de_espinaca.jpg',
     bebida: 'Jugo de naranja',
     acompanamiento: 'Pan francés',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=XjuMkb7VQ-g",
   },
   {
     categoria_slug: 'desayunos',
@@ -475,7 +475,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/revuelto_de_champinones.jpg',
     bebida: 'Café pasado',
     acompanamiento: 'Pan tostado',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=zQSirrFXgCU",
   },
   {
     categoria_slug: 'desayunos',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_queso_y_tomate.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=rP5yuZ5HIUQ",
   },
   {
     categoria_slug: 'desayunos',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pan_con_huevo_y_queso.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=3DMRXlO4K-o",
   },
   {
     categoria_slug: 'desayunos',
@@ -587,7 +587,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/croissant_con_jamon_y_queso.jpg',
     bebida: 'Café con leche',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=mNBpkwNT6YU",
   },
   {
     categoria_slug: 'desayunos',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/yogurt_con_granola_y_fruta.jpg',
     bebida: 'Jugo de naranja',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=4H0XvY7Rpko",
   },
   {
     categoria_slug: 'desayunos',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ensalada_de_frutas.jpg',
     bebida: 'Jugo surtido',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=aP8O6pzhexk",
   },
   {
     categoria_slug: 'desayunos',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/avena_con_manzana.jpg',
     bebida: 'Café pasado',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Gwcsg7MEePg",
   },
   {
     categoria_slug: 'desayunos',

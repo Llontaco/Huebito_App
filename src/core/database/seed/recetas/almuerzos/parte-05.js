@@ -27,7 +27,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pollo_al_horno_con_papas.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Ensalada fresca',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=v5VFLbz1BUg",
   },
   {
     categoria_slug: 'almuerzos',
@@ -55,7 +55,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/milanesa_de_pollo.jpg',
     bebida: 'Limonada',
     acompanamiento: 'Papas fritas y ensalada',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=RGGJMK0DbxE",
   },
   {
     categoria_slug: 'almuerzos',
@@ -83,7 +83,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pollo_broaster.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Papas fritas y cremas',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=d0MJOGFaxp0",
   },
   {
     categoria_slug: 'almuerzos',
@@ -111,7 +111,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pepian_de_pava.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Arroz y yuca',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ezLbDgRosXU",
   },
   {
     categoria_slug: 'almuerzos',
@@ -139,7 +139,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/pato_en_aji.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Arroz blanco',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=NyNOcYu5XIg",
   },
   {
     categoria_slug: 'almuerzos',
@@ -167,7 +167,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/lechon_al_horno.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Camote y salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=hLVxSUfDQpc",
   },
   {
     categoria_slug: 'almuerzos',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicharron_de_cerdo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Camote y salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=2hpwZLBempo",
   },
   {
     categoria_slug: 'almuerzos',
@@ -223,7 +223,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicharron_de_pollo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Yuca frita y salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Fw_tK21uqIE",
   },
   {
     categoria_slug: 'almuerzos',
@@ -251,7 +251,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/estofado_de_pollo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Arroz blanco',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=eUdE-C9Oizg",
   },
   {
     categoria_slug: 'almuerzos',
@@ -279,7 +279,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/aji_de_langostinos.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Arroz blanco',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=OwAJa1eGnNI",
   },
   {
     categoria_slug: 'almuerzos',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/saltado_de_langostinos.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Arroz blanco',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=eeg3gz8D0Go",
   },
   {
     categoria_slug: 'almuerzos',
@@ -335,7 +335,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/sudado_de_pescado_a_la_nortena.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Yuca y arroz',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=nTThmFc_afo",
   },
   {
     categoria_slug: 'almuerzos',
@@ -363,7 +363,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/corvina_a_la_plancha.jpg',
     bebida: 'Limonada',
     acompanamiento: 'Ensalada y papas',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=RQxUId-u7PE",
   },
   {
     categoria_slug: 'almuerzos',
@@ -391,7 +391,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/trucha_a_la_parrilla.jpg',
     bebida: 'Limonada',
     acompanamiento: 'Papas andinas',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=QAwHueMJ8kg",
   },
   {
     categoria_slug: 'almuerzos',
@@ -419,7 +419,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ceviche_de_conchas_negras.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Camote y cancha',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=mrTsFb95-i4",
   },
   {
     categoria_slug: 'almuerzos',
@@ -447,7 +447,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ceviche_de_pulpo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Choclo y camote',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=WJlJhW8R2Ew",
   },
   {
     categoria_slug: 'almuerzos',
@@ -475,7 +475,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicharron_de_calamar.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Yuca frita y salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ec8lE_a5u44",
   },
   {
     categoria_slug: 'almuerzos',
@@ -503,7 +503,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/aguadito_de_mariscos.jpg',
     bebida: 'Chicha morada',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=7n8yNXagJY8",
   },
   {
     categoria_slug: 'almuerzos',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/sopa_de_choros.jpg',
     bebida: 'Chicha morada',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=WpNy8PVu814",
   },
   {
     categoria_slug: 'almuerzos',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tortilla_de_raya.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Arroz y zarza criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=468nHDUbmr8",
   },
   {
     categoria_slug: 'almuerzos',
@@ -587,7 +587,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/frito_trujillano.jpg',
     bebida: 'Chicha de jora',
     acompanamiento: 'Mote y camote',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=0cvmEmQHLns",
   },
   {
     categoria_slug: 'almuerzos',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/arroz_arabe.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Pollo o carne guisada',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=W1nbnESBKKc",
   },
   {
     categoria_slug: 'almuerzos',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tallarin_a_la_huancaina_con_lomo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Papas fritas',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=oapDfof4wdE",
   },
   {
     categoria_slug: 'almuerzos',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/causa_de_atun.jpg',
     bebida: 'Limonada',
     acompanamiento: 'Hojas de lechuga',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ufS2elj5mWE",
   },
   {
     categoria_slug: 'almuerzos',
@@ -699,7 +699,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/arroz_chaufa_de_pollo.jpg',
     bebida: 'Té de jazmín',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=sFbtifPPQCY",
   },
   {
     categoria_slug: 'almuerzos',
@@ -727,7 +727,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/tacu_tacu_con_lomo.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Salsa criolla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=AAgyDFX6Qiw",
   },
   {
     categoria_slug: 'almuerzos',
@@ -755,7 +755,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/aji_de_fideos.jpg',
     bebida: 'Chicha morada',
     acompanamiento: 'Papa y huevo duro',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=SeBxsvn_qbw",
   },
   {
     categoria_slug: 'almuerzos',
@@ -783,6 +783,6 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chupe_verde.jpg',
     bebida: 'Mate de muña',
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=EyYbvV97wqo",
   },
 ];

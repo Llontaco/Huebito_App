@@ -27,7 +27,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_naranja.jpg',
     bebida: null,
     acompanamiento: 'Pan con palta',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=OlJFZRk1pl8",
   },
   {
     categoria_slug: 'bebidas',
@@ -55,7 +55,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_pina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=eNPlYsQMvJE",
   },
   {
     categoria_slug: 'bebidas',
@@ -83,7 +83,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_fresa.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=NVW_LaFPSxs",
   },
   {
     categoria_slug: 'bebidas',
@@ -139,7 +139,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_mango.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=8MPRZFDFRGE",
   },
   {
     categoria_slug: 'bebidas',
@@ -167,7 +167,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_maracuya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=FSLY7i4p2DU",
   },
   {
     categoria_slug: 'bebidas',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_granadilla.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lnqmx_IpyXw",
   },
   {
     categoria_slug: 'bebidas',
@@ -223,7 +223,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_tuna.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=apXIg_FJeVM",
   },
   {
     categoria_slug: 'bebidas',
@@ -279,7 +279,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_aguaymanto.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Yx4seNLlbms",
   },
   {
     categoria_slug: 'bebidas',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_guanabana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=kV_ZCvK40d4",
   },
   {
     categoria_slug: 'bebidas',
@@ -335,7 +335,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_lucuma.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lp38wVj0fTo",
   },
   {
     categoria_slug: 'bebidas',
@@ -363,7 +363,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_chirimoya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=OJQu9_ic7mA",
   },
   {
     categoria_slug: 'bebidas',
@@ -391,7 +391,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_melon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=zvvzGCks_48",
   },
   {
     categoria_slug: 'bebidas',
@@ -419,7 +419,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_sandia.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=16UZAQ97OIo",
   },
   {
     categoria_slug: 'bebidas',
@@ -475,7 +475,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_manzana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=QoIYF4gbEiI",
   },
   {
     categoria_slug: 'bebidas',
@@ -503,7 +503,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_pera.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=GBGBodi57fU",
   },
   {
     categoria_slug: 'bebidas',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_durazno.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=afv4aLto-CE",
   },
   {
     categoria_slug: 'bebidas',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_uva.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=imQGtzap4E4",
   },
   {
     categoria_slug: 'bebidas',
@@ -587,7 +587,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_tamarindo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=UAwQ7-6xB20",
   },
   {
     categoria_slug: 'bebidas',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_nispero.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=M3aPUl-6BdE",
   },
   {
     categoria_slug: 'bebidas',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_mora.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Wi7Qu0Pwmfc",
   },
   {
     categoria_slug: 'bebidas',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_mandarina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=NFc6pY591EI",
   },
   {
     categoria_slug: 'bebidas',
@@ -699,7 +699,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_toronja.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=wc0F-f45750",
   },
   {
     categoria_slug: 'bebidas',
@@ -727,7 +727,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_membrillo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=8OG22F6gTSI",
   },
   {
     categoria_slug: 'bebidas',
@@ -755,7 +755,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_higo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Pvi7uZ1Src4",
   },
   {
     categoria_slug: 'bebidas',
@@ -783,6 +783,6 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_pitahaya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=iBPmnIcXCQQ",
   },
 ];

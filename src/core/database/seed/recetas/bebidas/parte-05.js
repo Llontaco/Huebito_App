@@ -55,7 +55,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/mate_de_muna.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=R8mkRipYk50",
   },
   {
     categoria_slug: 'bebidas',
@@ -111,7 +111,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/manzanilla.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=5N_YtUREp-A",
   },
   {
     categoria_slug: 'bebidas',
@@ -139,7 +139,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/hierba_luisa.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=EnA6BDWUdjU",
   },
   {
     categoria_slug: 'bebidas',
@@ -167,7 +167,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_cedron.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=6s4t3JW1Jvg",
   },
   {
     categoria_slug: 'bebidas',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_toronjil.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=GabAH4eIbkg",
   },
   {
     categoria_slug: 'bebidas',
@@ -223,7 +223,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_menta.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=QnlCbc1-SK0",
   },
   {
     categoria_slug: 'bebidas',
@@ -251,7 +251,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_boldo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=O0sGOrJimFw",
   },
   {
     categoria_slug: 'bebidas',
@@ -279,7 +279,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_eucalipto.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Jpf80LhIuEk",
   },
   {
     categoria_slug: 'bebidas',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/te_de_canela_y_clavo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=_sfFoHhonBI",
   },
   {
     categoria_slug: 'bebidas',
@@ -335,7 +335,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_tilo.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=jyui-zcZeIQ",
   },
   {
     categoria_slug: 'bebidas',
@@ -363,7 +363,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_valeriana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Y8r9MUf-V7E",
   },
   {
     categoria_slug: 'bebidas',
@@ -391,7 +391,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_paico.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xnJ94DH6I8U",
   },
   {
     categoria_slug: 'bebidas',
@@ -419,7 +419,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_llanten.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xygPOHIgtgQ",
   },
   {
     categoria_slug: 'bebidas',
@@ -503,7 +503,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/infusion_de_una_de_gato.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=x42tcSimmqQ",
   },
   {
     categoria_slug: 'bebidas',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/te_negro_con_leche.jpg',
     bebida: null,
     acompanamiento: 'Pan con mantequilla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lpil6T7yb0c",
   },
   {
     categoria_slug: 'bebidas',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/te_verde_con_limon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=l_74-gnV76E",
   },
   {
     categoria_slug: 'bebidas',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cafe_americano.jpg',
     bebida: null,
     acompanamiento: 'Pan con mantequilla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=VipB6Knqwu4",
   },
   {
     categoria_slug: 'bebidas',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cafe_cortado.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=5sbn3jl3J78",
   },
   {
     categoria_slug: 'bebidas',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/capuchino_casero.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=9w1rfTzNe5k",
   },
   {
     categoria_slug: 'bebidas',
@@ -727,7 +727,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cafe_helado.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=lxfPsRz1NeA",
   },
   {
     categoria_slug: 'bebidas',

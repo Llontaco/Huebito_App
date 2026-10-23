@@ -27,7 +27,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_zanahoria.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=kLf_Yz_Mhq4",
   },
   {
     categoria_slug: 'bebidas',
@@ -83,7 +83,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/extracto_de_alfalfa.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ANvWAiodlYo",
   },
   {
     categoria_slug: 'bebidas',
@@ -111,7 +111,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_verde.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=XEILuF4BLgo",
   },
   {
     categoria_slug: 'bebidas',
@@ -139,7 +139,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_apio_con_pina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=52B0bNaYVuo",
   },
   {
     categoria_slug: 'bebidas',
@@ -167,7 +167,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_pepino_con_limon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=RrwBwYG9rDM",
   },
   {
     categoria_slug: 'bebidas',
@@ -195,7 +195,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_de_espinaca_con_manzana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Q5w7l0DOs5Q",
   },
   {
     categoria_slug: 'bebidas',
@@ -251,7 +251,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/batido_de_lucuma.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=pxYdFGR1978",
   },
   {
     categoria_slug: 'bebidas',
@@ -307,7 +307,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/batido_de_platano_con_avena.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=nRgayAD5-TI",
   },
   {
     categoria_slug: 'bebidas',
@@ -335,7 +335,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/batido_de_mango_con_yogurt.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=jlhFGhVgck8",
   },
   {
     categoria_slug: 'bebidas',
@@ -363,7 +363,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/batido_de_chirimoya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=wamHgvFuay8",
   },
   {
     categoria_slug: 'bebidas',
@@ -391,7 +391,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cremolada_de_fresa.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xFi-1NYdp74",
   },
   {
     categoria_slug: 'bebidas',
@@ -419,7 +419,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cremolada_de_maracuya.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xFi-1NYdp74",
   },
   {
     categoria_slug: 'bebidas',
@@ -447,7 +447,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cremolada_de_lucuma.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=xFi-1NYdp74",
   },
   {
     categoria_slug: 'bebidas',
@@ -475,7 +475,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cremolada_de_guanabana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=vC25wek_rxA",
   },
   {
     categoria_slug: 'bebidas',
@@ -503,7 +503,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/maracuya_frozen.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=NzCyt7pqPOU",
   },
   {
     categoria_slug: 'bebidas',
@@ -531,7 +531,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/limonada_frozen.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=PJCybQhfHrE",
   },
   {
     categoria_slug: 'bebidas',
@@ -559,7 +559,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/limonada_clasica.jpg',
     bebida: null,
     acompanamiento: 'Almuerzos criollos',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=cNSMzwONpBI",
   },
   {
     categoria_slug: 'bebidas',
@@ -587,7 +587,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/limonada_de_hierbabuena.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=9qvc3hCeVsg",
   },
   {
     categoria_slug: 'bebidas',
@@ -615,7 +615,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/agua_de_manzana_con_canela.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=Uc3WvxJf7H8",
   },
   {
     categoria_slug: 'bebidas',
@@ -643,7 +643,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/agua_de_jengibre_con_limon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=4LVbEPDEcEA",
   },
   {
     categoria_slug: 'bebidas',
@@ -671,7 +671,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/agua_saborizada_de_citricos.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=gQLby6IzHTU",
   },
   {
     categoria_slug: 'bebidas',
@@ -699,7 +699,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/yogurt_casero_de_fresa.jpg',
     bebida: null,
     acompanamiento: 'Granola',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=XX7ZQCl3BXI",
   },
   {
     categoria_slug: 'bebidas',
@@ -727,7 +727,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/leche_con_platano_y_algarrobina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=O6JPhulvGUA",
   },
   {
     categoria_slug: 'bebidas',
@@ -755,7 +755,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/jugo_surtido_especial.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=JrZ8HzuK0VI",
   },
   {
     categoria_slug: 'bebidas',

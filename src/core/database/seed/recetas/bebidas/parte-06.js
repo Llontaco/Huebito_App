@@ -29,7 +29,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ponche_de_habas.jpg',
     bebida: null,
     acompanamiento: 'Pan con queso',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=1ciNKXDJAdc",
   },
   {
     categoria_slug: 'bebidas',
@@ -57,7 +57,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ponche_de_mani.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=WbS3k5ydpZo",
   },
   {
     categoria_slug: 'bebidas',
@@ -114,7 +114,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ponche_de_leche.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=KBxoTkoEeFc",
   },
   {
     categoria_slug: 'bebidas',
@@ -142,7 +142,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/ponche_de_quinua.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=GLKKIb9YXcw",
   },
   {
     categoria_slug: 'bebidas',
@@ -171,7 +171,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/calientito.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=PrD0W4AykvU",
   },
   {
     categoria_slug: 'bebidas',
@@ -199,7 +199,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chocolate_cusqueno.jpg',
     bebida: null,
     acompanamiento: 'Panetón',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=yLArBFbemxY",
   },
   {
     categoria_slug: 'bebidas',
@@ -227,7 +227,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/submarino.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=alu_V4kQLmI",
   },
   {
     categoria_slug: 'bebidas',
@@ -255,7 +255,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/leche_con_canela.jpg',
     bebida: null,
     acompanamiento: 'Pan con mantequilla',
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=ShzHcN1OpbE",
   },
   {
     categoria_slug: 'bebidas',
@@ -283,7 +283,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/cafe_bombon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=px4o89NpsW4",
   },
   {
     categoria_slug: 'bebidas',
@@ -311,7 +311,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/horchata_de_arroz.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=SQDrBjEJwao",
   },
   {
     categoria_slug: 'bebidas',
@@ -339,7 +339,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/quinua_con_pina.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=bwKsFAkkYrs",
   },
   {
     categoria_slug: 'bebidas',
@@ -395,7 +395,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/chicha_de_manzana.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=PRZ2L0Wd1cc",
   },
   {
     categoria_slug: 'bebidas',
@@ -423,7 +423,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/refresco_de_hierbabuena_con_limon.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=9qvc3hCeVsg",
   },
   {
     categoria_slug: 'bebidas',
@@ -451,7 +451,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/agua_de_coco_natural.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=gRec3ZULCng",
   },
   {
     categoria_slug: 'bebidas',
@@ -508,7 +508,7 @@ export const parte = [
     imagen_asset: '/assets/images/recetas/te_de_frutas.jpg',
     bebida: null,
     acompanamiento: null,
-    video_url: null,
+    video_url: "https://www.youtube.com/watch?v=QlcATKXfbqQ",
   },
   {
     categoria_slug: 'bebidas',
