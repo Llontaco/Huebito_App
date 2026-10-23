@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 135 | 26 | 57 | 52 |
+| bebidas | 135 | 34 | 50 | 51 |
 
 ## desayunos
 
@@ -359,19 +359,19 @@ Carpeta: `image/bebidas/`
 | Aguajina | `aguajina.jpg` | **falta** |
 | Api blanco | `api-blanco.jpg` | **falta** |
 | Api morado | `api-morado.jpg` | en la carpeta (api-morado.jpg) |
-| Avena | `avena.jpg` | foto en la base |
-| Batido de chirimoya | `batido-de-chirimoya.jpg` | foto en la base |
-| Batido de lúcuma | `batido-de-lucuma.jpg` | foto en la base |
-| Batido de mango con yogurt | `batido-de-mango-con-yogurt.jpg` | foto en la base |
+| Avena | `avena.jpg` | en la carpeta (avena.jpg) |
+| Batido de chirimoya | `batido-de-chirimoya.jpg` | en la carpeta (batido-de-chirimoya.jpg) |
+| Batido de lúcuma | `batido-de-lucuma.jpg` | en la carpeta (batido-de-lucuma.jpg) |
+| Batido de mango con yogurt | `batido-de-mango-con-yogurt.jpg` | en la carpeta (batido-de-mango-con-yogurt.jpg) |
 | Batido de plátano con avena | `batido-de-platano-con-avena.jpg` | en la carpeta (batido-de-platano-con-avena.jpg) |
 | Bebida de aloe vera con miel | `bebida-de-aloe-vera-con-miel.jpg` | foto en la base |
-| Café americano | `cafe-americano.jpg` | foto en la base |
+| Café americano | `cafe-americano.jpg` | en la carpeta (cafe-americano.jpg) |
 | Café bombón | `cafe-bombon.jpg` | en la carpeta (cafe-bombon.jpg) |
 | Café con algarrobina | `cafe-con-algarrobina.jpg` | foto en la base |
 | Café cortado | `cafe-cortado.jpg` | foto en la base |
 | Café helado | `cafe-helado.jpg` | foto en la base |
 | Calientito | `calientito.jpg` | **falta** |
-| Capuchino casero | `capuchino-casero.jpg` | foto en la base |
+| Capuchino casero | `capuchino-casero.jpg` | en la carpeta (capuchino-casero.jpg) |
 | Chapo | `chapo.jpg` | en la carpeta (chapo.jpg) |
 | Chicha blanca de trigo | `chicha-blanca-de-trigo.jpg` | **falta** |
 | Chicha de guiñapo | `chicha-de-guinapo.jpg` | **falta** |
@@ -381,7 +381,7 @@ Carpeta: `image/bebidas/`
 | Chicha de quinua | `chicha-de-quinua.jpg` | **falta** |
 | Chicha de siete semillas | `chicha-de-siete-semillas.jpg` | foto en la base |
 | Chicha morada | `chicha-morada.jpg` | foto en la base |
-| Chocolate caliente | `chocolate-caliente.jpg` | foto en la base |
+| Chocolate caliente | `chocolate-caliente.jpg` | en la carpeta (chocolate-caliente.jpg) |
 | Chocolate cusqueño | `chocolate-cusqueno.jpg` | **falta** |
 | Crema de café casera | `crema-de-cafe-casera.jpg` | foto en la base |
 | Cremolada de fresa | `cremolada-de-fresa.jpg` | **falta** |
@@ -390,7 +390,7 @@ Carpeta: `image/bebidas/`
 | Cremolada de maracuyá | `cremolada-de-maracuya.jpg` | **falta** |
 | Emoliente | `emoliente.jpg` | en la carpeta (emoliente.jpg) |
 | Emoliente con uña de gato | `emoliente-con-una-de-gato.jpg` | **falta** |
-| Extracto de alfalfa | `extracto-de-alfalfa.jpg` | **falta** |
+| Extracto de alfalfa | `extracto-de-alfalfa.jpg` | en la carpeta (extracto-de-alfalfa.jpg) |
 | Frutillada | `frutillada.jpg` | foto en la base |
 | Hierba luisa | `hierba-luisa.jpg` | foto en la base |
 | Horchata de arroz | `horchata-de-arroz.jpg` | **falta** |
