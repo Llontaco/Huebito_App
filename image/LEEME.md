@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 135 | 38 | 47 | 50 |
+| bebidas | 135 | 43 | 42 | 50 |
 
 ## desayunos
 
@@ -417,15 +417,15 @@ Carpeta: `image/bebidas/`
 | Jugo de fresa | `jugo-de-fresa.jpg` | en la carpeta (jugo-de-fresa.jpg) |
 | Jugo de granadilla | `jugo-de-granadilla.jpg` | en la carpeta (jugo-de-granadilla.jpg) |
 | Jugo de guanábana | `jugo-de-guanabana.jpg` | en la carpeta (jugo-de-guanabana.jpg) |
-| Jugo de higo | `jugo-de-higo.jpg` | foto en la base |
+| Jugo de higo | `jugo-de-higo.jpg` | en la carpeta (jugo-de-higo.jpg) |
 | Jugo de lúcuma | `jugo-de-lucuma.jpg` | en la carpeta (jugo-de-lucuma.jpg) |
 | Jugo de mandarina | `jugo-de-mandarina.jpg` | en la carpeta (jugo-de-mandarina.jpg) |
-| Jugo de mango | `jugo-de-mango.jpg` | foto en la base |
+| Jugo de mango | `jugo-de-mango.jpg` | en la carpeta (jugo-de-mango.jpg) |
 | Jugo de manzana | `jugo-de-manzana.jpg` | en la carpeta (jugo-de-manzana.jpg) |
-| Jugo de maracuyá | `jugo-de-maracuya.jpg` | foto en la base |
+| Jugo de maracuyá | `jugo-de-maracuya.jpg` | en la carpeta (jugo-de-maracuya.jpg) |
 | Jugo de melón | `jugo-de-melon.jpg` | en la carpeta (jugo-de-melon.jpg) |
-| Jugo de membrillo | `jugo-de-membrillo.jpg` | foto en la base |
-| Jugo de mora | `jugo-de-mora.jpg` | foto en la base |
+| Jugo de membrillo | `jugo-de-membrillo.jpg` | en la carpeta (jugo-de-membrillo.jpg) |
+| Jugo de mora | `jugo-de-mora.jpg` | en la carpeta (jugo-de-mora.jpg) |
 | Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
 | Jugo de níspero | `jugo-de-nispero.jpg` | en la carpeta (jugo-de-nispero.jpg) |
 | Jugo de papaya | `jugo-de-papaya.jpg` | en la carpeta (jugo-de-papaya.jpg) |
