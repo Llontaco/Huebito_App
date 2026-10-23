@@ -12,7 +12,9 @@ export class ApiError extends Error {
 }
 
 function construirUrl(ruta, params) {
-  const url = new URL(`${API_BASE_URL}${ruta.startsWith('/') ? ruta : `/${ruta}`}`);
+  // API_BASE_URL puede ser relativa ('/api', el proxy de Vercel), así que se
+  // resuelve contra el origen de la página.
+  const url = new URL(`${API_BASE_URL}${ruta.startsWith('/') ? ruta : `/${ruta}`}`, window.location.origin);
   for (const [clave, valor] of Object.entries(params || {})) {
     if (valor === undefined || valor === null || valor === '') continue;
     url.searchParams.set(clave, String(valor));
