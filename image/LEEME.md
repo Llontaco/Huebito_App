@@ -32,7 +32,7 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | desayunos | 106 | 1 | 86 | 19 |
 | almuerzos | 150 | 0 | 103 | 47 |
 | cenas | 33 | 0 | 12 | 21 |
-| bebidas | 135 | 43 | 42 | 50 |
+| bebidas | 135 | 47 | 41 | 47 |
 
 ## desayunos
 
@@ -429,10 +429,10 @@ Carpeta: `image/bebidas/`
 | Jugo de naranja | `jugo-de-naranja.jpg` | en la carpeta (jugo-de-naranja.jpg) |
 | Jugo de níspero | `jugo-de-nispero.jpg` | en la carpeta (jugo-de-nispero.jpg) |
 | Jugo de papaya | `jugo-de-papaya.jpg` | en la carpeta (jugo-de-papaya.jpg) |
-| Jugo de pepino con limón | `jugo-de-pepino-con-limon.jpg` | **falta** |
-| Jugo de pera | `jugo-de-pera.jpg` | **falta** |
-| Jugo de pitahaya | `jugo-de-pitahaya.jpg` | **falta** |
-| Jugo de piña | `jugo-de-pina.jpg` | foto en la base |
+| Jugo de pepino con limón | `jugo-de-pepino-con-limon.jpg` | en la carpeta (jugo-de-pepino-con-limon.jpg) |
+| Jugo de pera | `jugo-de-pera.jpg` | en la carpeta (jugo-de-pera.jpg) |
+| Jugo de pitahaya | `jugo-de-pitahaya.jpg` | en la carpeta (jugo-de-pitahaya.jpg) |
+| Jugo de piña | `jugo-de-pina.jpg` | en la carpeta (jugo-de-pina.jpg) |
 | Jugo de sandía | `jugo-de-sandia.jpg` | foto en la base |
 | Jugo de sauco | `jugo-de-sauco.jpg` | foto en la base |
 | Jugo de tamarindo | `jugo-de-tamarindo.jpg` | foto en la base |
