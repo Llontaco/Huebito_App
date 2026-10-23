@@ -34,7 +34,7 @@ export function HomeScreen() {
     <div className="min-h-screen bg-surface pb-6">
       <div className="px-5 pt-4 pb-2 flex items-center justify-between">
         <h1 className="text-[20px] font-medium font-body text-on-surface">
-          {usuario ? `Hola, ${usuario.nombre} 👋` : 'Hola 👋'}
+          {usuario ? `Hola, ${usuario.nombre.split(' ')[0]} 👋` : 'Hola 👋'}
         </h1>
         <AppIconButton icon={LogOut} onPressed={handleLogout} />
       </div>

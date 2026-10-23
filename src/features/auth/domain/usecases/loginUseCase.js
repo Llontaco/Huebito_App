@@ -3,7 +3,7 @@ export class LoginUseCase {
     this.repository = repository;
   }
 
-  call(credentials) {
-    return this.repository.login(credentials);
+  call(idTokenGoogle) {
+    return this.repository.loginConGoogle(idTokenGoogle);
   }
 }

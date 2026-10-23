@@ -1,26 +1,44 @@
+function aUsuario(datos) {
+  if (!datos) return null;
+  return {
+    id: datos.id,
+    nombre: datos.nombre,
+    correo: datos.email,
+    fotoUrl: datos.fotoUrl ?? null,
+  };
+}
+
 export class AuthRepositoryImpl {
   constructor(datasource) {
     this.datasource = datasource;
+    this.accessToken = null;
   }
 
-  obtenerUsuarioActual() {
-    return this.datasource.obtenerUsuarioActual();
+  // Al abrir la app intenta recuperar la sesión con la cookie de refresh.
+  // Si no hay cookie o expiró, simplemente no hay usuario.
+  async obtenerUsuarioActual() {
+    try {
+      const { accessToken } = await this.datasource.refrescar();
+      this.accessToken = accessToken;
+      return aUsuario(await this.datasource.obtenerPerfil(accessToken));
+    } catch {
+      this.accessToken = null;
+      return null;
+    }
   }
 
-  async login({ correo, password }) {
-    const usuario = await this.datasource.login(correo, password);
-    if (!usuario) throw new Error('Correo o contraseña incorrectos');
-    await this.datasource.guardarUsuarioActual(usuario);
-    return usuario;
+  async loginConGoogle(idToken) {
+    const { accessToken, usuario } = await this.datasource.loginConGoogle(idToken);
+    this.accessToken = accessToken;
+    return aUsuario(usuario);
   }
 
-  async registrar({ nombre, correo, password }) {
-    const existente = await this.datasource.login(correo, password);
-    if (existente?.correo === correo) throw new Error('El correo ya está registrado');
-    return this.datasource.registrar({ nombre, correo, password });
+  async cerrarSesion() {
+    this.accessToken = null;
+    await this.datasource.cerrarSesion().catch(() => {});
   }
 
-  cerrarSesion() {
-    return this.datasource.cerrarSesion();
+  obtenerAccessToken() {
+    return this.accessToken;
   }
 }

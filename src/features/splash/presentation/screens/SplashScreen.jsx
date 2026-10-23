@@ -7,17 +7,23 @@ import { AppRoutes } from '../../../../core/router/appRoutes';
 export function SplashScreen() {
   const navigate = useNavigate();
   const { colors } = useTheme();
-  const { usuario, modoInvitado } = useAuth();
+  const { usuario, modoInvitado, loading } = useAuth();
   const [visible, setVisible] = useState(false);
+  const [animacionLista, setAnimacionLista] = useState(false);
 
   useEffect(() => {
     const t1 = setTimeout(() => setVisible(true), 50);
-    const t2 = setTimeout(() => {
-      const destino = (usuario != null || modoInvitado) ? AppRoutes.home : AppRoutes.login;
-      navigate(destino, { replace: true });
-    }, 1800);
+    const t2 = setTimeout(() => setAnimacionLista(true), 1800);
     return () => { clearTimeout(t1); clearTimeout(t2); };
-  }, [navigate, usuario, modoInvitado]);
+  }, []);
+
+  // Espera a la animación y a que termine de recuperarse la sesión guardada,
+  // para no mandar al login a alguien que sí tenía sesión.
+  useEffect(() => {
+    if (!animacionLista || loading) return;
+    const destino = (usuario != null || modoInvitado) ? AppRoutes.home : AppRoutes.login;
+    navigate(destino, { replace: true });
+  }, [animacionLista, loading, navigate, usuario, modoInvitado]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-surface">

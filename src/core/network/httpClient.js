@@ -20,6 +20,42 @@ function construirUrl(ruta, params) {
   return url.toString();
 }
 
+// Petición con JSON para los endpoints de sesión (/auth, /users). Manda
+// credentials: 'include' para que viaje la cookie httpOnly del refresh token,
+// y el access token, si lo hay, como Bearer.
+export async function apiRequest(ruta, { method = 'GET', body, token } = {}) {
+  const controlador = new AbortController();
+  const timeout = setTimeout(() => controlador.abort(), API_TIMEOUT_MS);
+
+  const headers = { Accept: 'application/json' };
+  if (body !== undefined) headers['Content-Type'] = 'application/json';
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  try {
+    const respuesta = await fetch(construirUrl(ruta), {
+      method,
+      headers,
+      body: body !== undefined ? JSON.stringify(body) : undefined,
+      credentials: 'include',
+      signal: controlador.signal,
+    });
+
+    if (!respuesta.ok) {
+      const detalle = await respuesta.json().catch(() => null);
+      throw new ApiError(detalle?.message || `El backend respondió ${respuesta.status} en ${ruta}`, {
+        status: respuesta.status,
+      });
+    }
+
+    return respuesta.status === 204 ? null : await respuesta.json();
+  } catch (error) {
+    if (error instanceof ApiError) throw error;
+    throw new ApiError(`No se pudo contactar al backend (${ruta})`, { causa: error });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 // GET con timeout. AbortController corta la petición si el backend no responde
 // dentro de API_TIMEOUT_MS, en vez de dejarla colgada indefinidamente.
 export async function apiGet(ruta, { params, signal } = {}) {

@@ -1,15 +1,13 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import { AuthLocalDatasource } from '../../data/datasources/authLocalDatasource.js';
+import { AuthRemoteDatasource } from '../../data/datasources/authRemoteDatasource.js';
 import { AuthRepositoryImpl } from '../../data/repositories/authRepositoryImpl.js';
 import { LoginUseCase } from '../../domain/usecases/loginUseCase.js';
-import { RegistrarUseCase } from '../../domain/usecases/registrarUseCase.js';
 import { CerrarSesionUseCase } from '../../domain/usecases/cerrarSesionUseCase.js';
 
-const datasource = new AuthLocalDatasource();
-const repository = new AuthRepositoryImpl(datasource);
-const loginUC = new LoginUseCase(repository);
-const registrarUC = new RegistrarUseCase(repository);
-const cerrarSesionUC = new CerrarSesionUseCase(repository);
+const datasource = new AuthRemoteDatasource();
+export const authRepository = new AuthRepositoryImpl(datasource);
+const loginUC = new LoginUseCase(authRepository);
+const cerrarSesionUC = new CerrarSesionUseCase(authRepository);
 
 const AuthContext = createContext(null);
 
@@ -20,36 +18,23 @@ export function AuthProvider({ children }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    repository.obtenerUsuarioActual()
+    authRepository.obtenerUsuarioActual()
       .then((u) => setUsuario(u))
-      .catch(() => setUsuario(null))
       .finally(() => setLoading(false));
   }, []);
 
-  const login = useCallback(async (correo, password) => {
+  // Sirve igual para entrar y para registrarse: si el correo de Google no
+  // existe todavía, el backend crea el usuario.
+  const loginConGoogle = useCallback(async (idToken) => {
     setLoading(true);
     setError(null);
     try {
-      const u = await loginUC.call({ correo, password });
+      const u = await loginUC.call(idToken);
       setUsuario(u);
+      setModoInvitado(false);
       return u;
     } catch (e) {
-      setError(e.message);
-      throw e;
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  const registrar = useCallback(async (nombre, correo, password) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const u = await registrarUC.call({ nombre, correo, password });
-      setUsuario(u);
-      return u;
-    } catch (e) {
-      setError(e.message);
+      setError(e.status ? e.message : 'No se pudo conectar con el servidor. Inténtalo de nuevo.');
       throw e;
     } finally {
       setLoading(false);
@@ -58,6 +43,7 @@ export function AuthProvider({ children }) {
 
   const cerrarSesion = useCallback(async () => {
     await cerrarSesionUC.call();
+    window.google?.accounts?.id?.disableAutoSelect();
     setUsuario(null);
     setModoInvitado(false);
   }, []);
@@ -70,8 +56,8 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider value={{
-      usuario, loading, error,
-      login, registrar, cerrarSesion,
+      usuario, loading, error, setError,
+      loginConGoogle, cerrarSesion,
       continuarComoInvitado, modoInvitado, autenticado,
     }}>
       {children}

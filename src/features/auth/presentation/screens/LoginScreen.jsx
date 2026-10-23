@@ -1,19 +1,29 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppRoutes } from '../../../../core/router/appRoutes';
-import { AppPrimaryButton } from '../../../../core/widgets/AppPrimaryButton';
+import { AppPrimaryButton, AppButtonVariant } from '../../../../core/widgets/AppPrimaryButton';
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { useAuth } from '../providers/useAuth';
+import { GoogleSignInButton } from '../widgets/GoogleSignInButton';
 
 export function LoginScreen({ mode = 'login' }) {
   const navigate = useNavigate();
   const { colors } = useTheme();
-  const { continuarComoInvitado } = useAuth();
+  const { continuarComoInvitado, loginConGoogle, error, setError } = useAuth();
   const esLogin = mode === 'login';
 
   const handleGuestLogin = () => {
     continuarComoInvitado();
     navigate(AppRoutes.home, { replace: true });
+  };
+
+  const handleGoogle = async (idToken) => {
+    try {
+      await loginConGoogle(idToken);
+      navigate(AppRoutes.home, { replace: true });
+    } catch {
+      // el mensaje ya quedó en `error`
+    }
   };
 
   return (
@@ -62,14 +72,35 @@ export function LoginScreen({ mode = 'login' }) {
         </p>
 
         <div className="w-full">
+          <GoogleSignInButton
+            texto={esLogin ? 'signin_with' : 'signup_with'}
+            onCredential={handleGoogle}
+            onError={(e) => setError(e.message)}
+          />
+        </div>
+
+        {error && (
+          <p className="mt-3 text-xs font-body" style={{ color: colors.error ?? '#b3261e' }}>
+            {error}
+          </p>
+        )}
+
+        <div className="w-full flex items-center gap-3 my-5">
+          <span className="flex-1 h-px" style={{ backgroundColor: colors.outline }} />
+          <span className="text-xs font-body" style={{ color: colors.onSurfaceVariant }}>o</span>
+          <span className="flex-1 h-px" style={{ backgroundColor: colors.outline }} />
+        </div>
+
+        <div className="w-full">
           <AppPrimaryButton
-            label={esLogin ? 'Ingresar como invitado' : 'Registrarse'}
-            onPressed={esLogin ? handleGuestLogin : () => navigate(AppRoutes.home, { replace: true })}
+            label="Ingresar como invitado"
+            variant={AppButtonVariant.outlined}
+            onPressed={handleGuestLogin}
           />
         </div>
 
         <button
-          onClick={() => navigate(esLogin ? AppRoutes.register : AppRoutes.login)}
+          onClick={() => { setError(null); navigate(esLogin ? AppRoutes.register : AppRoutes.login); }}
           className="mt-6 text-sm font-body"
           style={{ color: colors.onSurfaceVariant }}
         >
