@@ -16,7 +16,21 @@ export class AuthRepositoryImpl {
 
   // Al abrir la app intenta recuperar la sesión con la cookie de refresh.
   // Si no hay cookie o expiró, simplemente no hay usuario.
-  async obtenerUsuarioActual() {
+  //
+  // Si se pide dos veces a la vez (React en modo estricto monta los efectos
+  // dos veces, o dos componentes lo piden juntos) se comparte una sola
+  // petición: dos refresh con el mismo token harían que el backend lo tome
+  // como un token reutilizado.
+  obtenerUsuarioActual() {
+    if (!this._sesionEnCurso) {
+      this._sesionEnCurso = this._recuperarSesion().finally(() => {
+        this._sesionEnCurso = null;
+      });
+    }
+    return this._sesionEnCurso;
+  }
+
+  async _recuperarSesion() {
     try {
       const { accessToken } = await this.datasource.refrescar();
       this.accessToken = accessToken;
