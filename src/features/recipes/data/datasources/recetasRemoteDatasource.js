@@ -11,33 +11,26 @@ export class RecetasRemoteDatasource {
   }
 
   // GET /recetas -> { items, total, page, limit }
-  // El DTO topea limit en 100, así que con 150 recetas por categoría hay que
-  // recorrer varias páginas hasta juntar el total que informa la propia API.
+  // El DTO topea limit en 100. La primera página trae el total; si faltan
+  // filas, las páginas restantes se piden todas a la vez (en paralelo), no una
+  // detrás de otra, para no sumar la latencia de cada viaje.
   //
   // Con `momento`, la API devuelve solo las recetas de ese momento del día
   // (lo usa la ruleta de acompañante para las bebidas).
   async getRecetasByCategoria(categoriaId, { momento, signal } = {}) {
-    const acumuladas = [];
-    let page = 1;
-    let total = Infinity;
+    const params = (page) => ({ categoriaId, ...(momento ? { momento } : {}), limit: API_MAX_LIMIT, page });
 
-    while (acumuladas.length < total) {
-      const respuesta = await apiGet('/recetas', {
-        params: { categoriaId, ...(momento ? { momento } : {}), limit: API_MAX_LIMIT, page },
-        signal,
-      });
+    const primera = await apiGet('/recetas', { params: params(1), signal });
+    const items = [...(primera?.items ?? [])];
+    const total = primera?.total ?? items.length;
+    const paginas = Math.ceil(total / API_MAX_LIMIT);
+    if (paginas <= 1 || items.length === 0) return items;
 
-      const items = respuesta?.items ?? [];
-      total = respuesta?.total ?? items.length;
-      acumuladas.push(...items);
-
-      // Corte de seguridad: si una página vuelve vacía pero el total dice que
-      // faltan filas, paramos igual para no quedarnos en un bucle infinito.
-      if (items.length === 0) break;
-      page += 1;
-    }
-
-    return acumuladas;
+    const resto = await Promise.all(
+      Array.from({ length: paginas - 1 }, (_, i) => apiGet('/recetas', { params: params(i + 2), signal })),
+    );
+    for (const r of resto) items.push(...(r?.items ?? []));
+    return items;
   }
 
   async getRecetaById(id, { signal } = {}) {

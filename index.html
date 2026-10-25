@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Huebito</title>
-    <meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F5F5F7" />
     <script>
       // Aplica el tema guardado antes de que cargue React, para que no se vea
-      // un destello del tema equivocado al abrir la app.
+      // un destello del tema equivocado al abrir la app. Sin elección guardada
+      // la app arranca en claro.
       try {
-        var tema = localStorage.getItem('huebito_tema');
-        var oscuro = tema ? tema === 'oscuro' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (oscuro) document.documentElement.classList.add('dark');
+        if (localStorage.getItem('huebito_tema') === 'oscuro') {
+          document.documentElement.classList.add('dark');
+        }
       } catch (e) {}
     </script>
   </head>

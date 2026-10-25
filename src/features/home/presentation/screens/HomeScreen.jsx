@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { AppIconButton } from '../../../../core/widgets/AppIconButton';
@@ -10,6 +10,7 @@ import { useFavoritos } from '../../../favorites/presentation/providers/useFavor
 import { useHistorial } from '../../../history/presentation/providers/useHistorial';
 import { CategoriaSlug } from '../../../recipes/domain/entities/categoria';
 import { AppRoutes } from '../../../../core/router/appRoutes';
+import { recetasRepository } from '../../../recipes/data/repositories/recetasRepositoryInstance';
 import { Dices, LogOut, Sunrise, Sun, Moon, ChevronRight } from 'lucide-react';
 
 // Las tres opciones del menú principal. Desayunar y Cenar abren su ruleta;
@@ -27,13 +28,19 @@ export function HomeScreen() {
   const { favoritos, loading: loadingFav } = useFavoritos();
   const { recientes, loading: loadingRec } = useHistorial();
 
+  // Mientras el usuario mira el menú, se cargan en segundo plano todas las
+  // ruletas: al tocar una, sus recetas ya están listas.
+  useEffect(() => {
+    recetasRepository.precargar();
+  }, []);
+
   const handleLogout = async () => {
     await cerrarSesion();
     navigate(AppRoutes.login, { replace: true });
   };
 
   return (
-    <div className="min-h-screen bg-surface pb-6">
+    <div className="min-h-screen bg-surface pb-28">
       <div className="px-5 pt-4 pb-2 flex items-center justify-between">
         <h1 className="text-[20px] font-medium font-body text-on-surface">
           {usuario ? `Hola, ${usuario.nombre.split(' ')[0]} 👋` : 'Hola 👋'}

@@ -13,6 +13,7 @@ import { RecetaDetailPage } from '../../features/recipe_detail/presentation/scre
 import { RecetaDetailScreen } from '../../features/recipe_detail/presentation/screens/RecetaDetailScreen';
 import { FavoritosScreen } from '../../features/favorites/presentation/screens/FavoritosScreen';
 import { HistorialScreen } from '../../features/history/presentation/screens/HistorialScreen';
+import { AsistenteFlotante } from '../../features/chat/presentation/AsistenteFlotante';
 
 function RequireAuth({ children }) {
   const { autenticado, loading } = useAuth();
@@ -56,6 +57,8 @@ function AppRouter() {
         <Route path={AppRoutes.history} element={<RequireAuth><HistorialScreen /></RequireAuth>} />
         <Route path="*" element={<Navigate to={AppRoutes.home} replace />} />
       </Routes>
+      {/* Botón del asistente: se muestra solo en las pantallas donde no tapa nada. */}
+      <AsistenteFlotante />
     </HashRouter>
   );
 }

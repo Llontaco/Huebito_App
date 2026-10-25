@@ -74,7 +74,7 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
         }}
       >
         <div className="w-full aspect-[1.3] rounded-card overflow-hidden">
-          <RecipeImagePlaceholder categoria={receta.categoriaSlug} imagenUrl={receta.imagenUrl} />
+          <RecipeImagePlaceholder categoria={receta.categoriaSlug} imagenUrl={receta.imagenUrl} prioridad />
         </div>
         <CreditoImagen
           autor={receta.imagenAutor}

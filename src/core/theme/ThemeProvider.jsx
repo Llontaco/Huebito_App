@@ -4,7 +4,8 @@ import { AppColors } from './appColors';
 const ThemeContext = createContext(null);
 
 // Preferencia elegida con el botón de tema: 'claro' | 'oscuro'. Si el usuario
-// nunca lo tocó no hay nada guardado y la app sigue el modo del sistema.
+// nunca lo tocó, la app arranca en claro (el tema por defecto de Huebito),
+// sin importar el modo del sistema.
 export const CLAVE_TEMA = 'huebito_tema';
 
 function leerPreferencia() {
@@ -16,22 +17,9 @@ function leerPreferencia() {
   }
 }
 
-const sistemaOscuro = () =>
-  typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-
 export function ThemeProvider({ children }) {
   const [preferencia, setPreferencia] = useState(leerPreferencia);
-  const [oscuroSistema, setOscuroSistema] = useState(sistemaOscuro);
-  const isDark = preferencia ? preferencia === 'oscuro' : oscuroSistema;
-
-  // Sin preferencia guardada, acompaña los cambios del modo del sistema.
-  useEffect(() => {
-    const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
-    if (!mq) return undefined;
-    const alCambiar = (e) => setOscuroSistema(e.matches);
-    mq.addEventListener?.('change', alCambiar);
-    return () => mq.removeEventListener?.('change', alCambiar);
-  }, []);
+  const isDark = preferencia === 'oscuro';
 
   useEffect(() => {
     const root = window.document.documentElement;

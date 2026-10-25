@@ -25,9 +25,10 @@ function construirUrl(ruta, params) {
 // Petición con JSON para los endpoints de sesión (/auth, /users). Manda
 // credentials: 'include' para que viaje la cookie httpOnly del refresh token,
 // y el access token, si lo hay, como Bearer.
-export async function apiRequest(ruta, { method = 'GET', body, token } = {}) {
+// `timeoutMs` permite esperar más en pedidos lentos por naturaleza (el chat).
+export async function apiRequest(ruta, { method = 'GET', body, token, timeoutMs = API_TIMEOUT_MS } = {}) {
   const controlador = new AbortController();
-  const timeout = setTimeout(() => controlador.abort(), API_TIMEOUT_MS);
+  const timeout = setTimeout(() => controlador.abort(), timeoutMs);
 
   const headers = { Accept: 'application/json' };
   if (body !== undefined) headers['Content-Type'] = 'application/json';

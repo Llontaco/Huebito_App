@@ -7,7 +7,7 @@ import { CategoriaSlug } from '../../features/recipes/domain/entities/categoria'
 // carga, cae automáticamente en el ícono ilustrativo de la categoría.
 // imagenUrl puede ser una ruta local o la URL del endpoint del backend que
 // sirve el binario guardado en Neon: al widget le da igual cuál de las dos.
-export function RecipeImagePlaceholder({ categoria, imagenUrl, borderRadius = '20px' }) {
+export function RecipeImagePlaceholder({ categoria, imagenUrl, borderRadius = '20px', prioridad = false }) {
   const { colors } = useTheme();
   const [imgError, setImgError] = useState(false);
   const iconosPorCategoria = {
@@ -25,6 +25,10 @@ export function RecipeImagePlaceholder({ categoria, imagenUrl, borderRadius = '2
       <img
         src={imagenUrl}
         alt=""
+        // Fuera de pantalla no se descargan hasta que el usuario se acerca;
+        // async evita que decodificar la foto trabe el scroll o la ruleta.
+        loading={prioridad ? 'eager' : 'lazy'}
+        decoding="async"
         className="w-full h-full object-cover block"
         style={{ borderRadius }}
         onError={() => setImgError(true)}

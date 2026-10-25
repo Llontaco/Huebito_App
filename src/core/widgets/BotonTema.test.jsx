@@ -15,10 +15,13 @@ function montar() {
 describe('BotonTema', () => {
   beforeEach(() => document.documentElement.classList.remove('dark'));
 
-  it('sin preferencia guardada sigue al sistema (claro en jsdom)', () => {
+  it('sin preferencia guardada arranca en claro aunque el sistema esté en oscuro', () => {
+    const original = window.matchMedia;
+    window.matchMedia = (q) => ({ ...original(q), matches: true });
     montar();
     expect(document.documentElement.classList.contains('dark')).toBe(false);
     expect(screen.getByRole('button', { name: 'Cambiar a tema oscuro' })).toBeInTheDocument();
+    window.matchMedia = original;
   });
 
   it('al tocarlo cambia de tema y guarda la elección', async () => {

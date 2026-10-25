@@ -34,7 +34,7 @@ export function AlmuerzoScreen() {
   const { colors } = useTheme();
 
   return (
-    <div className="min-h-screen bg-surface pb-6">
+    <div className="min-h-screen bg-surface pb-28">
       <AppTopBar title="Almorzar" onBack={() => navigate(-1)} />
 
       <div className="px-5 mt-2">

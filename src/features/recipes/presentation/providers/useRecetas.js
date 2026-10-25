@@ -13,13 +13,16 @@ const getRecetaAleatoriaUC = new GetRecetaAleatoriaUseCase(repository);
 // `momento` es opcional: con él solo llegan las recetas de ese momento del día
 // (la ruleta de acompañante lo usa para las bebidas).
 export function useRecetasPorCategoria(categoria, momento) {
-  const [recetas, setRecetas] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // Si la precarga ya trajo estas recetas, se muestran desde el primer render,
+  // sin pasar por el indicador de carga.
+  const enMemoria = repository.peek?.(categoria, { momento }) ?? null;
+  const [recetas, setRecetas] = useState(enMemoria ?? []);
+  const [loading, setLoading] = useState(!enMemoria);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
-    setLoading(true);
+    if (!repository.peek?.(categoria, { momento })) setLoading(true);
     getRecetasPorCategoriaUC.call(categoria, { momento })
       .then((data) => { if (!cancelled) { setRecetas(data); setError(null); } })
       .catch((e) => { if (!cancelled) setError(e.message); })

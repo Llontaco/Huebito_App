@@ -93,3 +93,56 @@ describe('RecetasRepositoryImpl', () => {
     expect(repo._remote.getRecetasByCategoria).toHaveBeenCalledTimes(2);
   });
 });
+
+describe('RecetasRepositoryImpl: velocidad', () => {
+  let repo;
+  beforeEach(() => {
+    localStorage.clear();
+    repo = crearRepo();
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+  });
+
+  it('al volver a abrir la app usa la copia del navegador sin esperar al backend', async () => {
+    await repo.getByCategoria('desayunos');
+    const otraSesion = crearRepo();
+    otraSesion._remote.getRecetasByCategoria.mockImplementation(() => new Promise(() => {})); // backend colgado
+    const recetas = await otraSesion.getByCategoria('desayunos');
+    expect(recetas.map((r) => r.nombre)).toEqual(['Pan A', 'Pan B']);
+    expect(otraSesion.ultimoOrigen).toBe('cache');
+  });
+
+  it('si la copia es vieja la muestra igual y la renueva por detrás', async () => {
+    await repo.getByCategoria('desayunos');
+    const guardado = JSON.parse(localStorage.getItem('huebito_cache_api_v1'));
+    for (const k of Object.keys(guardado)) guardado[k].t -= 60 * 60 * 1000;
+    localStorage.setItem('huebito_cache_api_v1', JSON.stringify(guardado));
+
+    const otraSesion = crearRepo();
+    otraSesion._remote.getRecetasByCategoria.mockImplementation(
+      () => new Promise((r) => setTimeout(() => r([fila(12, 'Pan nuevo')]), 30)),
+    );
+    const primero = await otraSesion.getByCategoria('desayunos');
+    expect(primero.map((r) => r.nombre)).toEqual(['Pan A', 'Pan B']);
+
+    await vi.waitFor(() => expect(otraSesion.peek('desayunos').map((r) => r.nombre)).toEqual(['Pan nuevo']));
+  });
+
+  it('dos pantallas pidiendo lo mismo a la vez hacen un solo pedido', async () => {
+    await Promise.all([repo.getByCategoria('desayunos'), repo.getByCategoria('desayunos')]);
+    expect(repo._remote.getRecetasByCategoria).toHaveBeenCalledTimes(1);
+    expect(repo._remote.getCategorias).toHaveBeenCalledTimes(1);
+  });
+
+  it('precargar deja las recetas listas en memoria (peek)', async () => {
+    expect(repo.peek('desayunos')).toBeNull();
+    await repo.precargar(['desayunos', 'bebidas']);
+    expect(repo.peek('desayunos')).toHaveLength(2);
+    expect(repo.peek('bebidas')).toHaveLength(2);
+  });
+
+  it('invalidarCache también borra la copia del navegador', async () => {
+    await repo.getByCategoria('desayunos');
+    repo.invalidarCache();
+    expect(localStorage.getItem('huebito_cache_api_v1')).toBeNull();
+  });
+});

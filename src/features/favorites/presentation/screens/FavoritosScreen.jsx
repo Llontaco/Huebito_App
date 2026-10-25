@@ -10,7 +10,7 @@ export function FavoritosScreen() {
   const { favoritos, loading } = useFavoritos();
 
   return (
-    <div className="min-h-screen bg-surface pb-6">
+    <div className="min-h-screen bg-surface pb-28">
       <AppTopBar title="Favoritos" onBack={() => navigate(-1)} />
       {loading ? (
         <div className="pt-8 flex justify-center">
