@@ -42,7 +42,7 @@ function VideoModal({ videoUrl, nombre, onClose }) {
           <p className="text-sm font-semibold font-body text-on-surface truncate pr-2">
             {nombre}
           </p>
-          <AppIconButton icon={X} onPressed={onClose} filled />
+          <AppIconButton icon={X} onPressed={onClose} filled label="Cerrar video" />
         </div>
 
         <div className="w-full aspect-video bg-black">

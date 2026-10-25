@@ -8,7 +8,7 @@ export function AppTopBar({ title, onBack, actions = [] }) {
   return (
     <div className="h-14 flex items-center px-5">
       <div className="w-10">
-        {onBack && <AppIconButton icon={ArrowLeft} onPressed={onBack} />}
+        {onBack && <AppIconButton icon={ArrowLeft} onPressed={onBack} label="Volver" />}
       </div>
       <div className="flex-1 text-center">
         {title && (

@@ -184,7 +184,7 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
               onPressed={() => toggle(receta.id)}
             />
           </div>
-          <AppIconButton icon={Share2} onPressed={handleShare} filled />
+          <AppIconButton icon={Share2} onPressed={handleShare} filled label="Compartir receta" />
         </div>
       </div>
     </div>

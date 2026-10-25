@@ -5,6 +5,7 @@ import { AppPrimaryButton, AppButtonVariant } from '../../../../core/widgets/App
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { useAuth } from '../providers/useAuth';
 import { GoogleSignInButton } from '../widgets/GoogleSignInButton';
+import { BotonTema } from '../../../../core/widgets/BotonTema';
 
 export function LoginScreen({ mode = 'login' }) {
   const navigate = useNavigate();
@@ -40,6 +41,10 @@ export function LoginScreen({ mode = 'login' }) {
         className="absolute -bottom-28 -left-24 w-72 h-72 rounded-full blur-3xl pointer-events-none"
         style={{ backgroundColor: `${colors.primary}17` }}
       />
+
+      <div className="absolute top-4 right-4 pt-safe z-10">
+        <BotonTema />
+      </div>
 
       <div
         className="relative w-full max-w-[360px] rounded-[30px] px-7 py-10 flex flex-col items-center text-center"

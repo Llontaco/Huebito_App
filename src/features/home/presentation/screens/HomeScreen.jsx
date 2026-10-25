@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../../../core/theme/ThemeProvider';
 import { AppIconButton } from '../../../../core/widgets/AppIconButton';
+import { BotonTema } from '../../../../core/widgets/BotonTema';
 import { AppPrimaryButton, AppButtonVariant } from '../../../../core/widgets/AppPrimaryButton';
 import { RecipeCard } from '../../../../core/widgets/RecipeCard';
 import { useAuth } from '../../../auth/presentation/providers/useAuth';
@@ -37,7 +38,10 @@ export function HomeScreen() {
         <h1 className="text-[20px] font-medium font-body text-on-surface">
           {usuario ? `Hola, ${usuario.nombre.split(' ')[0]} 👋` : 'Hola 👋'}
         </h1>
-        <AppIconButton icon={LogOut} onPressed={handleLogout} />
+        <div className="flex items-center gap-1">
+          <BotonTema />
+          <AppIconButton icon={LogOut} onPressed={handleLogout} label="Cerrar sesión" />
+        </div>
       </div>
 
       <div className="px-5 mt-2">
