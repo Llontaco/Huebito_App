@@ -180,7 +180,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=enxbUqDbq2g",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: "Causa Limeña",
     descripcion: "Puré de papa amarilla sazonado con ají y limón, relleno de pollo o atún.",
     ingredientes: [
@@ -209,7 +209,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=UbbSMZrosZk",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: "Papa a la Huancaína",
     descripcion: "Papas cocidas bañadas en salsa cremosa de ají amarillo y queso.",
     ingredientes: [
@@ -463,7 +463,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=KhVK5pQC8jk",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: "Ceviche",
     descripcion: "Pescado fresco marinado en limón con cebolla, ají y culantro.",
     ingredientes: [

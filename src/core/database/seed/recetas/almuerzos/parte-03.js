@@ -198,7 +198,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=3iKYZcegBTU",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa Wantán',
     descripcion: 'Caldo claro de chifa con wantanes rellenos, char siu y verduras.',
     ingredientes: [
@@ -394,7 +394,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=ZnfIJ8lKJXA",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Papa Rellena',
     descripcion: 'Masa de papa amarilla rellena de carne guisada, frita hasta dorar.',
     ingredientes: [
@@ -478,7 +478,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=rVAtxP4x8ew",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Conchitas a la Parmesana',
     descripcion: 'Conchas de abanico gratinadas con mantequilla, vino blanco y parmesano.',
     ingredientes: [
@@ -506,7 +506,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=2CNpL0F-9VU",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Pulpo al Olivo',
     descripcion: 'Láminas de pulpo cocido bañadas en mayonesa de aceituna botija.',
     ingredientes: [
@@ -534,7 +534,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=XacKKritHXk",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Leche de Tigre',
     descripcion: 'El jugo concentrado del cebiche servido como entrada en vaso, con pescado y mariscos.',
     ingredientes: [
@@ -562,7 +562,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=z7KPaW-WlIo",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Ceviche Mixto',
     descripcion: 'Ceviche de pescado con mariscos surtidos, limón, cebolla y ají limo.',
     ingredientes: [
@@ -675,7 +675,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=ah6oqKX2Whs",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Chupe de Pescado',
     descripcion: 'Sopa espesa de pescado con leche, papa, arroz y huevo escalfado.',
     ingredientes: [

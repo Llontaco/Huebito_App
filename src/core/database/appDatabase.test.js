@@ -39,6 +39,12 @@ describe('appDatabase (copia local de recetas)', () => {
     expect(recetas).toHaveLength(recetasSeedData.length);
     expect(recetas.some((r) => r.video_url)).toBe(true);
     expect(appDatabase.getTable(DbTables.favoritos)).toEqual([{ id: 1, receta_id: 1 }]);
+    // Agrega las categorías nuevas sin cambiar los ids de las que ya había.
+    const cats = appDatabase.getTable(DbTables.categorias);
+    expect(cats.find((c) => c.slug === 'desayunos').id).toBe(1);
+    expect(cats.map((c) => c.slug)).toEqual(expect.arrayContaining(['sopas', 'entradas']));
+    const sopas = cats.find((c) => c.slug === 'sopas');
+    expect(recetas.filter((r) => r.categoria_id === sopas.id).length).toBe(21);
   });
 
   it('si la copia está al día, no la reescribe', () => {
@@ -62,7 +68,7 @@ describe('appDatabase (copia local de recetas)', () => {
   it('cada receta del seed tiene los campos mínimos para mostrarse', () => {
     for (const r of recetasSeedData) {
       expect(r.nombre, JSON.stringify(r).slice(0, 80)).toBeTruthy();
-      expect(['desayunos', 'almuerzos', 'cenas', 'bebidas']).toContain(r.categoria_slug);
+      expect(['desayunos', 'almuerzos', 'sopas', 'entradas', 'cenas', 'bebidas']).toContain(r.categoria_slug);
       expect(r.ingredientes.length, r.nombre).toBeGreaterThan(0);
       expect(r.preparacion.length, r.nombre).toBeGreaterThan(0);
       expect(r.tiempo_minutos, r.nombre).toBeGreaterThan(0);

@@ -44,7 +44,7 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
   const esFav = esFavorito(receta.id);
   const momentoDelPlato = Momento.deCategoria[receta.categoriaSlug];
   const ofrecerAcompanante =
-    mostrarVolverAGirar && CategoriaSlug.comidas.includes(receta.categoriaSlug) && !sinAcompanante;
+    mostrarVolverAGirar && CategoriaSlug.platos.includes(receta.categoriaSlug) && !sinAcompanante;
   const momentoCombinacion = location.state?.momento ?? Momento.deCategoria[plato?.categoriaSlug];
   // Dentro de la ruleta la combinación la deciden los sorteos: en el plato no
   // se sugiere bebida (para eso está la ruleta de acompañante) y en la bebida

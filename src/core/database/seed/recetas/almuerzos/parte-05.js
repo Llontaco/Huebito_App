@@ -394,7 +394,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=QAwHueMJ8kg",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Ceviche de Conchas Negras',
     descripcion: 'Ceviche tumbesino de conchas negras con su jugo, limón y ají limo.',
     ingredientes: [
@@ -422,7 +422,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=mrTsFb95-i4",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Ceviche de Pulpo',
     descripcion: 'Pulpo cocido en cubos con limón, cebolla, ají y culantro.',
     ingredientes: [
@@ -478,7 +478,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=ec8lE_a5u44",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Aguadito de Mariscos',
     descripcion: 'Sopa de arroz verde con mariscos surtidos y culantro.',
     ingredientes: [
@@ -506,7 +506,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=7n8yNXagJY8",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa de Choros',
     descripcion: 'Caldo marino de choros con papa, arroz y culantro.',
     ingredientes: [
@@ -646,7 +646,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=oapDfof4wdE",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Causa de Atún',
     descripcion: 'Masa de papa amarilla con ají y limón rellena de atún con mayonesa.',
     ingredientes: [
@@ -758,7 +758,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=SeBxsvn_qbw",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Chupe Verde',
     descripcion: 'Sopa andina de papa con crema de huacatay, queso y huevo escalfado.',
     ingredientes: [

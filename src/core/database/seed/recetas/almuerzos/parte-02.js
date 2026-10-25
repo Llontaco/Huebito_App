@@ -30,7 +30,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=QNCIDtoNmZ8",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Anticuchos de corazón',
     descripcion: 'Brochetas de corazón de res marinadas en ají panca y vinagre, asadas a la parrilla.',
     ingredientes: [
@@ -116,7 +116,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=S3k1yDksoO4",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Chupe de Camarones',
     descripcion: 'Sopa arequipeña espesa con camarones de río, leche, huevo escalfado y queso.',
     ingredientes: [
@@ -146,7 +146,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=reBjmhwiXuQ",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Parihuela',
     descripcion: 'Sopa marina potente con pescado, mariscos, ají panca y un toque de pisco.',
     ingredientes: [
@@ -176,7 +176,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=YI5c999JL9E",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Aguadito de Pollo',
     descripcion: 'Sopa espesa de arroz y pollo teñida de verde por el culantro licuado.',
     ingredientes: [
@@ -205,7 +205,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=xhQMUtazge0",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Caldo de Gallina',
     descripcion: 'Caldo reconfortante de gallina con fideos, papa y huevo duro.',
     ingredientes: [
@@ -233,7 +233,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=PhmMG3BWvD4",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa Criolla',
     descripcion: 'Sopa rápida de carne picada, fideos, leche y huevo, con pan frito encima.',
     ingredientes: [
@@ -262,7 +262,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=VeZyjEZY2UY",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Menestrón',
     descripcion: 'Sopa espesa de verduras, fideos y frejoles con pesto de albahaca peruano.',
     ingredientes: [
@@ -518,7 +518,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=TaTLMSrT8ao",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Jalea Mixta',
     descripcion: 'Fritura crocante de pescado y mariscos con yuca, salsa criolla y zarza.',
     ingredientes: [
@@ -547,7 +547,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=3Zp1UC3Gd7M",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Tiradito de Pescado',
     descripcion: 'Láminas finas de pescado crudo bañadas en crema de ají amarillo y limón.',
     ingredientes: [
@@ -575,7 +575,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=-8j5Ayixlq8",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Ocopa Arequipeña',
     descripcion: 'Papas sancochadas bañadas en crema de huacatay, maní y queso.',
     ingredientes: [
@@ -604,7 +604,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=jEiKrXwz_P0",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Solterito Arequipeño',
     descripcion: 'Ensalada fría de habas, choclo, queso, tomate y aceituna con vinagreta.',
     ingredientes: [

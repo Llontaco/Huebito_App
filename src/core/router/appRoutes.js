@@ -3,6 +3,8 @@ export const AppRoutes = {
   login: '/login',
   register: '/register',
   home: '/home',
+  // Elección entre almuerzo clásico, sopa o entrada.
+  almuerzo: '/almuerzo',
   favorites: '/favorites',
   history: '/history',
   // `momento` filtra la ruleta a ese momento del día; lo usa la ruleta de

@@ -17,7 +17,7 @@ neonConfig.webSocketConstructor = ws;
 
 const root = path.resolve(import.meta.dirname, '..', '..');
 const dirImagenes = path.join(root, CARPETA_IMAGENES);
-const ORDEN = ['desayunos', 'almuerzos', 'cenas', 'bebidas'];
+const ORDEN = ['desayunos', 'almuerzos', 'sopas', 'entradas', 'cenas', 'bebidas'];
 
 async function obtenerConnectionString() {
   if (process.env.DATABASE_URL) return process.env.DATABASE_URL;
@@ -78,7 +78,7 @@ al desplegarse y las muestra en lugar de la foto guardada en la base.
 
 ## Cómo subir una foto
 
-1. Elige la subcarpeta de la categoría: \`desayunos\`, \`almuerzos\`, \`cenas\` o \`bebidas\`.
+1. Elige la subcarpeta de la categoría: \`desayunos\`, \`almuerzos\`, \`sopas\`, \`entradas\`, \`cenas\` o \`bebidas\`.
 2. Nombra el archivo como indica la tabla de abajo: el nombre de la receta en
    minúsculas, sin tildes ni ñ, y con guiones en lugar de espacios.
    "Pan con palta" va como \`pan-con-palta.jpg\`.

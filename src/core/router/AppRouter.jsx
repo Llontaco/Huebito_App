@@ -7,6 +7,7 @@ import { SplashScreen } from '../../features/splash/presentation/screens/SplashS
 import { LoginScreen } from '../../features/auth/presentation/screens/LoginScreen';
 import { RegisterScreen } from '../../features/auth/presentation/screens/RegisterScreen';
 import { HomeScreen } from '../../features/home/presentation/screens/HomeScreen';
+import { AlmuerzoScreen } from '../../features/home/presentation/screens/AlmuerzoScreen';
 import { RuletaScreen } from '../../features/roulette/presentation/screens/RuletaScreen';
 import { RecetaDetailPage } from '../../features/recipe_detail/presentation/screens/RecetaDetailPage';
 import { RecetaDetailScreen } from '../../features/recipe_detail/presentation/screens/RecetaDetailScreen';
@@ -47,6 +48,7 @@ function AppRouter() {
         <Route path={AppRoutes.login} element={<AuthRedirect><LoginScreen /></AuthRedirect>} />
         <Route path={AppRoutes.register} element={<AuthRedirect><RegisterScreen /></AuthRedirect>} />
         <Route path={AppRoutes.home} element={<RequireAuth><HomeScreen /></RequireAuth>} />
+        <Route path={AppRoutes.almuerzo} element={<RequireAuth><AlmuerzoScreen /></RequireAuth>} />
         <Route path="/roulette/:categoria" element={<RequireAuth><RuletaScreen /></RequireAuth>} />
         <Route path="/roulette/:categoria/result" element={<RequireAuth><RecetaDetailScreen mostrarVolverAGirar /></RequireAuth>} />
         <Route path="/recipe/:id" element={<RequireAuth><RecetaDetailPage /></RequireAuth>} />

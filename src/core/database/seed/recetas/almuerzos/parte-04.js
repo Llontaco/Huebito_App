@@ -310,7 +310,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=jw-Cb-K3U0s",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Shámbar',
     descripcion: 'Sopa trujillana espesa de trigo con menestras variadas y carne de cerdo.',
     ingredientes: [
@@ -339,7 +339,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=_oS6KQ7jRts",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Patasca',
     descripcion: 'Sopa andina de mote con carne y menudencias, cocida por horas.',
     ingredientes: [
@@ -367,7 +367,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=38P3k-Am_Gg",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Chairo',
     descripcion: 'Sopa altiplánica de chuño, carne y verduras, espesa y reconfortante.',
     ingredientes: [
@@ -621,7 +621,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=2TjRySSHgF8",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Inchicapi',
     descripcion: 'Sopa amazónica espesa de gallina con maní, maíz y sachaculantro.',
     ingredientes: [
@@ -677,7 +677,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=INK-HxFfT68",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa de Morón',
     descripcion: 'Sopa espesa de cebada morón con carne, verduras y papa.',
     ingredientes: [

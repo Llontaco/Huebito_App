@@ -11,10 +11,11 @@ import { CategoriaSlug } from '../../../recipes/domain/entities/categoria';
 import { AppRoutes } from '../../../../core/router/appRoutes';
 import { Dices, LogOut, Sunrise, Sun, Moon, ChevronRight } from 'lucide-react';
 
-// Las tres opciones del menú principal: cada una abre la ruleta de su comida.
+// Las tres opciones del menú principal. Desayunar y Cenar abren su ruleta;
+// Almorzar abre antes la elección entre almuerzo clásico, sopa o entrada.
 const opcionesDelDia = [
   { slug: CategoriaSlug.desayunos, verbo: 'Desayunar', detalle: 'Ruleta de desayunos', icono: Sunrise },
-  { slug: CategoriaSlug.almuerzos, verbo: 'Almorzar', detalle: 'Ruleta de almuerzos', icono: Sun },
+  { slug: CategoriaSlug.almuerzos, verbo: 'Almorzar', detalle: 'Almuerzo clásico, sopa o entrada', icono: Sun, ruta: AppRoutes.almuerzo },
   { slug: CategoriaSlug.cenas, verbo: 'Cenar', detalle: 'Ruleta de cenas', icono: Moon },
 ];
 
@@ -44,10 +45,10 @@ export function HomeScreen() {
       </div>
 
       <div className="px-5 mt-6 flex flex-col gap-3">
-        {opcionesDelDia.map(({ slug, verbo, detalle, icono: Icon }) => (
+        {opcionesDelDia.map(({ slug, verbo, detalle, icono: Icon, ruta }) => (
           <button
             key={slug}
-            onClick={() => navigate(AppRoutes.roulette(slug))}
+            onClick={() => navigate(ruta ?? AppRoutes.roulette(slug))}
             className="w-full flex items-center gap-4 px-4 py-4 rounded-[20px] text-left"
             style={{ backgroundColor: colors.surfaceContainer }}
           >

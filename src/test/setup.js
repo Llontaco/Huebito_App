@@ -7,3 +7,17 @@ afterEach(() => {
   localStorage.clear();
   vi.restoreAllMocks();
 });
+
+// jsdom no implementa matchMedia; el ThemeProvider lo usa para el modo oscuro.
+if (!window.matchMedia) {
+  window.matchMedia = (query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    addListener: () => {},
+    removeListener: () => {},
+    dispatchEvent: () => false,
+  });
+}

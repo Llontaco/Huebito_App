@@ -5,7 +5,7 @@ al desplegarse y las muestra en lugar de la foto guardada en la base.
 
 ## Cómo subir una foto
 
-1. Elige la subcarpeta de la categoría: `desayunos`, `almuerzos`, `cenas` o `bebidas`.
+1. Elige la subcarpeta de la categoría: `desayunos`, `almuerzos`, `sopas`, `entradas`, `cenas` o `bebidas`.
 2. Nombra el archivo como indica la tabla de abajo: el nombre de la receta en
    minúsculas, sin tildes ni ñ, y con guiones en lugar de espacios.
    "Pan con palta" va como `pan-con-palta.jpg`.
@@ -30,7 +30,9 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 | Categoría | Recetas | En la carpeta | Foto en la base | Faltan |
 |---|---|---|---|---|
 | desayunos | 106 | 104 | 1 | 1 |
-| almuerzos | 150 | 150 | 0 | 0 |
+| almuerzos | 112 | 112 | 0 | 0 |
+| sopas | 21 | 21 | 0 | 0 |
+| entradas | 17 | 17 | 0 | 0 |
 | cenas | 33 | 33 | 0 | 0 |
 | bebidas | 135 | 132 | 0 | 3 |
 
@@ -155,13 +157,10 @@ Carpeta: `image/almuerzos/`
 |---|---|---|
 | Adobo Arequipeño | `adobo-arequipeno.jpg` | en la carpeta (adobo-arequipeno.jpg) |
 | Aeropuerto | `aeropuerto.jpg` | en la carpeta (aeropuerto.jpg) |
-| Aguadito de Mariscos | `aguadito-de-mariscos.jpg` | en la carpeta (aguadito-de-mariscos.jpg) |
-| Aguadito de Pollo | `aguadito-de-pollo.jpg` | en la carpeta (aguadito-de-pollo.jpg) |
 | Ají de Fideos | `aji-de-fideos.jpg` | en la carpeta (aji-de-fideos.jpg) |
 | Ají de Gallina | `aji-de-gallina.jpg` | en la carpeta (aji-de-gallina.jpg) |
 | Ají de Gallina Vegetariano | `aji-de-gallina-vegetariano.jpg` | en la carpeta (aji-de-gallina-vegetariano.jpg) |
 | Ají de Langostinos | `aji-de-langostinos.jpg` | en la carpeta (aji-de-langostinos.jpg) |
-| Anticuchos de corazón | `anticuchos-de-corazon.jpg` | en la carpeta (anticuchos-de-corazon.jpg) |
 | Apanado de Carne | `apanado-de-carne.jpg` | en la carpeta (apanado-de-carne.jpg) |
 | Arroz Chaufa | `arroz-chaufa.jpg` | en la carpeta (arroz-chaufa.jpg) |
 | Arroz Chaufa Amazónico | `arroz-chaufa-amazonico.jpg` | en la carpeta (arroz-chaufa-amazonico.jpg) |
@@ -178,21 +177,11 @@ Carpeta: `image/almuerzos/`
 | Bistec a lo Pobre | `bistec-a-lo-pobre.jpg` | en la carpeta (bistec-a-lo-pobre.jpg) |
 | Budín de Verduras | `budin-de-verduras.jpg` | en la carpeta (budin-de-verduras.jpg) |
 | Cabrito a la Norteña | `cabrito-a-la-nortena.jpg` | en la carpeta (cabrito-a-la-nortena.jpg) |
-| Caldo de Gallina | `caldo-de-gallina.jpg` | en la carpeta (caldo-de-gallina.jpg) |
-| Caldo de Mote | `caldo-de-mote.jpg` | en la carpeta (caldo-de-mote.jpg) |
 | Carapulcra | `carapulcra.jpg` | en la carpeta (carapulcra.jpg) |
 | Carapulcra con Sopa Seca | `carapulcra-con-sopa-seca.jpg` | en la carpeta (carapulcra-con-sopa-seca.jpg) |
 | Carne Guisada con Papas | `carne-guisada-con-papas.jpg` | en la carpeta (carne-guisada-con-papas.jpg) |
 | Carne a la Olla | `carne-a-la-olla.jpg` | en la carpeta (carne-a-la-olla.jpg) |
 | Cau Cau | `cau-cau.jpg` | en la carpeta (cau-cau.jpg) |
-| Causa Limeña | `causa-limena.jpg` | en la carpeta (causa-limena.jpg) |
-| Causa de Atún | `causa-de-atun.jpg` | en la carpeta (causa-de-atun.jpg) |
-| Ceviche | `ceviche.jpg` | en la carpeta (ceviche.jpg) |
-| Ceviche Mixto | `ceviche-mixto.jpg` | en la carpeta (ceviche-mixto.jpg) |
-| Ceviche de Champiñones | `ceviche-de-champinones.jpg` | en la carpeta (ceviche-de-champinones.jpg) |
-| Ceviche de Conchas Negras | `ceviche-de-conchas-negras.jpg` | en la carpeta (ceviche-de-conchas-negras.jpg) |
-| Ceviche de Pulpo | `ceviche-de-pulpo.jpg` | en la carpeta (ceviche-de-pulpo.jpg) |
-| Chairo | `chairo.jpg` | en la carpeta (chairo.jpg) |
 | Chanfainita | `chanfainita.jpg` | en la carpeta (chanfainita.jpg) |
 | Chaufa de Mariscos | `chaufa-de-mariscos.jpg` | en la carpeta (chaufa-de-mariscos.jpg) |
 | Chi Jau Kay | `chi-jau-kay.jpg` | en la carpeta (chi-jau-kay.jpg) |
@@ -202,11 +191,6 @@ Carpeta: `image/almuerzos/`
 | Chicharrón de Pescado | `chicharron-de-pescado.jpg` | en la carpeta (chicharron-de-pescado.jpg) |
 | Chicharrón de Pollo | `chicharron-de-pollo.jpg` | en la carpeta (chicharron-de-pollo.jpg) |
 | Chicharrón de Trucha | `chicharron-de-trucha.jpg` | en la carpeta (chicharron-de-trucha.jpg) |
-| Chupe Verde | `chupe-verde.jpg` | en la carpeta (chupe-verde.jpg) |
-| Chupe de Camarones | `chupe-de-camarones.jpg` | en la carpeta (chupe-de-camarones.jpg) |
-| Chupe de Pescado | `chupe-de-pescado.jpg` | en la carpeta (chupe-de-pescado.jpg) |
-| Chupe de Quinua | `chupe-de-quinua.jpg` | en la carpeta (chupe-de-quinua.jpg) |
-| Conchitas a la Parmesana | `conchitas-a-la-parmesana.jpg` | en la carpeta (conchitas-a-la-parmesana.jpg) |
 | Corvina a la Plancha | `corvina-a-la-plancha.jpg` | en la carpeta (corvina-a-la-plancha.jpg) |
 | Costillas de Cerdo al Horno | `costillas-de-cerdo-al-horno.jpg` | en la carpeta (costillas-de-cerdo-al-horno.jpg) |
 | Cuy Chactado | `cuy-chactado.jpg` | en la carpeta (cuy-chactado.jpg) |
@@ -223,11 +207,8 @@ Carpeta: `image/almuerzos/`
 | Garbanzos Guisados | `garbanzos-guisados.jpg` | en la carpeta (garbanzos-guisados.jpg) |
 | Guiso de Quinua | `guiso-de-quinua.jpg` | en la carpeta (guiso-de-quinua.jpg) |
 | Hígado Encebollado | `higado-encebollado.jpg` | en la carpeta (higado-encebollado.jpg) |
-| Inchicapi | `inchicapi.jpg` | en la carpeta (inchicapi.jpg) |
-| Jalea Mixta | `jalea-mixta.jpg` | en la carpeta (jalea-mixta.jpg) |
 | Juane | `juane.jpg` | en la carpeta (juane.jpg) |
 | Kam Lu Wantán | `kam-lu-wantan.jpg` | en la carpeta (kam-lu-wantan.jpg) |
-| Leche de Tigre | `leche-de-tigre.jpg` | en la carpeta (leche-de-tigre.jpg) |
 | Lechón al Horno | `lechon-al-horno.jpg` | en la carpeta (lechon-al-horno.jpg) |
 | Lentejas Guisadas | `lentejas-guisadas.jpg` | en la carpeta (lentejas-guisadas.jpg) |
 | Locro de Pecho | `locro-de-pecho.jpg` | en la carpeta (locro-de-pecho.jpg) |
@@ -236,20 +217,14 @@ Carpeta: `image/almuerzos/`
 | Lomo a lo Pobre | `lomo-a-lo-pobre.jpg` | en la carpeta (lomo-a-lo-pobre.jpg) |
 | Majado de Yuca | `majado-de-yuca.jpg` | en la carpeta (majado-de-yuca.jpg) |
 | Malaya Frita | `malaya-frita.jpg` | en la carpeta (malaya-frita.jpg) |
-| Menestrón | `menestron.jpg` | en la carpeta (menestron.jpg) |
 | Milanesa de Pollo | `milanesa-de-pollo.jpg` | en la carpeta (milanesa-de-pollo.jpg) |
 | Mondonguito a la Italiana | `mondonguito-a-la-italiana.jpg` | en la carpeta (mondonguito-a-la-italiana.jpg) |
-| Ocopa Arequipeña | `ocopa-arequipena.jpg` | en la carpeta (ocopa-arequipena.jpg) |
 | Olluquito con Charqui | `olluquito-con-charqui.jpg` | en la carpeta (olluquito-con-charqui.jpg) |
 | Pachamanca a la Olla | `pachamanca-a-la-olla.jpg` | en la carpeta (pachamanca-a-la-olla.jpg) |
 | Pallares Guisados | `pallares-guisados.jpg` | en la carpeta (pallares-guisados.jpg) |
-| Papa Rellena | `papa-rellena.jpg` | en la carpeta (papa-rellena.jpg) |
-| Papa a la Huancaína | `papa-a-la-huancaina.jpg` | en la carpeta (papa-a-la-huancaina.jpg) |
-| Parihuela | `parihuela.jpg` | en la carpeta (parihuela.jpg) |
 | Pastel de Choclo Salado | `pastel-de-choclo-salado.jpg` | en la carpeta (pastel-de-choclo-salado.jpg) |
 | Pastel de Papa | `pastel-de-papa.jpg` | en la carpeta (pastel-de-papa.jpg) |
 | Patarashca | `patarashca.jpg` | en la carpeta (patarashca.jpg) |
-| Patasca | `patasca.jpg` | en la carpeta (patasca.jpg) |
 | Pato en Ají | `pato-en-aji.jpg` | en la carpeta (pato-en-aji.jpg) |
 | Pepián de Choclo | `pepian-de-choclo.jpg` | en la carpeta (pepian-de-choclo.jpg) |
 | Pepián de Pava | `pepian-de-pava.jpg` | en la carpeta (pepian-de-pava.jpg) |
@@ -266,7 +241,6 @@ Carpeta: `image/almuerzos/`
 | Pollo a la Brasa | `pollo-a-la-brasa.jpg` | en la carpeta (pollo-a-la-brasa.jpg) |
 | Pollo a la Olla | `pollo-a-la-olla.jpg` | en la carpeta (pollo-a-la-olla.jpg) |
 | Pollo al Horno con Papas | `pollo-al-horno-con-papas.jpg` | en la carpeta (pollo-al-horno-con-papas.jpg) |
-| Pulpo al Olivo | `pulpo-al-olivo.jpg` | en la carpeta (pulpo-al-olivo.jpg) |
 | Puré de Pallares con Pescado | `pure-de-pallares-con-pescado.jpg` | en la carpeta (pure-de-pallares-con-pescado.jpg) |
 | Quinua Atamalada | `quinua-atamalada.jpg` | en la carpeta (quinua-atamalada.jpg) |
 | Rocoto Relleno | `rocoto-relleno.jpg` | en la carpeta (rocoto-relleno.jpg) |
@@ -279,15 +253,7 @@ Carpeta: `image/almuerzos/`
 | Seco de Pollo | `seco-de-pollo.jpg` | en la carpeta (seco-de-pollo.jpg) |
 | Seco de Res | `seco-de-res.jpg` | en la carpeta (seco-de-res.jpg) |
 | Seco de Res con Frejoles | `seco-de-res-con-frejoles.jpg` | en la carpeta (seco-de-res-con-frejoles.jpg) |
-| Shámbar | `shambar.jpg` | en la carpeta (shambar.jpg) |
-| Solterito Arequipeño | `solterito-arequipeno.jpg` | en la carpeta (solterito-arequipeno.jpg) |
-| Sopa Criolla | `sopa-criolla.jpg` | en la carpeta (sopa-criolla.jpg) |
 | Sopa Seca Chinchana | `sopa-seca-chinchana.jpg` | en la carpeta (sopa-seca-chinchana.jpg) |
-| Sopa Wantán | `sopa-wantan.jpg` | en la carpeta (sopa-wantan.jpg) |
-| Sopa de Choros | `sopa-de-choros.jpg` | en la carpeta (sopa-de-choros.jpg) |
-| Sopa de Habas | `sopa-de-habas.jpg` | en la carpeta (sopa-de-habas.jpg) |
-| Sopa de Morón | `sopa-de-moron.jpg` | en la carpeta (sopa-de-moron.jpg) |
-| Sopa de Quinua | `sopa-de-quinua.jpg` | en la carpeta (sopa-de-quinua.jpg) |
 | Sudado | `sudado.jpg` | en la carpeta (sudado.jpg) |
 | Sudado de Pescado a la Norteña | `sudado-de-pescado-a-la-nortena.jpg` | en la carpeta (sudado-de-pescado-a-la-nortena.jpg) |
 | Tacacho con Cecina | `tacacho-con-cecina.jpg` | en la carpeta (tacacho-con-cecina.jpg) |
@@ -297,12 +263,62 @@ Carpeta: `image/almuerzos/`
 | Tallarines Verdes | `tallarines-verdes.jpg` | en la carpeta (tallarines-verdes.jpg) |
 | Tallarín Saltado Criollo | `tallarin-saltado-criollo.jpg` | en la carpeta (tallarin-saltado-criollo.jpg) |
 | Tallarín a la Huancaína con Lomo | `tallarin-a-la-huancaina-con-lomo.jpg` | en la carpeta (tallarin-a-la-huancaina-con-lomo.jpg) |
-| Timbuche | `timbuche.jpg` | en la carpeta (timbuche.jpg) |
-| Tiradito de Pescado | `tiradito-de-pescado.jpg` | en la carpeta (tiradito-de-pescado.jpg) |
 | Tortilla de Raya | `tortilla-de-raya.jpg` | en la carpeta (tortilla-de-raya.jpg) |
 | Trigo Atamalado | `trigo-atamalado.jpg` | en la carpeta (trigo-atamalado.jpg) |
 | Trucha Frita | `trucha-frita.jpg` | en la carpeta (trucha-frita.jpg) |
 | Trucha a la Parrilla | `trucha-a-la-parrilla.jpg` | en la carpeta (trucha-a-la-parrilla.jpg) |
+
+## sopas
+
+Carpeta: `image/sopas/`
+
+| Receta | Archivo | Estado |
+|---|---|---|
+| Aguadito de Mariscos | `aguadito-de-mariscos.jpg` | en la carpeta (aguadito-de-mariscos.jpg) |
+| Aguadito de Pollo | `aguadito-de-pollo.jpg` | en la carpeta (aguadito-de-pollo.jpg) |
+| Caldo de Gallina | `caldo-de-gallina.jpg` | en la carpeta (caldo-de-gallina.jpg) |
+| Caldo de Mote | `caldo-de-mote.jpg` | en la carpeta (caldo-de-mote.jpg) |
+| Chairo | `chairo.jpg` | en la carpeta (chairo.jpg) |
+| Chupe Verde | `chupe-verde.jpg` | en la carpeta (chupe-verde.jpg) |
+| Chupe de Camarones | `chupe-de-camarones.jpg` | en la carpeta (chupe-de-camarones.jpg) |
+| Chupe de Pescado | `chupe-de-pescado.jpg` | en la carpeta (chupe-de-pescado.jpg) |
+| Chupe de Quinua | `chupe-de-quinua.jpg` | en la carpeta (chupe-de-quinua.jpg) |
+| Inchicapi | `inchicapi.jpg` | en la carpeta (inchicapi.jpg) |
+| Menestrón | `menestron.jpg` | en la carpeta (menestron.jpg) |
+| Parihuela | `parihuela.jpg` | en la carpeta (parihuela.jpg) |
+| Patasca | `patasca.jpg` | en la carpeta (patasca.jpg) |
+| Shámbar | `shambar.jpg` | en la carpeta (shambar.jpg) |
+| Sopa Criolla | `sopa-criolla.jpg` | en la carpeta (sopa-criolla.jpg) |
+| Sopa Wantán | `sopa-wantan.jpg` | en la carpeta (sopa-wantan.jpg) |
+| Sopa de Choros | `sopa-de-choros.jpg` | en la carpeta (sopa-de-choros.jpg) |
+| Sopa de Habas | `sopa-de-habas.jpg` | en la carpeta (sopa-de-habas.jpg) |
+| Sopa de Morón | `sopa-de-moron.jpg` | en la carpeta (sopa-de-moron.jpg) |
+| Sopa de Quinua | `sopa-de-quinua.jpg` | en la carpeta (sopa-de-quinua.jpg) |
+| Timbuche | `timbuche.jpg` | en la carpeta (timbuche.jpg) |
+
+## entradas
+
+Carpeta: `image/entradas/`
+
+| Receta | Archivo | Estado |
+|---|---|---|
+| Anticuchos de corazón | `anticuchos-de-corazon.jpg` | en la carpeta (anticuchos-de-corazon.jpg) |
+| Causa Limeña | `causa-limena.jpg` | en la carpeta (causa-limena.jpg) |
+| Causa de Atún | `causa-de-atun.jpg` | en la carpeta (causa-de-atun.jpg) |
+| Ceviche | `ceviche.jpg` | en la carpeta (ceviche.jpg) |
+| Ceviche Mixto | `ceviche-mixto.jpg` | en la carpeta (ceviche-mixto.jpg) |
+| Ceviche de Champiñones | `ceviche-de-champinones.jpg` | en la carpeta (ceviche-de-champinones.jpg) |
+| Ceviche de Conchas Negras | `ceviche-de-conchas-negras.jpg` | en la carpeta (ceviche-de-conchas-negras.jpg) |
+| Ceviche de Pulpo | `ceviche-de-pulpo.jpg` | en la carpeta (ceviche-de-pulpo.jpg) |
+| Conchitas a la Parmesana | `conchitas-a-la-parmesana.jpg` | en la carpeta (conchitas-a-la-parmesana.jpg) |
+| Jalea Mixta | `jalea-mixta.jpg` | en la carpeta (jalea-mixta.jpg) |
+| Leche de Tigre | `leche-de-tigre.jpg` | en la carpeta (leche-de-tigre.jpg) |
+| Ocopa Arequipeña | `ocopa-arequipena.jpg` | en la carpeta (ocopa-arequipena.jpg) |
+| Papa Rellena | `papa-rellena.jpg` | en la carpeta (papa-rellena.jpg) |
+| Papa a la Huancaína | `papa-a-la-huancaina.jpg` | en la carpeta (papa-a-la-huancaina.jpg) |
+| Pulpo al Olivo | `pulpo-al-olivo.jpg` | en la carpeta (pulpo-al-olivo.jpg) |
+| Solterito Arequipeño | `solterito-arequipeno.jpg` | en la carpeta (solterito-arequipeno.jpg) |
+| Tiradito de Pescado | `tiradito-de-pescado.jpg` | en la carpeta (tiradito-de-pescado.jpg) |
 
 ## cenas
 

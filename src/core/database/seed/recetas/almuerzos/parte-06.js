@@ -30,7 +30,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=qhyBqgUUzbs",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'entradas',
     nombre: 'Ceviche de Champiñones',
     descripcion: 'Versión vegetariana del cebiche con champiñones, limón y ají limo.',
     ingredientes: [
@@ -310,7 +310,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=T29kZtnoELM",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa de Quinua',
     descripcion: 'Sopa andina de quinua con verduras, papa y queso fresco.',
     ingredientes: [
@@ -338,7 +338,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=h9zxfVEMKx0",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Sopa de Habas',
     descripcion: 'Caldo andino espeso de habas secas con papa y hierbabuena.',
     ingredientes: [
@@ -366,7 +366,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=nKtySjMfO_k",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Caldo de Mote',
     descripcion: 'Caldo serrano de mote con carne de res y verduras.',
     ingredientes: [
@@ -394,7 +394,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=c26Ch6Mrf4Y",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Chupe de Quinua',
     descripcion: 'Sopa cremosa de quinua con leche, queso y huevo escalfado.',
     ingredientes: [
@@ -618,7 +618,7 @@ export const parte = [
     video_url: "https://www.youtube.com/watch?v=Jqls09smGMY",
   },
   {
-    categoria_slug: 'almuerzos',
+    categoria_slug: 'sopas',
     nombre: 'Timbuche',
     descripcion: 'Caldo amazónico ligero de pescado fresco con huevo y sachaculantro.',
     ingredientes: [

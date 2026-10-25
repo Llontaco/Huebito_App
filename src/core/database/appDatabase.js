@@ -38,9 +38,14 @@ class AppDatabase {
     const seedAlDia = storedData.seedVersion === SEED_VERSION;
     if (yaTieneCategoriaSlug && yaTieneVideoUrl && yaTieneRutaAbsoluta && seedAlDia) return storedData;
 
-    const categorias = storedData[DbTables.categorias]?.length > 0
-      ? storedData[DbTables.categorias]
-      : categoriasSeedData.map((categoria, index) => ({ id: index + 1, ...categoria }));
+    // Se conservan las categorías guardadas (y sus ids) y se agregan las que el
+    // seed trae y la copia vieja no tenía, como sopas y entradas.
+    const categorias = [...(storedData[DbTables.categorias] ?? [])];
+    for (const categoria of categoriasSeedData) {
+      if (categorias.some((c) => c.slug === categoria.slug)) continue;
+      const id = categorias.length > 0 ? Math.max(...categorias.map((c) => c.id)) + 1 : 1;
+      categorias.push({ id, ...categoria });
+    }
     const categoriaIds = Object.fromEntries(categorias.map((categoria) => [categoria.slug, categoria.id]));
     const recetas = recetasSeedData.map((receta, index) => ({
       id: index + 1,
