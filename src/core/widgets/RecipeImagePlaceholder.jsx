@@ -37,12 +37,12 @@ export function RecipeImagePlaceholder({ categoria, imagenUrl, borderRadius = '2
       className="w-full h-full flex items-center justify-center"
       style={{
         borderRadius,
-        background: `linear-gradient(135deg, ${colors.primary}33, ${colors.primary}0D)`,
+        backgroundColor: colors.primaryTint,
       }}
     >
       <div
         className="flex items-center justify-center rounded-full"
-        style={{ width: '38%', aspectRatio: '1', backgroundColor: `${colors.primary}26` }}
+        style={{ width: '38%', aspectRatio: '1', backgroundColor: colors.primaryTint }}
       >
         <Icon className="w-[45%] h-[45%]" style={{ color: colors.primary }} />
       </div>

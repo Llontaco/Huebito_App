@@ -38,7 +38,7 @@ export function AlmuerzoScreen() {
       <AppTopBar title="Almorzar" onBack={() => navigate(-1)} />
 
       <div className="px-5 mt-2">
-        <h2 className="text-[27px] font-bold font-display text-on-surface">¿Qué se te antoja?</h2>
+        <h2 className="text-[30px] font-bold font-display tracking-[-0.03em] leading-tight text-on-surface">¿Qué se te antoja?</h2>
         <p className="mt-2 text-sm font-body text-on-surface-variant">
           Elige qué quieres sortear y gira la ruleta.
         </p>
@@ -49,12 +49,12 @@ export function AlmuerzoScreen() {
           <button
             key={slug}
             onClick={() => navigate(AppRoutes.roulette(slug))}
-            className="w-full flex items-center gap-4 px-4 py-4 rounded-[20px] text-left"
+            className="w-full flex items-center gap-4 px-4 py-4 rounded-card text-left"
             style={{ backgroundColor: colors.surfaceContainer }}
           >
             <span
               className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: `${colors.primary}26` }}
+              style={{ backgroundColor: colors.primaryTint }}
             >
               <Icon size={24} style={{ color: colors.primary }} />
             </span>

@@ -9,6 +9,8 @@
 
   body {
     @apply bg-surface text-on-surface font-body antialiased;
+    /* Interletrado negativo de iOS: el texto se ve compacto y nítido. */
+    letter-spacing: -0.01em;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     user-select: none;
@@ -32,20 +34,20 @@
 }
 
 @layer utilities {
-  .bg-surface { background-color: #FBF7F2; }
-  .dark .bg-surface { background-color: #292A2D; }
+  .bg-surface { background-color: #F5F5F7; }
+  .dark .bg-surface { background-color: #000000; }
   
   .bg-surface-container { background-color: #FFFFFF; }
-  .dark .bg-surface-container { background-color: #231717; }
+  .dark .bg-surface-container { background-color: #1C1C1E; }
   
-  .text-on-surface { color: #231717; }
-  .dark .text-on-surface { color: #FFFFFF; }
+  .text-on-surface { color: #1D1D1F; }
+  .dark .text-on-surface { color: #F5F5F7; }
   
-  .text-on-surface-variant { color: #756F68; }
-  .dark .text-on-surface-variant { color: #5F6062; }
+  .text-on-surface-variant { color: #6E6E73; }
+  .dark .text-on-surface-variant { color: #98989D; }
   
-  .border-outline { border-color: #E3DCD3; }
-  .dark .border-outline { border-color: #404249; }
+  .border-outline { border-color: #D2D2D7; }
+  .dark .border-outline { border-color: #38383A; }
 
   /* Respetan el notch/isla y las barras de gesto en Android/iOS cuando la
      app corre empaquetada (env() cae a 0px en un navegador normal). */

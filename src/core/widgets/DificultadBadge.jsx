@@ -7,19 +7,20 @@ export function DificultadBadge({ dificultad }) {
   const nivel = dificultad === Dificultad.facil ? 1 : dificultad === Dificultad.media ? 2 : 3;
 
   return (
-    <div className="flex items-center gap-1.5">
+    <div className="flex items-center gap-1">
       {[0, 1, 2].map((i) => (
         <div
           key={i}
-          className="w-1.5 rounded-sm"
+          className="w-[5px] rounded-full"
           style={{
             height: 6 + i * 3,
             backgroundColor: i < nivel ? colors.primary : colors.outline,
           }}
         />
       ))}
-      <span className="text-[12px] font-medium font-body tracking-wider ml-1.5 text-on-surface-variant">
-        {dificultad.label}
+      {/* dificultad es el valor guardado ("facil"); la etiqueta visible sale de Dificultad. */}
+      <span className="text-[13px] font-body ml-1.5 text-on-surface-variant">
+        {Dificultad.getLabel(dificultad)}
       </span>
     </div>
   );

@@ -45,7 +45,7 @@ export function HomeScreen() {
       </div>
 
       <div className="px-5 mt-2">
-        <h2 className="text-[27px] font-bold font-display text-on-surface">¿Qué quieres hacer hoy?</h2>
+        <h2 className="text-[30px] font-bold font-display tracking-[-0.03em] leading-tight text-on-surface">¿Qué quieres hacer hoy?</h2>
       </div>
 
       <div className="px-5 mt-6 flex flex-col gap-3">
@@ -53,12 +53,12 @@ export function HomeScreen() {
           <button
             key={slug}
             onClick={() => navigate(ruta ?? AppRoutes.roulette(slug))}
-            className="w-full flex items-center gap-4 px-4 py-4 rounded-[20px] text-left"
+            className="w-full flex items-center gap-4 px-4 py-4 rounded-card text-left"
             style={{ backgroundColor: colors.surfaceContainer }}
           >
             <span
               className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-              style={{ backgroundColor: `${colors.primary}26` }}
+              style={{ backgroundColor: colors.primaryTint }}
             >
               <Icon size={24} style={{ color: colors.primary }} />
             </span>
@@ -112,7 +112,7 @@ function Section({ title, onVerTodas, recetas, loading, emptyLabel, navigate }) 
         <h3 className="text-[18px] font-semibold font-body text-on-surface">{title}</h3>
         <button
           onClick={onVerTodas}
-          className="text-[12px] font-medium font-body tracking-wider"
+          className="text-[15px] font-body"
           style={{ color: colors.primary }}
         >
           Ver todas

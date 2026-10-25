@@ -73,7 +73,7 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
           transform: visible ? 'translateY(0)' : 'translateY(12px)',
         }}
       >
-        <div className="w-full aspect-[1.3] rounded-[20px] overflow-hidden">
+        <div className="w-full aspect-[1.3] rounded-card overflow-hidden">
           <RecipeImagePlaceholder categoria={receta.categoriaSlug} imagenUrl={receta.imagenUrl} />
         </div>
         <CreditoImagen
@@ -83,7 +83,7 @@ export function RecetaDetailScreen({ receta: propReceta, mostrarVolverAGirar = f
         />
 
         <div className="receta-texto">
-          <h1 className="mt-6 text-[27px] font-bold font-display text-on-surface">{receta.nombre}</h1>
+          <h1 className="mt-6 text-[30px] font-bold font-display tracking-[-0.03em] leading-tight text-on-surface">{receta.nombre}</h1>
           <p className="mt-2 text-sm font-body text-on-surface-variant leading-relaxed">
             {receta.descripcion}
           </p>
@@ -202,7 +202,7 @@ const nombreDelMomento = {
 function AcompananteCard({ momento, onSi, onNo }) {
   const { colors } = useTheme();
   return (
-    <div className="mt-6 p-4 rounded-[20px]" style={{ backgroundColor: colors.surfaceContainer }}>
+    <div className="mt-6 p-4 rounded-card" style={{ backgroundColor: colors.surfaceContainer }}>
       <div className="flex items-center gap-2">
         <CupSoda size={20} style={{ color: colors.primary }} />
         <p className="text-[16px] font-semibold font-body text-on-surface">¿Quieres un acompañante?</p>
@@ -227,8 +227,8 @@ function AcompananteCard({ momento, onSi, onNo }) {
 function CombinacionCard({ momento, plato, bebida, onVerPlato }) {
   const { colors } = useTheme();
   return (
-    <div className="mt-6 p-4 rounded-[20px]" style={{ backgroundColor: colors.surfaceContainer }}>
-      <p className="text-[12px] font-medium font-body tracking-wider text-on-surface-variant uppercase">
+    <div className="mt-6 p-4 rounded-card" style={{ backgroundColor: colors.surfaceContainer }}>
+      <p className="text-[13px] font-body text-on-surface-variant">
         Tu {nombreDelMomento[momento] ?? 'comida'} de hoy
       </p>
       <button onClick={onVerPlato} className="mt-3 w-full flex items-center gap-3 text-left">
@@ -248,12 +248,12 @@ function InfoChip({ icon: Icon, label, value }) {
   const { colors } = useTheme();
   return (
     <div
-      className="flex-1 flex items-center gap-2 p-4 rounded-[20px]"
+      className="flex-1 flex items-center gap-2 p-4 rounded-card"
       style={{ backgroundColor: colors.surfaceContainer }}
     >
       <Icon size={20} style={{ color: colors.primary }} />
       <div className="min-w-0">
-        <p className="text-[12px] font-medium font-body tracking-wider text-on-surface-variant uppercase">{label}</p>
+        <p className="text-[13px] font-body text-on-surface-variant">{label}</p>
         <p className="text-sm font-body text-on-surface truncate">{value}</p>
       </div>
     </div>

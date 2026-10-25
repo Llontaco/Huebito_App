@@ -34,7 +34,7 @@ function VideoModal({ videoUrl, nombre, onClose }) {
       aria-label={`Video de ${nombre}`}
     >
       <div
-        className="w-full max-w-2xl rounded-[20px] overflow-hidden shadow-2xl"
+        className="w-full max-w-2xl rounded-card overflow-hidden shadow-2xl"
         style={{ backgroundColor: colors.surface }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -74,7 +74,7 @@ function AvisoVideo({ icono: Icono, titulo, detalle }) {
   const { colors } = useTheme();
   return (
     <div
-      className="mt-3 flex items-center gap-4 p-4 rounded-[20px]"
+      className="mt-3 flex items-center gap-4 p-4 rounded-card"
       style={{ backgroundColor: colors.surfaceContainer }}
     >
       <div
@@ -113,7 +113,7 @@ export function RecetaVideoSection({ videoUrl, nombre }) {
     contenido = (
       <button
         onClick={() => setModalAbierto(true)}
-        className="group mt-3 relative block w-full aspect-video rounded-[20px] overflow-hidden text-left"
+        className="group mt-3 relative block w-full aspect-video rounded-card overflow-hidden text-left"
         style={{ backgroundColor: colors.surfaceContainer }}
         aria-label={`Ver video de la preparación de ${nombre}`}
       >

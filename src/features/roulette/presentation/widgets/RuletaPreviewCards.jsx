@@ -81,7 +81,6 @@ export function RuletaPreviewCards({ recetas = [], size = 220, margin = 60 }) {
               style={{
                 aspectRatio: '1 / 1',
                 border: `2px solid ${colors.primary}`,
-                boxShadow: `0 10px 22px -8px ${colors.primary}80, 0 4px 10px -4px rgba(35,23,23,0.3)`,
               }}
             >
               <RecipeImagePlaceholder

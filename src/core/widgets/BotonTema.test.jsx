@@ -45,7 +45,7 @@ describe('BotonTema', () => {
     document.head.appendChild(meta);
     montar();
     await userEvent.click(screen.getByRole('button', { name: 'Cambiar a tema oscuro' }));
-    expect(meta.getAttribute('content')).toBe('#292A2D');
+    expect(meta.getAttribute('content')).toBe('#000000');
     meta.remove();
   });
 });
