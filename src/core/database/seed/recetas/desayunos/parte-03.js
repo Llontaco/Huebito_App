@@ -781,7 +781,7 @@ export const parte = [
     tiempo_minutos: 35,
     dificultad: 'facil',
     imagen_asset: '/assets/images/recetas/choclo_con_queso.jpg',
-    bebida: 'Mate de muña',
+    bebida: 'Mate de coca',
     acompanamiento: null,
     video_url: null,
   },

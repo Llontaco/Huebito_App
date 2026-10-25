@@ -781,7 +781,7 @@ export const parte = [
     tiempo_minutos: 40,
     dificultad: 'facil',
     imagen_asset: '/assets/images/recetas/chupe_verde.jpg',
-    bebida: 'Mate de muña',
+    bebida: 'Mate de coca',
     acompanamiento: null,
     video_url: "https://www.youtube.com/watch?v=EyYbvV97wqo",
   },

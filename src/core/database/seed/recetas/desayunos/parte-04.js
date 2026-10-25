@@ -53,7 +53,7 @@ export const parte = [
     tiempo_minutos: 35,
     dificultad: 'facil',
     imagen_asset: '/assets/images/recetas/papa_sancochada_con_queso.jpg',
-    bebida: 'Mate de muña',
+    bebida: 'Mate de coca',
     acompanamiento: 'Salsa de huacatay',
     video_url: "https://www.youtube.com/watch?v=vEpl-MPVpco",
   },
