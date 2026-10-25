@@ -29,12 +29,12 @@ Esta lista se genera con `node database/imagenes/listarCarpeta.mjs`.
 
 | Categoría | Recetas | En la carpeta | Foto en la base | Faltan |
 |---|---|---|---|---|
-| desayunos | 106 | 104 | 1 | 1 |
-| almuerzos | 112 | 112 | 0 | 0 |
+| desayunos | 90 | 88 | 1 | 1 |
+| almuerzos | 110 | 110 | 0 | 0 |
 | sopas | 21 | 21 | 0 | 0 |
 | entradas | 17 | 17 | 0 | 0 |
-| cenas | 33 | 33 | 0 | 0 |
-| bebidas | 135 | 132 | 0 | 3 |
+| cenas | 27 | 27 | 0 | 0 |
+| bebidas | 115 | 115 | 0 | 0 |
 
 ## desayunos
 
@@ -50,10 +50,7 @@ Carpeta: `image/desayunos/`
 | Buñuelos | `bunuelos.jpg` | en la carpeta (bunuelos.jpg) |
 | Cachanga | `cachanga.jpg` | en la carpeta (cachanga.jpg) |
 | Camote frito con miel | `camote-frito-con-miel.jpg` | en la carpeta (camote-frito-con-miel.jpg) |
-| Camote sancochado con queso | `camote-sancochado-con-queso.jpg` | en la carpeta (camote-sancochado-con-queso.jpg) |
-| Cancha con queso | `cancha-con-queso.jpg` | en la carpeta (cancha-con-queso.jpg) |
 | Choclo con queso | `choclo-con-queso.jpg` | en la carpeta (choclo-con-queso.jpg) |
-| Churros con chocolate | `churros-con-chocolate.jpg` | en la carpeta (churros-con-chocolate.jpg) |
 | Crepes dulces | `crepes-dulces.jpg` | en la carpeta (crepes-dulces.jpg) |
 | Croissant con jamón y queso | `croissant-con-jamon-y-queso.jpg` | en la carpeta (croissant-con-jamon-y-queso.jpg) |
 | Empanada de carne | `empanada-de-carne.jpg` | en la carpeta (empanada-de-carne.jpg) |
@@ -61,7 +58,6 @@ Carpeta: `image/desayunos/`
 | Empanada de queso | `empanada-de-queso.jpg` | en la carpeta (empanada-de-queso.jpg) |
 | Ensalada de frutas | `ensalada-de-frutas.jpg` | en la carpeta (ensalada-de-frutas.jpg) |
 | Galletas de avena | `galletas-de-avena.jpg` | en la carpeta (galletas-de-avena.jpg) |
-| Habas con queso | `habas-con-queso.jpg` | en la carpeta (habas-con-queso.jpg) |
 | Huevo escalfado con pan | `huevo-escalfado-con-pan.jpg` | en la carpeta (huevo-escalfado-con-pan.jpg) |
 | Huevos a la rabona | `huevos-a-la-rabona.jpg` | en la carpeta (huevos-a-la-rabona.jpg) |
 | Huevos al plato | `huevos-al-plato.jpg` | en la carpeta (huevos-al-plato.jpg) |
@@ -84,7 +80,6 @@ Carpeta: `image/desayunos/`
 | Pan con chorizo | `pan-con-chorizo.jpg` | en la carpeta (pan-con-chorizo.jpg) |
 | Pan con hot dog | `pan-con-hot-dog.jpg` | en la carpeta (pan-con-hot-dog.jpg) |
 | Pan con huevo frito | `pan-con-huevo-frito.jpg` | en la carpeta (pan-con-huevo-frito.jpg) |
-| Pan con huevo revuelto | `pan-con-huevo-revuelto.jpg` | en la carpeta (pan-con-huevo-revuelto.jpg) |
 | Pan con huevo y queso | `pan-con-huevo-y-queso.jpg` | en la carpeta (pan-con-huevo-y-queso.jpg) |
 | Pan con jamonada | `pan-con-jamonada.jpg` | en la carpeta (pan-con-jamonada.jpg) |
 | Pan con lechón | `pan-con-lechon.jpg` | en la carpeta (pan-con-lechon.jpg) |
@@ -94,32 +89,23 @@ Carpeta: `image/desayunos/`
 | Pan con miel y mantequilla | `pan-con-miel-y-mantequilla.jpg` | en la carpeta (pan-con-miel-y-mantequilla.jpg) |
 | Pan con mortadela | `pan-con-mortadela.jpg` | en la carpeta (pan-con-mortadela.jpg) |
 | Pan con palta | `pan-con-palta.jpg` | en la carpeta (pan-con-palta.jpg) |
-| Pan con palta y huevo | `pan-con-palta-y-huevo.jpg` | en la carpeta (pan-con-palta-y-huevo.jpg) |
 | Pan con pate | `pan-con-pate.jpg` | **falta** |
 | Pan con pavo | `pan-con-pavo.jpg` | en la carpeta (pan-con-pavo.jpg) |
 | Pan con pollo | `pan-con-pollo.jpg` | en la carpeta (pan-con-pollo.jpg) |
-| Pan con pollo deshilachado y palta | `pan-con-pollo-deshilachado-y-palta.jpg` | en la carpeta (pan-con-pollo-deshilachado-y-palta.jpg) |
 | Pan con queso crema y mermelada | `pan-con-queso-crema-y-mermelada.jpg` | en la carpeta (pan-con-queso-crema-y-mermelada.jpg) |
 | Pan con queso fresco | `pan-con-queso-fresco.jpg` | en la carpeta (pan-con-queso-fresco.jpg) |
 | Pan con queso mantecoso | `pan-con-queso-mantecoso.jpg` | en la carpeta (pan-con-queso-mantecoso.jpg) |
-| Pan con queso y tomate | `pan-con-queso-y-tomate.jpg` | en la carpeta (pan-con-queso-y-tomate.jpg) |
 | Pan con relleno | `pan-con-relleno.jpg` | en la carpeta (pan-con-relleno.jpg) |
 | Pan con salchicha huachana | `pan-con-salchicha-huachana.jpg` | en la carpeta (pan-con-salchicha-huachana.jpg) |
 | Pan con salpicón de pollo | `pan-con-salpicon-de-pollo.jpg` | en la carpeta (pan-con-salpicon-de-pollo.jpg) |
 | Pan con tamal | `pan-con-tamal.jpg` | en la carpeta (pan-con-tamal.jpg) |
 | Pan con tocino y huevo | `pan-con-tocino-y-huevo.jpg` | en la carpeta (pan-con-tocino-y-huevo.jpg) |
-| Pan con tortilla | `pan-con-tortilla.jpg` | en la carpeta (pan-con-tortilla.jpg) |
 | Pan con tortilla de raya | `pan-con-tortilla-de-raya.jpg` | en la carpeta (pan-con-tortilla-de-raya.jpg) |
 | Pan de camote | `pan-de-camote.jpg` | en la carpeta (pan-de-camote.jpg) |
-| Pan de kiwicha | `pan-de-kiwicha.jpg` | en la carpeta (pan-de-kiwicha.jpg) |
-| Pan de papa | `pan-de-papa.jpg` | en la carpeta (pan-de-papa.jpg) |
-| Pan integral casero | `pan-integral-casero.jpg` | en la carpeta (pan-integral-casero.jpg) |
 | Panqueques con miel | `panqueques-con-miel.jpg` | en la carpeta (panqueques-con-miel.jpg) |
-| Panqueques de quinua | `panqueques-de-quinua.jpg` | en la carpeta (panqueques-de-quinua.jpg) |
 | Papa sancochada con queso | `papa-sancochada-con-queso.jpg` | en la carpeta (papa-sancochada-con-queso.jpg) |
 | Papas doradas con huevo | `papas-doradas-con-huevo.jpg` | en la carpeta (papas-doradas-con-huevo.jpg) |
 | Pesque de quinua | `pesque-de-quinua.jpg` | en la carpeta (pesque-de-quinua.jpg) |
-| Picarones | `picarones.jpg` | en la carpeta (picarones.jpg) |
 | Pionono de manjar | `pionono-de-manjar.jpg` | en la carpeta (pionono-de-manjar.jpg) |
 | Plátano asado con queso | `platano-asado-con-queso.jpg` | en la carpeta (platano-asado-con-queso.jpg) |
 | Plátano frito con huevo | `platano-frito-con-huevo.jpg` | en la carpeta (platano-frito-con-huevo.jpg) |
@@ -127,7 +113,6 @@ Carpeta: `image/desayunos/`
 | Queque de vainilla | `queque-de-vainilla.jpg` | en la carpeta (queque-de-vainilla.jpg) |
 | Revuelto de champiñones | `revuelto-de-champinones.jpg` | en la carpeta (revuelto-de-champinones.jpg) |
 | Rosquitas de manteca | `rosquitas-de-manteca.jpg` | en la carpeta (rosquitas-de-manteca.jpg) |
-| Sopa de sémola | `sopa-de-semola.jpg` | en la carpeta (sopa-de-semola.jpg) |
 | Sándwich mixto caliente | `sandwich-mixto-caliente.jpg` | en la carpeta (sandwich-mixto-caliente.jpg) |
 | Sándwich triple | `sandwich-triple.jpg` | en la carpeta (sandwich-triple.jpg) |
 | Sánguche de chicharrón de pollo | `sanguche-de-chicharron-de-pollo.jpg` | en la carpeta (sanguche-de-chicharron-de-pollo.jpg) |
@@ -139,7 +124,6 @@ Carpeta: `image/desayunos/`
 | Torreja de choclo | `torreja-de-choclo.jpg` | en la carpeta (torreja-de-choclo.jpg) |
 | Tortilla de atún | `tortilla-de-atun.jpg` | en la carpeta (tortilla-de-atun.jpg) |
 | Tortilla de espinaca | `tortilla-de-espinaca.jpg` | en la carpeta (tortilla-de-espinaca.jpg) |
-| Tortilla de fideos | `tortilla-de-fideos.jpg` | en la carpeta (tortilla-de-fideos.jpg) |
 | Tortilla de papa | `tortilla-de-papa.jpg` | en la carpeta (tortilla-de-papa.jpg) |
 | Tortitas de quinua | `tortitas-de-quinua.jpg` | en la carpeta (tortitas-de-quinua.jpg) |
 | Tostada con manjar blanco | `tostada-con-manjar-blanco.jpg` | en la carpeta (tostada-con-manjar-blanco.jpg) |
@@ -159,7 +143,6 @@ Carpeta: `image/almuerzos/`
 | Aeropuerto | `aeropuerto.jpg` | en la carpeta (aeropuerto.jpg) |
 | Ají de Fideos | `aji-de-fideos.jpg` | en la carpeta (aji-de-fideos.jpg) |
 | Ají de Gallina | `aji-de-gallina.jpg` | en la carpeta (aji-de-gallina.jpg) |
-| Ají de Gallina Vegetariano | `aji-de-gallina-vegetariano.jpg` | en la carpeta (aji-de-gallina-vegetariano.jpg) |
 | Ají de Langostinos | `aji-de-langostinos.jpg` | en la carpeta (aji-de-langostinos.jpg) |
 | Apanado de Carne | `apanado-de-carne.jpg` | en la carpeta (apanado-de-carne.jpg) |
 | Arroz Chaufa | `arroz-chaufa.jpg` | en la carpeta (arroz-chaufa.jpg) |
@@ -194,7 +177,6 @@ Carpeta: `image/almuerzos/`
 | Corvina a la Plancha | `corvina-a-la-plancha.jpg` | en la carpeta (corvina-a-la-plancha.jpg) |
 | Costillas de Cerdo al Horno | `costillas-de-cerdo-al-horno.jpg` | en la carpeta (costillas-de-cerdo-al-horno.jpg) |
 | Cuy Chactado | `cuy-chactado.jpg` | en la carpeta (cuy-chactado.jpg) |
-| Dieta de Pollo | `dieta-de-pollo.jpg` | en la carpeta (dieta-de-pollo.jpg) |
 | Escabeche | `escabeche.jpg` | en la carpeta (escabeche.jpg) |
 | Escabeche de Pescado | `escabeche-de-pescado.jpg` | en la carpeta (escabeche-de-pescado.jpg) |
 | Espesado Chiclayano | `espesado-chiclayano.jpg` | en la carpeta (espesado-chiclayano.jpg) |
@@ -330,8 +312,6 @@ Carpeta: `image/cenas/`
 | Bolitas de yuca con queso | `bolitas-de-yuca-con-queso.jpg` | en la carpeta (bolitas-de-yuca-con-queso.jpg) |
 | Budín de pan | `budin-de-pan.jpg` | en la carpeta (budin-de-pan.jpg) |
 | Butifarra | `butifarra.jpg` | en la carpeta (butifarra.jpg) |
-| Chocotejas | `chocotejas.jpg` | en la carpeta (chocotejas.jpg) |
-| Cocadas | `cocadas.jpg` | en la carpeta (cocadas.jpg) |
 | Empanada de carne | `empanada-de-carne.jpg` | en la carpeta (empanada-de-carne.jpg) |
 | Empanada de pollo | `empanada-de-pollo.jpg` | en la carpeta (empanada-de-pollo.jpg) |
 | Empanadas dulces cusqueñas | `empanadas-dulces-cusquenas.jpg` | en la carpeta (empanadas-dulces-cusquenas.jpg) |
@@ -339,11 +319,9 @@ Carpeta: `image/cenas/`
 | Gaznates | `gaznates.jpg` | en la carpeta (gaznates.jpg) |
 | Hamburguesa casera | `hamburguesa-casera.jpg` | en la carpeta (hamburguesa-casera.jpg) |
 | Keke de zanahoria | `keke-de-zanahoria.jpg` | en la carpeta (keke-de-zanahoria.jpg) |
-| King kong | `king-kong.jpg` | en la carpeta (king-kong.jpg) |
 | Pan con chicharrón | `pan-con-chicharron.jpg` | en la carpeta (pan-con-chicharron.jpg) |
 | Pan con pejerrey | `pan-con-pejerrey.jpg` | en la carpeta (pan-con-pejerrey.jpg) |
 | Pan con pollo | `pan-con-pollo.jpg` | en la carpeta (pan-con-pollo.jpg) |
-| Pan de maca con cebolla | `pan-de-maca-con-cebolla.jpg` | en la carpeta (pan-de-maca-con-cebolla.jpg) |
 | Pancitos de papa | `pancitos-de-papa.jpg` | en la carpeta (pancitos-de-papa.jpg) |
 | Pastel de choclo dulce | `pastel-de-choclo-dulce.jpg` | en la carpeta (pastel-de-choclo-dulce.jpg) |
 | Pastelillos de yuca | `pastelillos-de-yuca.jpg` | en la carpeta (pastelillos-de-yuca.jpg) |
@@ -356,8 +334,6 @@ Carpeta: `image/cenas/`
 | Sánguche de pollo a la brasa | `sanguche-de-pollo-a-la-brasa.jpg` | en la carpeta (sanguche-de-pollo-a-la-brasa.jpg) |
 | Tamal criollo | `tamal-criollo.jpg` | en la carpeta (tamal-criollo.jpg) |
 | Tequeños de queso | `tequenos-de-queso.jpg` | en la carpeta (tequenos-de-queso.jpg) |
-| Torta de maracuyá | `torta-de-maracuya.jpg` | en la carpeta (torta-de-maracuya.jpg) |
-| Torta tres leches | `torta-tres-leches.jpg` | en la carpeta (torta-tres-leches.jpg) |
 | Turrón de doña pepa | `turron-de-dona-pepa.jpg` | en la carpeta (turron-de-dona-pepa.jpg) |
 
 ## bebidas
@@ -373,8 +349,6 @@ Carpeta: `image/bebidas/`
 | Agua de romero | `agua-de-romero.jpg` | en la carpeta (agua-de-romero.jpg) |
 | Agua saborizada de cítricos | `agua-saborizada-de-citricos.jpg` | en la carpeta (agua-saborizada-de-citricos.jpg) |
 | Aguajina | `aguajina.jpg` | en la carpeta (aguajina.jpg) |
-| Api blanco | `api-blanco.jpg` | en la carpeta (api-blanco.jpg) |
-| Api morado | `api-morado.jpg` | en la carpeta (api-morado.jpg) |
 | Avena | `avena.jpg` | en la carpeta (avena.jpg) |
 | Batido de chirimoya | `batido-de-chirimoya.jpg` | en la carpeta (batido-de-chirimoya.jpg) |
 | Batido de lúcuma | `batido-de-lucuma.jpg` | en la carpeta (batido-de-lucuma.jpg) |
@@ -405,27 +379,15 @@ Carpeta: `image/bebidas/`
 | Cremolada de lúcuma | `cremolada-de-lucuma.jpg` | en la carpeta (cremolada-de-lucuma.jpg) |
 | Cremolada de maracuyá | `cremolada-de-maracuya.jpg` | en la carpeta (cremolada-de-maracuya.jpg) |
 | Emoliente | `emoliente.jpg` | en la carpeta (emoliente.jpg) |
-| Emoliente con uña de gato | `emoliente-con-una-de-gato.jpg` | en la carpeta (emoliente-con-una-de-gato.jpg) |
 | Extracto de alfalfa | `extracto-de-alfalfa.jpg` | en la carpeta (extracto-de-alfalfa.jpg) |
 | Frutillada | `frutillada.jpg` | en la carpeta (frutillada.jpg) |
 | Hierba luisa | `hierba-luisa.jpg` | en la carpeta (hierba-luisa.jpg) |
-| Horchata de arroz | `horchata-de-arroz.jpg` | en la carpeta (horchata-de-arroz.jpg) |
-| Infusión de boldo | `infusion-de-boldo.jpg` | en la carpeta (infusion-de-boldo.jpg) |
-| Infusión de cedrón | `infusion-de-cedron.jpg` | en la carpeta (infusion-de-cedron.jpg) |
-| Infusión de chanca piedra | `infusion-de-chanca-piedra.jpg` | en la carpeta (infusion-de-chanca-piedra.jpg) |
 | Infusión de eucalipto | `infusion-de-eucalipto.jpg` | en la carpeta (infusion-de-eucalipto.jpg) |
-| Infusión de hercampuri | `infusion-de-hercampuri.jpg` | **falta** |
 | Infusión de hierbas | `infusion-de-hierbas.jpg` | en la carpeta (infusion-de-hierbas.jpg) |
-| Infusión de llantén | `infusion-de-llanten.jpg` | en la carpeta (infusion-de-llanten.jpg) |
-| Infusión de manayupa | `infusion-de-manayupa.jpg` | **falta** |
 | Infusión de menta | `infusion-de-menta.jpg` | en la carpeta (infusion-de-menta.jpg) |
-| Infusión de paico | `infusion-de-paico.jpg` | en la carpeta (infusion-de-paico.jpg) |
-| Infusión de tilo | `infusion-de-tilo.jpg` | en la carpeta (infusion-de-tilo.jpg) |
 | Infusión de toronjil | `infusion-de-toronjil.jpg` | en la carpeta (infusion-de-toronjil.jpg) |
 | Infusión de uña de gato | `infusion-de-una-de-gato.jpg` | en la carpeta (infusion-de-una-de-gato.jpg) |
-| Infusión de valeriana | `infusion-de-valeriana.jpg` | en la carpeta (infusion-de-valeriana.jpg) |
 | Jugo de aguaymanto | `jugo-de-aguaymanto.jpg` | en la carpeta (jugo-de-aguaymanto.jpg) |
-| Jugo de apio con piña | `jugo-de-apio-con-pina.jpg` | en la carpeta (jugo-de-apio-con-pina.jpg) |
 | Jugo de betarraga | `jugo-de-betarraga.jpg` | en la carpeta (jugo-de-betarraga.jpg) |
 | Jugo de chirimoya | `jugo-de-chirimoya.jpg` | en la carpeta (jugo-de-chirimoya.jpg) |
 | Jugo de durazno | `jugo-de-durazno.jpg` | en la carpeta (jugo-de-durazno.jpg) |
@@ -469,14 +431,10 @@ Carpeta: `image/bebidas/`
 | Limonada de hierbabuena | `limonada-de-hierbabuena.jpg` | en la carpeta (limonada-de-hierbabuena.jpg) |
 | Limonada frozen | `limonada-frozen.jpg` | en la carpeta (limonada-frozen.jpg) |
 | Maca | `maca.jpg` | en la carpeta (maca.jpg) |
-| Maca con algarrobina | `maca-con-algarrobina.jpg` | en la carpeta (maca-con-algarrobina.jpg) |
 | Manzanilla | `manzanilla.jpg` | en la carpeta (manzanilla.jpg) |
 | Maracuyá frozen | `maracuya-frozen.jpg` | en la carpeta (maracuya-frozen.jpg) |
 | Masato de yuca | `masato-de-yuca.jpg` | en la carpeta (masato-de-yuca.jpg) |
-| Mate de anís | `mate-de-anis.jpg` | en la carpeta (mate-de-anis.jpg) |
 | Mate de coca | `mate-de-coca.jpg` | en la carpeta (mate-de-coca.jpg) |
-| Mate de coca con muña | `mate-de-coca-con-muna.jpg` | en la carpeta (mate-de-coca-con-muna.jpg) |
-| Mate de muña | `mate-de-muna.jpg` | en la carpeta (mate-de-muna.jpg) |
 | Ponche de habas | `ponche-de-habas.jpg` | en la carpeta (ponche-de-habas.jpg) |
 | Ponche de leche | `ponche-de-leche.jpg` | en la carpeta (ponche-de-leche.jpg) |
 | Ponche de maní | `ponche-de-mani.jpg` | en la carpeta (ponche-de-mani.jpg) |
@@ -488,9 +446,7 @@ Carpeta: `image/bebidas/`
 | Refresco de carambola | `refresco-de-carambola.jpg` | en la carpeta (refresco-de-carambola.jpg) |
 | Refresco de cebada | `refresco-de-cebada.jpg` | en la carpeta (refresco-de-cebada.jpg) |
 | Refresco de cocona | `refresco-de-cocona.jpg` | en la carpeta (refresco-de-cocona.jpg) |
-| Refresco de habas tostadas | `refresco-de-habas-tostadas.jpg` | **falta** |
 | Refresco de hierbabuena con limón | `refresco-de-hierbabuena-con-limon.jpg` | en la carpeta (refresco-de-hierbabuena-con-limon.jpg) |
-| Refresco de kiwicha | `refresco-de-kiwicha.jpg` | en la carpeta (refresco-de-kiwicha.jpg) |
 | Refresco de linaza | `refresco-de-linaza.jpg` | en la carpeta (refresco-de-linaza.jpg) |
 | Refresco de maíz morado con piña | `refresco-de-maiz-morado-con-pina.jpg` | en la carpeta (refresco-de-maiz-morado-con-pina.jpg) |
 | Refresco de piña con cáscara | `refresco-de-pina-con-cascara.jpg` | en la carpeta (refresco-de-pina-con-cascara.jpg) |

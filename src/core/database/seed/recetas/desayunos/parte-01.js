@@ -83,33 +83,6 @@ export const parte = [
   },
   {
     categoria_slug: 'desayunos',
-    nombre: "Pan con tortilla",
-    descripcion: "Tortilla de verduras esponjosa servida caliente en pan francés.",
-    ingredientes: [
-      "4 huevos",
-      "1 taza de verduras picadas (cebolla, tomate y pimiento)",
-      "4 panes franceses",
-      "1/2 cucharadita de sal",
-      "1/4 cucharadita de pimienta",
-    ],
-    preparacion: [
-      "Picar finamente las verduras (cebolla, tomate, pimiento) en cubos pequeños",
-      "Batir los huevos enérgicamente en un bowl junto con sal y pimienta al gusto",
-      "Incorporar las verduras picadas a los huevos batidos y mezclar bien",
-      "Calentar una sartén con un poco de aceite a fuego medio",
-      "Verter la mezcla y cocinar tapado unos 3 minutos hasta que cuaje por debajo",
-      "Voltear la tortilla con ayuda de un plato y cocinar el otro lado hasta dorar ligeramente",
-      "Colocar la tortilla caliente dentro del pan francés recién partido y servir",
-    ],
-    tiempo_minutos: 15,
-    dificultad: "facil",
-    imagen_asset: "/assets/images/recetas/pan_con_tortilla.jpg",
-    bebida: "Emoliente",
-    acompanamiento: null,
-    video_url: "https://www.youtube.com/watch?v=snWN9zp0Usw",
-  },
-  {
-    categoria_slug: 'desayunos',
     nombre: "Pan con huevo",
     descripcion: "Huevo frito o revuelto servido en pan francés recién horneado.",
     ingredientes: [

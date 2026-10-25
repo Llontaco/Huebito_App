@@ -60,16 +60,6 @@
   "vistas": 2935839
  },
  {
-  "recetaId": 275,
-  "categoria": "almuerzos",
-  "nombre": "Ají de Gallina Vegetariano",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 254,
   "categoria": "almuerzos",
   "nombre": "Ají de Langostinos",
@@ -568,16 +558,6 @@
   "canal": "Waldir Maqque",
   "duracion": "3:35",
   "vistas": 290733
- },
- {
-  "recetaId": 244,
-  "categoria": "almuerzos",
-  "nombre": "Dieta de Pollo",
-  "videoUrl": "https://www.youtube.com/watch?v=0p4qLwuG5Lk",
-  "titulo": "Cocina Sopa Dieta de POLLO Rico y Barato | Abelca",
-  "canal": "Abelca",
-  "duracion": "6:23",
-  "vistas": 1298634
  },
  {
   "recetaId": 159,
@@ -1570,26 +1550,6 @@
   "vistas": 304246
  },
  {
-  "recetaId": 321,
-  "categoria": "bebidas",
-  "nombre": "Api blanco",
-  "videoUrl": "https://www.youtube.com/watch?v=-HCvoh0zc80",
-  "titulo": "Preparación de Api Morado y Api Blanco – Cocina Boliviana",
-  "canal": "Bolivianita.de",
-  "duracion": "6:40",
-  "vistas": 73805
- },
- {
-  "recetaId": 320,
-  "categoria": "bebidas",
-  "nombre": "Api morado",
-  "videoUrl": "https://www.youtube.com/watch?v=raam69PM2oA",
-  "titulo": "Api Morado con pasteles de Queso",
-  "canal": "CocinandoconLuz her",
-  "duracion": "11:22",
-  "vistas": 227119
- },
- {
   "recetaId": 302,
   "categoria": "bebidas",
   "nombre": "Avena",
@@ -1890,16 +1850,6 @@
   "vistas": 185557
  },
  {
-  "recetaId": 325,
-  "categoria": "bebidas",
-  "nombre": "Emoliente con uña de gato",
-  "videoUrl": "https://www.youtube.com/watch?v=XEB_Qw9MBww",
-  "titulo": "Preparación del Emoliente / Bebida tradicional del Perú",
-  "canal": "Cocina Fácil y Rápida",
-  "duracion": "4:33",
-  "vistas": 165937
- },
- {
   "recetaId": 368,
   "categoria": "bebidas",
   "nombre": "Extracto de alfalfa",
@@ -1930,46 +1880,6 @@
   "vistas": 54667
  },
  {
-  "recetaId": 433,
-  "categoria": "bebidas",
-  "nombre": "Horchata de arroz",
-  "videoUrl": "https://www.youtube.com/watch?v=SQDrBjEJwao",
-  "titulo": "Tienes calor 🥵 🔥? Haz agua de horchata de arroz - FACIL y rápido!!",
-  "canal": "Cocina Con Adela",
-  "duracion": "11:05",
-  "vistas": 2238267
- },
- {
-  "recetaId": 402,
-  "categoria": "bebidas",
-  "nombre": "Infusión de boldo",
-  "videoUrl": "https://www.youtube.com/watch?v=O0sGOrJimFw",
-  "titulo": "Como preparar té de boldo y algunos beneficios de esta infusión para la salud del cuerpo",
-  "canal": "Secretos Naturales",
-  "duracion": "2:05",
-  "vistas": 43870
- },
- {
-  "recetaId": 399,
-  "categoria": "bebidas",
-  "nombre": "Infusión de cedrón",
-  "videoUrl": "https://www.youtube.com/watch?v=6s4t3JW1Jvg",
-  "titulo": "Como hacer té de cedrón o hierba luisa y algunos beneficios de esta infusión para nuestra salud",
-  "canal": "Secretos Naturales",
-  "duracion": "2:12",
-  "vistas": 32230
- },
- {
-  "recetaId": 410,
-  "categoria": "bebidas",
-  "nombre": "Infusión de chanca piedra",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 403,
   "categoria": "bebidas",
   "nombre": "Infusión de eucalipto",
@@ -1978,16 +1888,6 @@
   "canal": "Secretos Naturales",
   "duracion": "2:00",
   "vistas": 119422
- },
- {
-  "recetaId": 409,
-  "categoria": "bebidas",
-  "nombre": "Infusión de hercampuri",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
  },
  {
   "recetaId": 309,
@@ -2000,26 +1900,6 @@
   "vistas": 24945
  },
  {
-  "recetaId": 408,
-  "categoria": "bebidas",
-  "nombre": "Infusión de llantén",
-  "videoUrl": "https://www.youtube.com/watch?v=xygPOHIgtgQ",
-  "titulo": "El LLANTEN cura estas ENFERMEDADES GASTRITIS,COLON IRRITABLE,HEMORROIDES ,etc  es muy facil INFUSION",
-  "canal": "Huerto los epazotes",
-  "duracion": "10:48",
-  "vistas": 857673
- },
- {
-  "recetaId": 420,
-  "categoria": "bebidas",
-  "nombre": "Infusión de manayupa",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 401,
   "categoria": "bebidas",
   "nombre": "Infusión de menta",
@@ -2028,26 +1908,6 @@
   "canal": "Secretos Naturales",
   "duracion": "2:22",
   "vistas": 64021
- },
- {
-  "recetaId": 407,
-  "categoria": "bebidas",
-  "nombre": "Infusión de paico",
-  "videoUrl": "https://www.youtube.com/watch?v=xnJ94DH6I8U",
-  "titulo": "🔴Infusión de PAICO, EPAZOTE, MASTRUZ y sus Beneficios 🌿 (MEXICAN TEA Leaves Infusion & Benefits)",
-  "canal": "Pablo Barbadillo (espacio Ñangapiry)",
-  "duracion": "9:45",
-  "vistas": 4579
- },
- {
-  "recetaId": 405,
-  "categoria": "bebidas",
-  "nombre": "Infusión de tilo",
-  "videoUrl": "https://www.youtube.com/watch?v=jyui-zcZeIQ",
-  "titulo": "Como preparar té de hojas de tilo o tila y algunos beneficios de tomar esta infusión para la salud",
-  "canal": "Secretos Naturales",
-  "duracion": "2:10",
-  "vistas": 29518
  },
  {
   "recetaId": 400,
@@ -2070,16 +1930,6 @@
   "vistas": 93099
  },
  {
-  "recetaId": 406,
-  "categoria": "bebidas",
-  "nombre": "Infusión de valeriana",
-  "videoUrl": "https://www.youtube.com/watch?v=Y8r9MUf-V7E",
-  "titulo": "Como preparar té de raíz de valeriana y algunos beneficios de tomar esta infusión para la salud",
-  "canal": "Secretos Naturales",
-  "duracion": "2:05",
-  "vistas": 107829
- },
- {
   "recetaId": 347,
   "categoria": "bebidas",
   "nombre": "Jugo de aguaymanto",
@@ -2088,16 +1938,6 @@
   "canal": "Jesús Saavedra Mendoza",
   "duracion": "6:54",
   "vistas": 12243
- },
- {
-  "recetaId": 370,
-  "categoria": "bebidas",
-  "nombre": "Jugo de apio con piña",
-  "videoUrl": "https://www.youtube.com/watch?v=52B0bNaYVuo",
-  "titulo": "JUGO DE APIO CON PIÑA | El mejor jugo diurético con apio | Zumo de apio con extractor de jugos",
-  "canal": "Simple Blending",
-  "duracion": "11:53",
-  "vistas": 2670293
  },
  {
   "recetaId": 367,
@@ -2530,16 +2370,6 @@
   "vistas": 68969
  },
  {
-  "recetaId": 435,
-  "categoria": "bebidas",
-  "nombre": "Maca con algarrobina",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 397,
   "categoria": "bebidas",
   "nombre": "Manzanilla",
@@ -2570,16 +2400,6 @@
   "vistas": 20508
  },
  {
-  "recetaId": 396,
-  "categoria": "bebidas",
-  "nombre": "Mate de anís",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 394,
   "categoria": "bebidas",
   "nombre": "Mate de coca",
@@ -2588,26 +2408,6 @@
   "canal": null,
   "duracion": null,
   "vistas": null
- },
- {
-  "recetaId": 422,
-  "categoria": "bebidas",
-  "nombre": "Mate de coca con muña",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
-  "recetaId": 395,
-  "categoria": "bebidas",
-  "nombre": "Mate de muña",
-  "videoUrl": "https://www.youtube.com/watch?v=R8mkRipYk50",
-  "titulo": "PREPAREMOS INFUSIÓN DE MUÑA",
-  "canal": "Tips y Trucos con Aracelice",
-  "duracion": "1:57",
-  "vistas": 13245
  },
  {
   "recetaId": 423,
@@ -2720,16 +2520,6 @@
   "vistas": 259029
  },
  {
-  "recetaId": 324,
-  "categoria": "bebidas",
-  "nombre": "Refresco de habas tostadas",
-  "videoUrl": "https://www.youtube.com/watch?v=Fzt70BQ-pvE",
-  "titulo": "PONCHE DE HABAS TOSTADAS CUSQUEÑO/ RECETA PONCHES TÍPICOS/ DELICIAS CUSQUEÑAS PERU/ COCINA PERUANA",
-  "canal": "Delicias Cusqueñas Perú",
-  "duracion": "12:45",
-  "vistas": 119997
- },
- {
   "recetaId": 437,
   "categoria": "bebidas",
   "nombre": "Refresco de hierbabuena con limón",
@@ -2738,16 +2528,6 @@
   "canal": "Sabor a la carta",
   "duracion": "3:19",
   "vistas": 281196
- },
- {
-  "recetaId": 323,
-  "categoria": "bebidas",
-  "nombre": "Refresco de kiwicha",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
  },
  {
   "recetaId": 317,
@@ -2890,26 +2670,6 @@
   "vistas": null
  },
  {
-  "recetaId": 469,
-  "categoria": "cenas",
-  "nombre": "Chocotejas",
-  "videoUrl": "https://www.youtube.com/watch?v=72oKC4qXLX0",
-  "titulo": "Chocotejas perfectas de Lucy´s Cakes/ 7 tips para que te queden súper bien",
-  "canal": "Lucy ́s Cakes",
-  "duracion": "9:20",
-  "vistas": 1251625
- },
- {
-  "recetaId": 465,
-  "categoria": "cenas",
-  "nombre": "Cocadas",
-  "videoUrl": "https://www.youtube.com/watch?v=yhXG2zokAhM",
-  "titulo": "DULCES FÁCILES y RÁPIDOS con solo 3 INGREDIENTES😍🥥😋 COQUITOS, BESOS DE COCO o COCADAS. Receta # 743",
-  "canal": "Golosolandia",
-  "duracion": "10:25",
-  "vistas": 720224
- },
- {
   "recetaId": 476,
   "categoria": "cenas",
   "nombre": "Empanada de carne",
@@ -2980,16 +2740,6 @@
   "vistas": 363436
  },
  {
-  "recetaId": 459,
-  "categoria": "cenas",
-  "nombre": "King kong",
-  "videoUrl": "https://www.youtube.com/watch?v=9ZC7VL34UCU",
-  "titulo": "Método Gross. Los Clásicos - King Kong - Suspiro Limeño",
-  "canal": "elGourmet",
-  "duracion": "4:06",
-  "vistas": 46625
- },
- {
   "recetaId": 470,
   "categoria": "cenas",
   "nombre": "Pan con chicharrón",
@@ -3018,16 +2768,6 @@
   "canal": "Sazón y Corazón",
   "duracion": "10:28",
   "vistas": 349724
- },
- {
-  "recetaId": 456,
-  "categoria": "cenas",
-  "nombre": "Pan de maca con cebolla",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
  },
  {
   "recetaId": 455,
@@ -3150,26 +2890,6 @@
   "vistas": 553116
  },
  {
-  "recetaId": 461,
-  "categoria": "cenas",
-  "nombre": "Torta de maracuyá",
-  "videoUrl": "https://www.youtube.com/watch?v=6zcEvYX69k4",
-  "titulo": "TORTA DE MARACUYÁ Receta paso a paso + GLASEADO DE MARACUYÁ 🤤🥧",
-  "canal": "Millennial en la cocina | Recetas fáciles ",
-  "duracion": "6:42",
-  "vistas": 372947
- },
- {
-  "recetaId": 460,
-  "categoria": "cenas",
-  "nombre": "Torta tres leches",
-  "videoUrl": "https://www.youtube.com/watch?v=OOcwz3Xwez0",
-  "titulo": "COMO HACER TORTA TRES LECHES PASO A PASO  | D' Jesús",
-  "canal": "D' Jesús",
-  "duracion": "6:01",
-  "vistas": 1287052
- },
- {
   "recetaId": 467,
   "categoria": "cenas",
   "nombre": "Turrón de doña pepa",
@@ -3260,26 +2980,6 @@
   "vistas": 216937
  },
  {
-  "recetaId": 140,
-  "categoria": "desayunos",
-  "nombre": "Camote sancochado con queso",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
-  "recetaId": 71,
-  "categoria": "desayunos",
-  "nombre": "Cancha con queso",
-  "videoUrl": "https://www.youtube.com/watch?v=Qb_4myZZA8Q",
-  "titulo": "CANCHA SERRANA PERUANA | TOSTANDO CANCHITA | Sazón y Corazón",
-  "canal": "Sazón y Corazón",
-  "duracion": "5:18",
-  "vistas": 718315
- },
- {
   "recetaId": 67,
   "categoria": "desayunos",
   "nombre": "Choclo con queso",
@@ -3288,16 +2988,6 @@
   "canal": null,
   "duracion": null,
   "vistas": null
- },
- {
-  "recetaId": 108,
-  "categoria": "desayunos",
-  "nombre": "Churros con chocolate",
-  "videoUrl": "https://www.youtube.com/watch?v=fA1LRVAGJgQ",
-  "titulo": "CHURROS CON CHOCOLATE",
-  "canal": "Marcos Di Cesare",
-  "duracion": "11:48",
-  "vistas": 365916
  },
  {
   "recetaId": 105,
@@ -3368,16 +3058,6 @@
   "canal": "Cocina con Carmen",
   "duracion": "2:27",
   "vistas": 10153937
- },
- {
-  "recetaId": 69,
-  "categoria": "desayunos",
-  "nombre": "Habas con queso",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
  },
  {
   "recetaId": 125,
@@ -3600,16 +3280,6 @@
   "vistas": 196820
  },
  {
-  "recetaId": 21,
-  "categoria": "desayunos",
-  "nombre": "Pan con huevo revuelto",
-  "videoUrl": "https://www.youtube.com/watch?v=pjlDbr7zQSA",
-  "titulo": "Sandwich de huevo en menos de 8 minutos",
-  "canal": "Chef 1A",
-  "duracion": "3:14",
-  "vistas": 136518
- },
- {
   "recetaId": 87,
   "categoria": "desayunos",
   "nombre": "Pan con huevo y queso",
@@ -3700,16 +3370,6 @@
   "vistas": 80295
  },
  {
-  "recetaId": 22,
-  "categoria": "desayunos",
-  "nombre": "Pan con palta y huevo",
-  "videoUrl": null,
-  "titulo": null,
-  "canal": null,
-  "duracion": null,
-  "vistas": null
- },
- {
   "recetaId": 120,
   "categoria": "desayunos",
   "nombre": "Pan con pate",
@@ -3740,16 +3400,6 @@
   "vistas": 349724
  },
  {
-  "recetaId": 121,
-  "categoria": "desayunos",
-  "nombre": "Pan con pollo deshilachado y palta",
-  "videoUrl": "https://www.youtube.com/watch?v=BA9br3suu4w",
-  "titulo": "Receta de pan con pollo y palta",
-  "canal": "Dos complices por el mundo",
-  "duracion": "1:56",
-  "vistas": 1678
- },
- {
   "recetaId": 133,
   "categoria": "desayunos",
   "nombre": "Pan con queso crema y mermelada",
@@ -3778,16 +3428,6 @@
   "canal": "StatUpBox En Español",
   "duracion": "3:20",
   "vistas": 20054
- },
- {
-  "recetaId": 86,
-  "categoria": "desayunos",
-  "nombre": "Pan con queso y tomate",
-  "videoUrl": "https://www.youtube.com/watch?v=rP5yuZ5HIUQ",
-  "titulo": "COMO HACER PAN CON TOMATE Y QUESO",
-  "canal": "Diana Rodelo",
-  "duracion": "7:49",
-  "vistas": 16465
  },
  {
   "recetaId": 18,
@@ -3840,16 +3480,6 @@
   "vistas": 1746
  },
  {
-  "recetaId": 4,
-  "categoria": "desayunos",
-  "nombre": "Pan con tortilla",
-  "videoUrl": "https://www.youtube.com/watch?v=snWN9zp0Usw",
-  "titulo": "Como hacer tortilla de huevo con hotdog",
-  "canal": "SiNa ManualidadesyCocina",
-  "duracion": "4:02",
-  "vistas": 102621
- },
- {
   "recetaId": 123,
   "categoria": "desayunos",
   "nombre": "Pan con tortilla de raya",
@@ -3870,36 +3500,6 @@
   "vistas": 128685
  },
  {
-  "recetaId": 130,
-  "categoria": "desayunos",
-  "nombre": "Pan de kiwicha",
-  "videoUrl": "https://www.youtube.com/watch?v=J8sQTrpxvT4",
-  "titulo": "Pan de Kiwicha (Amaranto) || Sin gluten ni lactosa 💚",
-  "canal": "Exótica de Oky",
-  "duracion": "7:11",
-  "vistas": 23855
- },
- {
-  "recetaId": 113,
-  "categoria": "desayunos",
-  "nombre": "Pan de papa",
-  "videoUrl": "https://www.youtube.com/watch?v=Opw7GFIIphk",
-  "titulo": "¿CÓMO HACER PAN DE HAMBURGUESAS? *PAN DE PAPA*",
-  "canal": "Gluten Morgen Español",
-  "duracion": "6:18",
-  "vistas": 561478
- },
- {
-  "recetaId": 148,
-  "categoria": "desayunos",
-  "nombre": "Pan integral casero",
-  "videoUrl": "https://www.youtube.com/watch?v=z2FTzs5N4rQ",
-  "titulo": "PAN DE CAJA INTEGRAL CASERO | Panadería Esencial T1 Cap.5",
-  "canal": "La Soleta Arte en Cocina | Postres deliciosos",
-  "duracion": "11:30",
-  "vistas": 162324
- },
- {
   "recetaId": 62,
   "categoria": "desayunos",
   "nombre": "Panqueques con miel",
@@ -3908,16 +3508,6 @@
   "canal": null,
   "duracion": null,
   "vistas": null
- },
- {
-  "recetaId": 129,
-  "categoria": "desayunos",
-  "nombre": "Panqueques de quinua",
-  "videoUrl": "https://www.youtube.com/watch?v=yglIeneJlf4",
-  "titulo": "PANQUEQUES DE QUINUA: ¡Sin Harina y Sin Azúcar! Descubre el Secreto Desayuno Saludable y Nutritivo",
-  "canal": "Delicias Cusqueñas Perú",
-  "duracion": "8:04",
-  "vistas": 589493
  },
  {
   "recetaId": 70,
@@ -3948,16 +3538,6 @@
   "canal": "Sabores de familia",
   "duracion": "5:56",
   "vistas": 121266
- },
- {
-  "recetaId": 106,
-  "categoria": "desayunos",
-  "nombre": "Picarones",
-  "videoUrl": "https://www.youtube.com/watch?v=ZjnUl4UzApg",
-  "titulo": "PICARONES Caseros Peruanos | Abelca",
-  "canal": "Abelca",
-  "duracion": "11:49",
-  "vistas": 3615807
  },
  {
   "recetaId": 144,
@@ -4090,16 +3670,6 @@
   "vistas": 2001614
  },
  {
-  "recetaId": 78,
-  "categoria": "desayunos",
-  "nombre": "Sopa de sémola",
-  "videoUrl": "https://www.youtube.com/watch?v=jKiG4v2sIQk",
-  "titulo": "SOPA Y CONSOMÉ DE AVE CON SÉMOLA, CLÁSICA, DELICIOSA Y REPONEDORA",
-  "canal": "Alvaro Barrientos Montero",
-  "duracion": "10:05",
-  "vistas": 529670
- },
- {
   "recetaId": 41,
   "categoria": "desayunos",
   "nombre": "Tamal criollo",
@@ -4148,16 +3718,6 @@
   "canal": "Cocina con Carmen",
   "duracion": "3:23",
   "vistas": 2174345
- },
- {
-  "recetaId": 127,
-  "categoria": "desayunos",
-  "nombre": "Tortilla de fideos",
-  "videoUrl": "https://www.youtube.com/watch?v=icT5N93w6f0",
-  "titulo": "TORTILLA DE FIDEOS FÁCIL ♥",
-  "canal": "T(h)iare'sTutorials",
-  "duracion": "1:59",
-  "vistas": 433116
  },
  {
   "recetaId": 49,
